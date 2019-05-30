@@ -1,0 +1,98 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s;
+}
+
+.slide-enter {
+  transform: translate(100%, 0);
+}
+
+.slide-leave-to {
+  transform: translate(-100%, 0);
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+  {
+  opacity: 0;
+}
+
+
+
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to
+
+/* .slide-fade-leave-active below version 2.1.8 */
+  {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+
+//transition list
+
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all .3s;
+  overflow: hidden;
+  min-height: 0 !important;
+  height: initial !important;
+}
+
+.list-enter,
+.list-leave-to
+
+/* .list-leave-active below version 2.1.8 */
+  {
+  opacity: 0;
+
+
+
+  transform: translateX(50px);
+}
+
+.tour-info .absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.list-enter {
+  overflow: hidden;
+  max-height: 0 !important;
+  min-height: 0 !important;
+}
+
+//zoom in center
+#calendar-show {
+
+  animation-duration: .3s;
+  animation-delay: 0s;
+
+}
+
+.editable-input-parent-wrapper {
+  animation-duration: .5s;
+  animation-delay: 0;
+}
+.zoomSpecial-fade-enter, .zoomSpecial-fade-leave-to
+/* .component-fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

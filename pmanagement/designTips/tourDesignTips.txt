@@ -1,0 +1,115 @@
+router Business customer
+	https://kurier-link.com/geschaeftskundenportal
+
+
+page 3 
+- tour  
+- details
+- tour time ( mo fr ) , start day finish day , start time finish time 
+  payment day (drop menu)
+
+Type 1 
+Type 2 
+Type 3 Hin and Weg 
+
+Tour 12011
+min 350 in day
+0.20 � per min 
+total .20 * 350 = 70 �
+
+Tour 12022
+stop 10 in tour 
+price per stop 10 �
+total price 10 * 10 = 100 �
+
+Tour 12015
+per paket 5 �
+ 5 min 5 * 25 �
+
+
+
+Tournumber
+Pries
+
+input 
+- digramm
+ - api/tests
+  - migration
+   - model (relations)
+    - funktions + constraint
+	 - design customer ordinted     
+
+- one page all date
+	- input [Name input]  
+	- dropmenu [payment-type]
+	- chosemenu Mo - Mi - Fr 
+	- view menu view dates
+	- submit 
+	- get offers 
+
+
+in frist page 
+	- tour type 
+	-  
+
+
+
+	- Tour per Time
+		- tour per min
+		- tour per hour
+	- Tour per day
+		- tour per day ( modify days in week mo fr )
+		- tour per 1 , 2 , 3 weeks 
+		- tour per 1 , 2 , 3 month
+		- tour per 1 year
+	- Tour per Stop
+		- dynamic stop 
+			- calcalte every stop by km ( vaild every stop address to give )
+			- + stop time per address one time 5 it will be listed in all the stops 	but can be changed in every stop takeing added by customer
+			- able to add pakets lable to every stop can be more then one paket
+		- static stop 
+			- will give no adress per stop but price
+			- will have to give the km per all tour (drop menu) start finsih adress 	important
+			- will need to give the number of the stops per day (between 10 - 20)
+			- stop time 5 min per stop ( able to change every stop) add by customer
+			- able to add pakets lable to every stop can be more then one pakets (	optional )
+	- Tour per paket 
+		- hier are all inforamtion about paket are vaild
+			- customer able to print lable to every paket 
+			- stops will be chosen automatic throw the system when 2 paket have same 	address
+			- 
+
+
+
+packet category
+ -small
+ -medium
+ -large
+ -xlarge
+			
+frist page 
+	- server show 
+		 header
+		 footer
+		 banner ( changed by tour type)
+		 Tour type per min
+		 Tour type per day
+		 tour type per paket
+		 Tour type standed ( tour per stop )
+		 frist address fom the standerd tour per stop
+		 secound address 
+		 	pick up + drow 
+		 		pick up period 
+sec page ( if tour per min)
+	-
+
+		 tour start date 
+	 	 tour start time from 08:00 till 09:00  
+
+
+
+		 A1
+		 A2
+			wenn A2 finish 
+				show A3 
+		A4

@@ -1,0 +1,379 @@
+body{
+}
+.sub-nav{
+    background: #000;
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-right {
+    padding-left: 5rem;
+    padding-right: 0;
+
+}
+.test{
+    display: inline-block;
+    color: #fff;
+    padding: 1.3rem 3rem 1.2rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    margin: 0;
+    line-height: 1.8rem;
+
+}
+
+.logo{
+    width: 11.5rem;
+}
+.contact{
+    /* margin-left: 20px; */
+    display: inline-block;
+    color: #fff;
+    padding: 1.3rem 3rem 1.2rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    margin: 0;
+    line-height: 1.8rem;
+}
+.contacts{
+    /* margin-left: 20px; */
+    display: inline-block;
+    color: #fff;
+    padding: 1.3rem 3rem 1.2rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    margin: 0;
+    line-height: 1.8rem;
+   
+    padding-right: 0;
+}
+.contact-info{
+    float: right;
+}
+.contact  i , .contacts  i {
+    padding-right: .5rem
+}
+.login{
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 5rem;
+    margin-left: 1.5rem;
+    letter-spacing: .1rem;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    vertical-align: middle;
+
+}
+@media screen and (max-width:690px){
+    .login{
+    padding: 2.5rem 1rem;
+        
+    }
+}
+
+@media screen and (max-width:576px){
+    .contact-info{
+        float: left;
+    }
+    .login{
+    padding: 1.5rem 1rem;
+    background: none !important;
+    margin: 0 !important;
+    
+        
+    }
+    .login::before{
+        
+        content:  " | | ";
+        margin-right: .5rem;
+    }
+}
+@media screen and (max-width:400px){
+   
+    .login{ 
+   
+        padding-left: 0;
+    padding-right: 0;
+    font-size: 1.2rem;
+    }
+    .login::before{
+        margin: 0;
+
+    }
+    .contacts{
+        padding-left: .5rem;
+        letter-spacing: .05rem;
+    }
+}
+.sub-left{
+    padding-right: 0;
+}
+
+@media (max-width: 876px) and (min-width:575.98px) {
+    .sub-nav{
+        /* background: red !important; */
+    }
+    .sub-left , .sub-right{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .contact{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 876px) {
+    
+    .sub-left , .sub-right{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 991px) {
+    
+   .nav-item{
+       padding-right: 0 !important;
+       padding-left: 0 !important;
+   }
+}
+/*start main nav*/
+.navbar-collapse{
+    flex-grow:0;
+}
+.navbar{
+    background: white !important;
+    box-shadow: 0 .5rem 5.3rem -.7rem rgba(0, 0, 0, 0.2);
+ 
+}
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    /* background: rgba(255, 255, 255, .9) !important  ; */
+  }
+.nav-item{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}  
+.navbar-nav li:first-child {
+    padding-left: 0;
+}
+.nav-item a {
+    color: #121212;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 2rem;
+    line-height: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-traffffffnsition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-in-out;
+    
+}
+
+
+
+/*
+button
+*/
+#myBtn {
+    
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2rem; /* Place the button at the bottom of the page */
+    right: -5rem;  /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#f6ab36; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+  
+    border-radius: 0%; /* Rounded corners */
+    transition: all .1s ease-in-out;
+    height: 4rem;
+
+    text-align: center;
+    width: 3.6rem;
+    z-index: 999;
+    line-height: 3.8rem;
+    font-size: 2.2rem;
+    transition: all .5s ease-in-out;
+    
+}
+.showbtn{
+    right:2rem !important;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+#myBtn:hover{
+    background-color: #121212;
+}
+
+body{
+    position: relative;
+}
+/* start optionbox */
+@media ( max-width: 767px ){
+    .option-template-menu{
+        width: 100% !important;
+        padding: 0 !important;
+        background-color: transparent !important; 
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+.option-template-menu {
+    width: 45rem;
+    position: absolute;
+    left: -73.5rem;
+    top: 0;
+    max-height: 65rem;
+    box-shadow: -.2rem .1rem .4rem rgba(2, 3, 3, 0.15);
+    background: #FFF;
+    z-index: 100;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    border-radius:.5rem;
+}
+.option-template-menu .option-template-menu-open {
+    position: absolute;
+    top: 20rem;
+    left: -4rem;
+    height: 4rem;
+    background: #fff;
+    width: 4rem;
+    line-height: 4rem;
+    -webkit-border-radius: .5rem 0 0 .5rem;
+    -moz-border-radius: .5rem 0 0 .5rem;
+    border-radius: .5rem 0 0 .5rem;
+    box-shadow: -.2rem .1rem .4rem rgba(2, 3, 3, 0.15);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.option-template-menu-open  i {
+    line-height: 4rem;
+    color:#f6ab36;
+}
+.option-template-menu-open i:hover{
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+}
+.left{
+    left:0;
+}
+
+.apps-option-group h5 {
+    color: #000;
+    text-transform: uppercase;  
+    font-weight: 400;
+}
+.apps-option-group p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    line-height: 2.4rem;
+}
+.option-template-menu ul {
+    overflow: hidden;
+}
+
+.option-template-menu ul li {
+    width: 25%;
+    float: left;
+    margin-bottom: 1.5rem;
+}
+.option-template-menu ul li a {
+    cursor: pointer;
+}
+
+.option-template-menu ul li:nth-child(1) a {
+    background: linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%);
+}
+.option-template-menu ul li:nth-child(2) a {
+    background: #70e1f5;
+    background: -webkit-linear-gradient(-45deg, #ff5f6d 0%, #ffc371 100%);
+    background: linear-gradient(-45deg, #ff5f6d 0%, #ffc371 100%);
+}
+
+.option-template-menu ul li:nth-child(3) a {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+}
+
+.option-template-menu ul li:nth-child(4) a {
+    background: #ADD100;
+    background: -webkit-linear-gradient(to right, #F9D423 0%, #FF4E50 100%);
+    background: linear-gradient(to right, #F9D423 0%, #FF4E50 100%);
+}
+
+.option-template-menu ul li:nth-child(5) a {
+    background: #FF4E50;
+    background: -webkit-linear-gradient(to right, #DC2424 0%, #4A569D 100%);
+    background: linear-gradient(to right, #DC2424 0%, #4A569D 100%);
+}
+
+.option-template-menu ul li:nth-child(6) a {
+    background: #F0C27B;
+    background: -webkit-linear-gradient(to right, #000000 0%, #53346D 100%);
+    background: linear-gradient(to right, #000000 0%, #53346D 100%);
+}
+
+.option-template-menu ul li:nth-child(7) a {
+    background: #AAFFA9;
+    background: -webkit-linear-gradient(to right, #108dc7 0%, #ef8e38 100%);
+    background: linear-gradient(to right, #108dc7 0%, #ef8e38 100%);
+}
+
+.option-template-menu ul li:nth-child(8) a {
+    background: #9D50BB;
+    background: -webkit-linear-gradient(to right, #5f2c82 0%, #49a09d 100%);
+    background: linear-gradient(to right, #5f2c82 0%, #49a09d 100%);
+}
+
+.option-template-menu ul li a {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.option-template-menu h5{
+    font-size: 1.5rem;
+}
+
+input.button:focus{
+    box-shadow: none;
+}

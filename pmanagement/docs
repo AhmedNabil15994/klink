@@ -1,0 +1,74 @@
+Business customers
+    Guest Page
+        -- link = https://kurier-link.com/geschaeftskundenportal
+    Ui = Page share to 3 parts 
+        - part 1 
+            - information about the location 
+        - part 2
+            - information about times of tour 
+        - part 3 
+            - inforamtion about type of tour 
+                Min, Hour, week, month 
+    information coming from server
+        - A1 = customer info if is a private customer or company customer 
+        - A2 = frist address with vaild ( street + Number + city)
+        - A3 = number of Tour ( gust-id , plz hex , trip_id)
+        - A4 = start day (with system help same day)
+        - A5 - finish day (empty when the tour have no finish day)
+        - A6 - start hour (with help from system start 8:00 till 9:00 Uhr)
+        - A7 - finish hour (with help from system finish 9:00 Uhr)
+        - A8 - canclation day ( wtih help from the system )
+                - system help date of canclation * time to end the tour contract vaild ( sameday., 1.2.3week, 1.2.3month,123year)
+        - A9 - number of stops per tour 
+        - A10- number of paket per tour 
+                - if he chose number of paket, will be asked if he want to build up everypaket date - like name addres plaket 
+        -
+
+
+- tour start from / finish in location 
+ - Tour type (min) ex (hour, week, month)
+  -
+   -
+    -
+     -
+Tournumber  1220451K002
+tourtype    50 min per day
+tour price  0.20€ per min
+total price 50*0.20= 10@
+
+Tournumber  1220451K001
+tourtype    100 stop 
+tour price  1.5€ per stop
+total price 100*1.5= 150€ per day
+
+Tournumber  1220451K009
+tourtype    1 month 
+tour price  1200€ per month
+total price 1*1200= 1200€ per month
+
+Tournumber  1220451K005
+tourtype    1600 paket 
+tour price  1€ per paket
+total price 1600*1= 1600€ per day
+
+
+
+
+50 min price 1@ per mit 
+50 stop price
+
+
+
+
+
+if tour per min
+    number of stops in the tour 
+    time which cost every stop (customer)
+
+if tour per stop
+    number os stops 
+    time needed ever stop
+
+if tour per paket 
+    number of paket
+    km of each paket 

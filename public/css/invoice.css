@@ -1,0 +1,712 @@
+.openSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.05);
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 117rem;
+  }
+}
+
+/*invoice*/
+.invoice-wrapper{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: .5rem 1rem 1rem #999;
+}
+.first-div {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=");
+  background: -moz-radial-gradient(center center, circle farthest-corner, #333333 10%, #000000);
+  background: -webkit-radial-gradient(center center, circle farthest-corner, #333333 10%, #000000);
+  background: radial-gradient(circle farthest-corner at center center, #333333 10%, #000000);
+  color: #fff;
+}
+
+.company-info {
+  padding: 2rem;
+  clear: both;
+  padding-bottom: 0 !important;
+}
+
+@media print {
+  .company-info {
+    clear: none;
+  }
+}
+
+.company-info .company-name {
+  cursor: pointer;
+  float: left;
+}
+
+.company-info .company-name h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #f6ab36;
+}
+
+.company-info .company-name span {
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+@media print {
+  .company-info .company-name {
+    float: left;
+  }
+}
+
+.company-info .company-info {
+  float: right;
+}
+
+.company-info .company-info span {
+  display: block;
+  margin-bottom: .2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #FFF;
+}
+
+@media print {
+  .company-info .company-info {
+    float: right;
+  }
+}
+
+.invoice-number {
+  padding: 2rem;
+  cursor: pointer;
+  padding-top: 0 !important;
+}
+
+.invoice-number h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.invoice-number span {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 0, 0.5);
+}
+
+.second-div {
+  cursor: pointer;
+}
+
+.second-div .billing-to {
+  padding: 2rem;
+}
+
+@media print {
+  .second-div .billing-to {
+    float: left;
+  }
+}
+
+.second-div .billing-to h4 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #333333;
+}
+
+.second-div .billing-to span {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.second-div .billing-dates {
+  padding: 2rem;
+}
+
+@media print {
+  .second-div .billing-dates {
+    float: left;
+  }
+}
+
+.second-div .billing-dates .dates {
+  background: #000;
+  color: #FFF;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: .3rem;
+}
+
+.second-div .billing-dates .dates p {
+  font-size: 1.4rem;
+}
+
+.second-div .billing-dates .dates p span {
+  margin-right: .5rem;
+  display: inline-block;
+  width: 11rem;
+  font-size: 1.4rem;
+}
+
+.second-div .billing-conc {
+  padding: 2rem;
+}
+
+@media print {
+  .second-div .billing-conc {
+    float: left;
+  }
+}
+
+.second-div .billing-conc .details {
+  background: #f6ab36;
+  color: #FFF;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: .3rem;
+}
+
+.second-div .billing-conc .details p {
+  font-size: 1.4rem;
+}
+
+.second-div .billing-conc .details p span {
+  margin-right: .5rem;
+  display: inline-block;
+  width: 11rem;
+  font-size: 1.4rem;
+}
+
+.fourth-div .total-value {
+  padding: 2rem;
+  float: right;
+  padding-right: 1.5rem;
+}
+
+.fifth-div p{
+  padding-right: 1.5rem;
+}
+
+.fourth-div .total-value p {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  padding: .5rem;
+}
+
+.fourth-div .total-value span {
+  display: inline-block;
+  width: 20rem;
+  margin-right: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fifth-div {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  text-align: right;
+  padding: 1rem;
+}
+
+.fifth-div p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.fifth-div span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+/*print mode*/
+@media print {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .first-div {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=") !important;
+    background: -moz-radial-gradient(center center, circle farthest-corner, #333333 10%, #000000) !important;
+    background: -webkit-radial-gradient(center center, circle farthest-corner, #333333 10%, #000000) !important;
+    background: radial-gradient(circle farthest-corner at center center, #333333 10%, #000000) !important;
+    color: #fff;
+  }
+  .company-info {
+    padding: 2rem;
+    clear: both;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media print {
+  .company-info {
+    clear: none;
+  }
+}
+
+@media print {
+  .company-info .company-name {
+    cursor: pointer;
+    float: left;
+  }
+  .company-info .company-name h2 {
+    font-weight: 700 !important;
+    font-size: 25pt !important;
+    text-transform: uppercase !important;
+    margin-bottom: 0 !important;
+    color: #f6ab36 !important;
+  }
+  .company-info .company-name span {
+    font-weight: 500 !important;
+    font-size: 10pt !important;
+    cursor: pointer !important;
+    color: #FFF !important;
+    text-transform: uppercase !important;
+  }
+}
+
+@media print {
+  .company-info .company-name {
+    float: left !important;
+  }
+}
+
+@media print {
+  .company-info .company-info {
+    float: right !important;
+  }
+  .company-info .company-info span {
+    display: block !important;
+    margin-bottom: .2rem !important;
+    font-size: 12pt !important;
+    cursor: pointer !important;
+    color: #FFF !important;
+  }
+}
+
+@media print {
+  .company-info .company-info {
+    float: right !important;
+  }
+}
+
+@media print {
+  .invoice-number {
+    padding: 2rem !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+  }
+  .invoice-number h3 {
+    font-size: 21pt !important;
+    text-transform: uppercase !important;
+    color: #FFF !important;
+  }
+  .invoice-number span {
+    font-size: 12pt !important;
+    color: rgba(255, 255, 0, 0.5) !important;
+  }
+  .second-div {
+    cursor: pointer;
+  }
+  .second-div .billing-to {
+    padding: 2rem !important;
+  }
+  .second-div .billing-to h4 {
+    text-transform: capitalize !important;
+    font-size: 18pt !important;
+    color: #333333 !important;
+  }
+  .second-div .billing-to span {
+    display: block !important;
+    font-size: 12pt !important;
+    margin-bottom: .5rem !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .second-div .billing-dates {
+    padding: 2rem !important;
+  }
+}
+
+@media print {
+  .second-div .billing-dates {
+    float: left;
+  }
+}
+
+@media print {
+  .second-div .billing-dates .dates {
+    background: #000 !important;
+    color: #FFF !important;
+    padding: 1rem !important;
+    padding-top: 2rem !important;
+    border-radius: .3rem !important;
+  }
+  .second-div .billing-dates .dates p {
+    color: #FFF !important;
+    font-size: 12pt;
+  }
+  .second-div .billing-dates .dates p span {
+    margin-right: .5rem !important;
+    display: inline-block !important;
+    width: 11rem !important;
+    color: #FFF !important;
+    font-size: 14pt;
+  }
+  .second-div .billing-conc {
+    padding: 2rem !important;
+  }
+}
+
+@media print {
+  .second-div .billing-conc {
+    float: left;
+  }
+}
+
+@media print {
+  .second-div .billing-conc .details {
+    background: #f6ab36 !important;
+    color: #FFF !important;
+    padding: 1rem !important;
+    padding-top: 2rem !important;
+    border-radius: .3rem !important;
+  }
+  .second-div .billing-conc .details p {
+    color: #FFF !important;
+    font-size: 12pt;
+  }
+  .second-div .billing-conc .details p span {
+    margin-right: .5rem !important;
+    display: inline-block !important;
+    width: 11rem !important;
+    color: #FFF !important;
+    font-size: 12pt;
+  }
+  .total-value {
+    padding: 2rem !important;
+    float: right;
+  }
+  .total-value p {
+    font-size: 1.5rem !important;
+  }
+  .total-value span {
+    display: inline-block !important;
+    width: 20rem !important;
+    margin-right: 1.5rem !important;
+    font-weight: 700 !important;
+  }
+  .fifth-div {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #FFF !important;
+    text-align: right !important;
+    padding: 1rem !important;
+  }
+  .fifth-div p {
+    text-transform: uppercase !important;
+    font-size: 1.6rem !important;
+    color: #FFF !important;
+  }
+  .fifth-div span {
+    margin-right: 1.5rem !important;
+    display: inline-block !important;
+    color: #FFF !important;
+  }
+}
+
+/*invoice*/
+/*variables*/
+/*variables*/
+/*order card*/
+.order-space .orderCard {
+  background: #FFF;
+  width: 100%;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  /*order head*/
+  /*order head*/
+  /*order data*/
+  /*order data*/
+}
+
+@media (max-width: 520px) {
+  .order-space .orderCard {
+    overflow-x: scroll;
+  }
+}
+
+.order-space .orderCard .order-head {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.05);
+}
+
+.order-space .orderCard .order-head h3.order-heading {
+  color: #263238;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  position: relative;
+  font-size: 2rem;
+}
+
+.order-space .orderCard .order-head h3.order-heading::before {
+  content: "";
+  position: absolute;
+  top: -.5rem;
+  left: -2rem;
+  height: 3rem;
+  width: .2rem;
+  background: #398bf7;
+}
+
+.order-space .orderCard .order-head p.order-paragraph {
+  text-transform: capitalize;
+  color: #b1b1b1;
+  font-size: 1.4rem;
+}
+
+.order-space .orderCard .table {
+  /*table header*/
+  /*table body*/
+  /*table body*/
+}
+
+.order-space .orderCard .table__header--row th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.order-space .orderCard .table__body--row {
+  transition: background .5s;
+  cursor: pointer;
+  /*td*/
+}
+
+.order-space .orderCard .table__body--row:hover {
+  background: #f3f3f3;
+}
+
+.order-space .orderCard .table__body--row td {
+  padding: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  vertical-align: middle;
+  color: #455a64;
+  border-top: none;
+  font-size: 1.4rem;
+  /*car details*/
+}
+
+.order-space .orderCard .table__body--row td .car-img {
+  width: 3rem;
+  height: 3rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.order-space .orderCard .table__body--row td .car-img img {
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+@media (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+.order-space .orderCard .table__body--row td .car-details {
+  float: left;
+}
+
+@media (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 1310px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td.car-head {
+    width: 20rem;
+  }
+}
+
+/*order card*/
+@media print {
+  .order-space .orderCard {
+    background: #FFF !important;
+    width: 100% !important;
+    border-radius: .5rem !important;
+    padding: 2rem !important;
+    margin-bottom: 3rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /*order head*/
+    /*order head*/
+    /*order data*/
+    /*order data*/
+  }
+}
+
+@media print and (max-width: 520px) {
+  .order-space .orderCard {
+    overflow-x: scroll;
+  }
+}
+
+@media print {
+  .order-space .orderCard .order-head {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.05) !important;
+  }
+  .order-space .orderCard .order-head h3.order-heading {
+    color: #263238 !important;
+    margin-top: 1rem !important;
+    margin-bottom: .5rem !important;
+    position: relative !important;
+    font-size: 20pt !important;
+  }
+  .order-space .orderCard .order-head h3.order-heading::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -.5rem !important;
+    left: -2rem !important;
+    height: 3rem !important;
+    width: .2rem !important;
+    background: #398bf7 !important;
+  }
+  .order-space .orderCard .order-head p.order-paragraph {
+    text-transform: capitalize !important;
+    color: #b1b1b1 !important;
+    font-size: 12pt !important;
+  }
+  .order-space .orderCard .table {
+    /*table header*/
+    /*table body*/
+    /*table body*/
+  }
+  .order-space .orderCard .table__header--row th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    color: #6c757d !important;
+    cursor: pointer !important;
+    font-size: 12pt !important;
+  }
+  .order-space .orderCard .table__body--row {
+    transition: background .5s !important;
+    cursor: pointer !important;
+    /*td*/
+  }
+  .order-space .orderCard .table__body--row:hover {
+    background: #f3f3f3 !important;
+  }
+  .order-space .orderCard .table__body--row td {
+    padding: 1.2rem !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    vertical-align: middle !important;
+    color: #455a64 !important;
+    border-top: none !important;
+    font-size: 12pt !important;
+    /*car details*/
+  }
+  .order-space .orderCard .table__body--row td .car-img {
+    width: 3rem !important;
+    height: 3rem !important;
+    float: left !important;
+    margin-right: 1rem !important;
+  }
+  .order-space .orderCard .table__body--row td .car-img img {
+    max-width: 100% !important;
+    border-radius: 100% !important;
+  }
+}
+
+@media print and (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none !important;
+  }
+}
+
+@media print and (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none !important;
+  }
+}
+
+@media print and (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none !important;
+  }
+}
+
+@media print {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: left;
+  }
+}
+
+@media print and (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none !important;
+  }
+}
+
+@media print and (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none !important;
+  }
+}
+
+@media print and (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none !important;
+  }
+}
+
+@media print and (max-width: 1310px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td.car-head {
+    width: 20rem !important;
+  }
+}

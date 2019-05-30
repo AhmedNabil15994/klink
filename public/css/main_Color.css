@@ -1,0 +1,130 @@
+.contact span , .contacts span{
+    color:#f6ab36;
+
+ 
+}
+
+
+
+ #myBtn {
+    
+    background-color:#f6ab36; /* Set a background color */
+
+ }
+
+ .option-template-menu-open  i {
+    color:#f6ab36;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color:#f6ab36 !important
+
+}
+
+.nav-item  a:hover {
+    color:#f6ab36 !important;
+    
+}
+.ts-social-width:hover{
+    background-color:  #f6ab36;;
+    border-color:    #f6ab36;
+}
+
+.copyright-text span{
+    color: #f6ab36;
+ }
+
+ .copyrights a:hover{
+    color: #f6ab36 !important;
+     
+ }
+
+
+
+
+
+ .head{
+    /* border: 1px solid #f6ab36; */
+ }
+ .head span{
+    color:#f6ab36;
+}
+.box:before{
+  
+    background-color: #f6ab36;
+}
+
+
+
+input.button{
+    background: #f6ab36!important;
+    border: 1px solid #f6ab36;
+    box-shadow: none;
+  
+
+}
+.submit{
+    background: #f6ab36!important;
+    border: 1px solid #f6ab36;   
+}
+h3.head:after{
+   
+    background-color: #f6ab36;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li.active {
+   
+    background-color:#f6ab36;
+   
+     
+}
+#fade-quote-carousel .profile-circle img {
+
+    border: 3px solid #f6ab36 ;
+}
+
+.ribbon span {
+
+    background: #f6ab36;
+   
+  }
+  .ribbon span::before {
+ 
+    border-left: 3px solid #f6ab36;
+   
+    border-top: 3px solid #f6ab36;
+  }
+  .ribbon span::after {
+    border-right: 3px solid #f6ab36;
+    border-top: 3px solid #f6ab36;
+  }
+  .calc{
+    color: #f6ab36;
+}
+
+.calc:hover{
+    color: #ea8f00;
+}
+.login{
+    background-color: #f6ab36;
+
+}
+.form-control:focus {
+    border-color: #f6ab36 !important;
+    box-shadow: none;
+}
+
+.car-section h2:after{
+    background-color: #f6ab36;   
+}
+.car-section .car-type{
+ 
+  border:2px solid #fff;
+}
+
+.car-section .car-type:hover{
+  
+    background: #f6ab36;
+    
+
+}

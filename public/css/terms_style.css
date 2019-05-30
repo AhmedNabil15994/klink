@@ -1,0 +1,29 @@
+/*start terms*/
+.terms {
+  background: #f9f9f9;
+  padding: 2.5rem;
+}
+
+.terms .term-heading {
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+}
+
+.terms .main-paragraph {
+  color: #838383;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.terms .sub-paragraph {
+  color: #838383;
+  line-height: 2;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.terms .sub-paragraph .select-text {
+  color: #f6ab36;
+}
+
+/*start terms*/

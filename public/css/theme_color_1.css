@@ -1,0 +1,135 @@
+.contact span , .contacts span{
+    color:  rgba(205, 15, 216)  !important;
+
+ 
+}
+
+.nav-item a:hover{
+    color: rgba(205, 15, 216, 0.75)
+     
+ } 
+
+ #myBtn {
+    
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+
+ }
+
+ .option-template-menu-open  i {
+    color:rgba(205, 15, 216);
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color:rgba(205, 15, 216);
+
+}
+
+.nav-item  a:hover {
+    color:rgba(205, 15, 216) !important;
+    
+}
+
+.ts-social-width:hover{
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+    border-color:    rgba(205, 15, 216) ;
+}
+
+
+.copyright-text span{
+    color:    rgba(205, 15, 216) 
+ }
+
+ .copyrights a:hover{
+    color:    rgba(205, 15, 216)  !important;
+     
+ }
+
+
+ .head span{
+    color: rgba(205, 15, 216)  ;
+}
+.box:before{
+  
+    background-color:  rgba(205, 15, 216)  ;
+}
+
+
+
+.submit{
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%)  !important; /* Set a background color */
+    
+    /* border: 1px solid  rgba(205, 15, 216)  ; */
+    border:none;
+
+}
+h3.head:after{
+   
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+}
+#fade-quote-carousel.carousel .carousel-indicators > li.active {
+   
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+   
+     
+}
+#fade-quote-carousel .profile-circle img {
+
+    border: 3px solid  rgba(205, 15, 216)   ;
+}
+
+.ribbon span {
+
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+   
+   
+  }
+  .ribbon span::before {
+ 
+    border-left: 3px solid  rgba(205, 15, 216)  ;
+   
+    border-top: 3px solid  rgba(205, 15, 216)  ;
+  }
+  .ribbon span::after {
+    border-right: 3px solid  rgba(205, 15, 216)  ;
+    border-top: 3px solid  rgba(205, 15, 216)  ;
+  }
+  .calc{
+    color:  rgba(205, 15, 216)  ;
+
+}
+.calc:hover{
+    color:rgb(52, 131, 255) ;
+
+}
+.login{
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+
+}
+
+input.button {
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+    border: 1px solid rgb(52, 131, 255) ;
+    box-shadow: none;
+}
+
+ .form-control:focus {
+    border-color: rgb(52, 131, 255)  !important;
+    box-shadow: none;
+}
+
+
+.car-section h2:after{
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+}
+.car-section .car-type{
+ 
+  border:2px solid rgb(52, 131, 255) ;
+}
+
+.car-section .car-type{
+  
+    background:linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%); /* Set a background color */
+   
+    
+
+}

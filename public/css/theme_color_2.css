@@ -1,0 +1,113 @@
+/* 
+   background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+   background: linear-gradient(to right, 0%, #F0C27B 100%); */
+.contact span , .contacts span{
+    color:    #4B1248 !important;
+
+ 
+}
+
+.nav-item a:hover{
+    color: #4B1248
+     
+ } 
+
+ #myBtn {
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, 0%, #F0C27B 100%);
+
+ }
+
+ .option-template-menu-open  i {
+    color:  #4B1248
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #4B1248
+
+}
+
+.nav-item  a:hover {
+    color: #4B1248 !important;
+    
+}
+
+.ts-social-width:hover{
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+   background: linear-gradient(to right, 0%, #F0C27B 100%);
+    border-color: #4B1248;
+}
+
+
+.copyright-text span{
+    color:  #4B1248
+
+}
+ .copyrights a:hover{
+    color:    #4B1248 !important;
+     
+ }
+
+
+ .head span{
+    color: #4B1248;
+}
+.box:before{
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, 0%, #F0C27B 100%);
+}
+
+
+
+.submit{
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, 0%, #F0C27B 100%);
+    /* border: 1px solid  rgba(205, 15, 216)  ; */
+    border:none;
+
+}
+h3.head:after{
+   
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, 0%, #F0C27B 100%);
+
+}
+#fade-quote-carousel.carousel .carousel-indicators > li.active {
+   
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, 0%, #F0C27B 100%);   
+     
+}
+#fade-quote-carousel .profile-circle img {
+
+    border: 3px solid  #4B1248;
+}
+
+.ribbon span {
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, 0%, #F0C27B 100%);
+   
+  }
+  .ribbon span::before {
+ 
+    border-left: 3px solid  rgba(205, 15, 216)  ;
+   
+    border-top: 3px solid  rgba(205, 15, 216)  ;
+  }
+  .ribbon span::after {
+    border-right: 3px solid  rgba(205, 15, 216)  ;
+    border-top: 3px solid  rgba(205, 15, 216)  ;
+  }
+  .calc{
+    color:  #F0C27B;
+
+}
+.calc:hover{
+    color:#F0C27B;
+
+}
+.login{
+    background: -webkit-linear-gradient(to right, #4B1248 0%, #F0C27B 100%);
+    background: linear-gradient(to right, 0%, #F0C27B 100%);
+
+}

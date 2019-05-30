@@ -1,0 +1,184 @@
+.form-group{
+  margin-bottom: 1.5rem;
+}
+/*start contact page*/
+section {
+  background: unset !important;
+  margin-top: 0 !important;
+}
+
+@media (min-width:1600px){
+  section.contact-us{
+    height: calc(100vh - 28rem);
+  }
+}
+/*
+@media (min-width:1366px) and (max-width:1600px){
+  section{
+    margin-bottom: 10rem !important;
+  }
+}
+*/
+
+.contact-us {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  /*contact form*/
+}
+
+section.contact-us{
+  background: url('../images/contact.jpg') !important;
+  background-size: cover !important;
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 0;
+
+  
+}
+
+.contact-us .black-overlay{
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  position: relative;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.2);
+}
+
+/*
+@media(min-width:992px){
+  .contact-us {
+    height: 100vh;
+  }
+}
+
+*/
+
+@media (max-width: 767px) {
+  .contact-us .container {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.contact-us h3 {
+  font-size: 2.2rem;
+  margin-bottom: 5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.contact-us h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: .2rem;
+  width: 6rem;
+  background: #f6ab36;
+  left: .3rem;
+  top: 3.5rem;
+}
+
+.contact-us .contact-information {
+  background: #FFF;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  min-height: 10rem;
+  margin-bottom: 2rem;
+  border-radius: .2rem;
+}
+
+.contact-us .contact-information .info-block {
+  border-right: .1rem solid #dddddd;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .contact-us .contact-information .info-block {
+    border: none;
+  }
+}
+
+.contact-us .contact-information .info-block:hover .icon {
+  background: #f6ab36;
+  color: #FFF;
+}
+
+.contact-us .contact-information .info-block .icon {
+  display: block;
+  border: .1rem solid #f6ab36;
+  color: #f6ab36;
+  padding: 2rem;
+  border-radius: 50%;
+  transition: background .5s;
+  font-size: 1.6rem;
+
+}
+
+.contact-us .contact-information .info-block:hover .icon {
+  background: #f6ab36;
+  color: #FFF;
+}
+
+.contact-us .contact-information .info-block .info-text {
+  margin-left: 1.5rem;
+}
+
+.contact-us .contact-information .info-block .info-text .text-para {
+  color: #000;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.contact-us .contact-information .info-block .info-text .text-sub {
+  color: #5c656d;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.contact-us .contact-information .col-sm-4:last-of-type > .info-block {
+  border-right: none;
+}
+
+.contact-us .contact-form {
+  border-radius: .3rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  min-height: 25rem;
+  background: #FFF;
+}
+
+.contact-us .contact-form .form-group input, .contact-us .contact-form .form-group textarea {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: .1rem solid #cfcfcf;
+  border-radius: .5rem;
+  transition: border 1s;
+  font-size: 1.6rem;
+}
+
+.contact-us .contact-form .form-group input:focus, .contact-us .contact-form .form-group textarea:focus {
+  outline: none;
+  border: .1rem solid #f6ab36;
+}
+
+.contact-us .contact-form .form-group textarea {
+  resize: none;
+  min-height: 12rem;
+}
+
+.contact-us .contact-form .form-group input[type="submit"] {
+  background: #f6ab36;
+  color: #FFF;
+  border: none;
+}
+
+/*end contact page*/

@@ -1,0 +1,274 @@
+/*start login page*/
+body {
+}
+
+@media (max-width: 400px) {
+  .log-section .col-xs-offset-1 {
+    margin-left: 0;
+  }
+  .log-section .col-xs-10 {
+    width: 100%;
+  }
+}
+
+
+
+section{
+  background:unset !important;
+  margin-top:0;
+  padding-top: 0;
+}
+
+section.log-section{
+  background: url('../images/log-back.jpg') !important;
+  background-size: cover !important;
+  position: relative;
+  padding-bottom: 0;
+  
+}
+
+.log-section .black-overlay{
+  position: relative;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.2);
+}
+
+@media (min-width:1600px){
+  section.log-section{
+    height: calc(100vh - 20rem);
+  }
+}
+
+
+.log_space {
+  background: #FFF;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: .2rem;
+  overflow: hidden;
+  position: relative;
+  min-height: 20rem;
+  margin-top: 7.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.log_space .slide-item {
+  display: none;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFF;
+}
+
+.log_space .slide-item.active {
+  display: block;
+}
+
+.log_space .site-logo {
+  width: 15rem;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+.log_space .site-logo img {
+  max-width: 100%;
+}
+
+.log_space .login-form,
+.log_space .reset-form {
+  height: 100%;
+}
+.log_space .login-form{
+  padding: 1rem;
+}
+.log_space .form-group {
+  position: relative;
+  margin-bottom: 1rem;
+  /*custom check box*/
+}
+.log_space .form-group a{
+  font-size: 1.4rem;
+}
+.log_space .form-group input{
+  font-size: 1.5rem;
+}
+
+.log_space .form-group .forget,
+.log_space .form-group .register,
+.log_space .form-group .backtolog {
+  text-decoration: none;
+  color: #337ab7;
+  transition: color .5s;
+}
+
+.log_space .form-group .forget:hover,
+.log_space .form-group .backtolog:hover {
+  color: #f6ab36;
+}
+
+.log_space .form-group input[type="email"],
+.log_space .form-group input[type="password"],
+.log_space .form-group input[type="checkbox"] {
+  padding: 1.5rem 1rem;
+  display: block;
+  padding-left: 2.9rem;
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-bottom: .1rem solid #ebebeb;
+  transition: border .5s;
+}
+
+.log_space .form-group input[type="email"]:focus,
+.log_space .form-group input[type="password"]:focus,
+.log_space .form-group input[type="checkbox"]:focus {
+  outline: none;
+}
+
+.log_space .form-group label.special {
+  position: absolute;
+  left: 4.4rem;
+  top: 1.4rem;
+  font-size: 1.3rem;
+  color: #afafaf;
+  font-weight: 100;
+  text-transform: uppercase;
+  transform: translateY(0);
+  transition: transform .5s;
+}
+
+.log_space .form-group span.icon {
+  position: absolute;
+  left: 2rem;
+  top: 1.3rem;
+  font-size: 1.7rem;
+  color: #f6ab36;
+}
+
+.log_space .form-group input.active + label {
+  transform: translateY(-2rem);
+  color: #f6ab36;
+}
+
+.log_space .form-group input.active {
+  border-bottom: .1rem solid #f6ab36;
+}
+
+.log_space .form-group .custom-check {
+  opacity: 0;
+}
+
+.log_space .form-group .custom-span {
+  position: relative;
+  left: 1.5rem;
+}
+
+.log_space .form-group .custom-span::before {
+  content: "\e157";
+  font-family: 'Glyphicons Halflings';
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -.3rem;
+  left: -1.8rem;
+  color: #f6ab36;
+}
+
+.log_space .form-group .custom-check:checked + span:before {
+  content: "\e067";
+}
+
+.log_space .form-group .custom-label {
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 350px) {
+  .log_space .form-group .custom-label {
+    padding-left: 1rem;
+  }
+}
+
+.log_space .form-group .custom-label span {
+  font-size: 1.2rem;
+  color: #afafaf;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+@media (max-width: 350px) {
+  .log_space .form-group .custom-label span {
+    font-size: 1.1rem;
+  }
+}
+
+.log_space .form-group input[type="submit"] {
+  padding: 1rem 5rem;
+  border: none;
+  background: #f6ab36;
+  color: #FFF;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  border-radius: .5rem;
+  transition: background .5s,
+ transform .5s;
+}
+
+@media (max-width:500px){
+  .log_space .form-group input[type="submit"].custom-input{
+    font-size: 1.2rem;
+    padding: 1rem 2.2rem;
+  }
+}
+
+.log_space .form-group input[type="submit"]:hover {
+  background: #ff9d00;
+  transform: scale(1.05);
+}
+
+.log_space .form-group input[type="submit"]:focus {
+  outline: none;
+}
+
+.log_space .form-group .rest_heading {
+  text-align: center;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  color: #969696;
+  font-size: 2rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+/*start login page*/
+input:-webkit-autofill,
+ input:-webkit-autofill:hover,
+ input:-webkit-autofill:focus,
+ input:-webkit-autofill:active {
+ -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  }
+
+
+/*register button*/ 
+.log_space .form-group .register{
+    display: inline-block;
+    background: #1da1f2;
+    color: #FFF;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+
+} 

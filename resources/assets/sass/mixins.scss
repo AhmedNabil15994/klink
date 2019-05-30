@@ -1,0 +1,276 @@
+@mixin inputParentStuff {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px; // align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+
+    &.focused {
+        border: 0;
+        padding: 0;
+
+        .label-span {
+            border: 1.5px solid $borderColor;
+            border-radius: 10px 10px 0 0px;
+            border-bottom: 0;
+        }
+
+        .input-child input {
+            border: 1.5px solid #f6ab36;
+
+        }
+    }
+
+    &.half-width {
+        max-width: 50%;
+        min-width: calc(50% - 2.5px);
+
+        &.odd {
+
+            max-width: calc(50% - 2.5px);
+            margin-right: 2.5px;
+        }
+
+        &.even {
+
+            max-width: calc(50% - 2.5px);
+            margin-left: 2.5px;
+        }
+    }
+
+    &.with-error {
+        background: rgba(220, 53, 69, .5);
+        transition: .3s;
+
+        svg {
+            path {
+                transition: .3s;
+                fill: #E2574C !important;
+            }
+        }
+
+        span.error {
+            background: #E2574C;
+            color: #eee;
+            font-size: 14px;
+            width: 100%;
+            padding: 0 5px;
+            display: block;
+            border-radius: 0;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top: 1px solid #fff;
+        }
+    }
+
+    span.error {
+        display: none;
+    }
+
+    .bootstrap-datetimepicker-widget span,
+    .timepicker-picker span {
+        display: inline-block;
+        background: transparent;
+        padding: initial;
+        width: inherit;
+
+    }
+
+    span {
+        align-items: center;
+        display: flex;
+        background: $inputSpanColor;
+        border-bottom: 1.5px solid $borderColor;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        &.label-span {
+            &.has-max-height {
+                max-height: 32px;
+            }
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and(max-width:544px) {
+        border-radius: 10px;
+
+        .input-child {
+            flex: 1 0 100%;
+
+            input {
+                font-size: 14px;
+            }
+
+            img,
+            svg {
+                margin-right: 5px;
+            }
+        }
+
+        span {
+            width: 100%;
+            border-radius: 10px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            font-size: 13px;
+        }
+    }
+
+    .rating-input-child {
+        width: 100%;
+        padding: 2px 0;
+        position: relative;
+
+        span {
+            position: absolute;
+            min-width: 7px;
+            width: initial;
+            right: 10px;
+            bottom: 0px;
+
+        }
+    }
+
+    .input-child {
+        display: flex;
+        flex: 1;
+        position: relative;
+        max-width: 100%;
+
+        select {
+
+            text-transform: none;
+            border-radius: 10px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            width: 100%;
+            height: 35px;
+            // background:;
+            border: 1px solid $borderColor;
+            color: #ffffff;
+            padding-left: 5px;
+            outline: none;
+            background: #ffffff;
+            color: $textColor;
+
+            &:focus {
+                outline: none;
+            }
+
+            option {
+                color: $textColor;
+                padding: 5px;
+            }
+        }
+
+        input,
+        textarea {
+            height: 35px;
+            flex: 1;
+            background: transparent;
+            padding-right: 25px;
+            padding-left: 10px;
+            border: 0;
+            color: $textColor;
+            font-size: 14px;
+            max-width: 100%;
+            border-radius: 0px 0px 10px 10px;
+
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+
+        textarea {
+            height: 95px;
+            padding: 5px;
+
+        }
+
+        img,
+        svg {
+            width: 35px;
+            height: 35px;
+            padding: 2.5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &.kurier-arrow {
+                width: 25px;
+                max-height: 20px;
+                padding: 0px;
+                cursor: pointer;
+
+                &.up {
+                    top: 0;
+                    margin-bottom: 5px;
+
+                }
+
+                &.down {
+                    bottom: 0;
+                    top: initial;
+                    transform: rotate(180DEG);
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    // background: rgba(0, 0, 0, .5);
+    border: 1.5px solid $borderColor;
+    padding: .5px;
+
+    .input-child .bootstrap-datetimepicker-widget {
+        min-width: 244px;
+        width: 27em;
+        max-width: 100%;
+
+        .row {
+            margin: 0;
+            width: auto;
+            justify-content: center;
+
+            .datepicker {
+                flex: 1;
+                padding: 0;
+                max-width: initial;
+            }
+
+            .timepicker {
+                width: auto;
+                display: flex;
+                padding: 0;
+                flex: initial;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: initial;
+                width: 150px;
+            }
+        }
+    }
+
+    .input-child .bootstrap-datetimepicker-widget .timepicker-picker table td a span,
+    .input-child .bootstrap-datetimepicker-widget .timepicker-picker table td,
+    .input-child .bootstrap-datetimepicker-widget .timepicker-picker table td span {
+        height: 30px !important;
+        line-height: 30px !important;
+        width: 30px !important;
+        line-height: 30px !important;
+        padding: 0px !important;
+        border: 0px !important;
+    }
+
+}

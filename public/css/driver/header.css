@@ -1,0 +1,55 @@
+.label.label-success {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 3px;
+    line-height: .9;
+}
+
+.header .topnav__list .listItem .dropDown .dropDown__list .downlink {
+    width: 100%;
+}
+
+.notifyjs-bootstrap-base.notifyjs-bootstrap-error {
+    background-color: #d9534f !important;
+    color: #FFF !important;
+    border-color: #d43f3a !important;
+}
+
+.notifyjs-bootstrap-base.notifyjs-bootstrap-success {
+    background-color: #449d44 !important;
+    color: #FFF !important;
+    border-color: #398439 !important;
+}
+
+
+@media (max-width:600px) {
+
+    #demo-foo-filtering_filter {
+        float: right;
+    }
+
+    div.dataTables_wrapper div.dataTables_length label {
+        margin-top: 2.5rem;
+    }
+
+
+}
+
+
+html {
+    font-size: 62.5% !important;
+}
+.profile-pic img{
+    border-radius: 50% ;
+    margin-top: -1rem ;
+}
+div.user-name{
+    margin-top: 0 !important;
+}
+.driver-order-wrapper{
+    display: flex;
+    flex-direction: column;
+}

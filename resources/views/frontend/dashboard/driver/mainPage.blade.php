@@ -1,0 +1,1 @@
+@extends($pathToView.'layout.index')

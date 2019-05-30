@@ -1,0 +1,119 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,500);
+// Variables
+@import "variables";
+//Ionicons
+// @import "node_modules/ionicons/dist/scss/ionicons.scss";
+//Font awesome
+@import "header";
+@import "packages/animate";
+@import "nav";
+@import "order";
+@import "userImports";
+@import "footer";
+@import '~bootstrap/scss/bootstrap';
+
+@import "lostBoot";
+@import "main";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "~vue-snotify/styles/material";
+
+body {
+    background-color: $backgroundColor;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    color: #555; //   padding-top: 50px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+.body-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 100%;
+    min-height: 100vh;
+    margin-top: 110px;
+
+    @media screen and(max-width:776px) {
+        margin-top: 120px;
+    }
+
+    background: rgba(0, 0, 0, .3);
+}
+
+body {
+    // background: url('/images/main-bg.jpg');
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-color: rgba(0, 0, 0, .3);
+}
+
+/* Titles */
+html {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+html,
+body {
+    // min-height: 100%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+/* Paragraph & Typographic */
+
+.container {
+    display: flex;
+
+    @media (min-width: 960px) {
+        max-width: 960px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: initial !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+        margin: 0 auto !important;
+    }
+
+}
+
+.snotifyToast__inner {
+    min-height: initial;
+}
+
+.snotify-icon {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.snotifyToast__title {
+    font-size: 1.3em;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,11 @@
+/*abstracts*/
+/*facebook browser*/
+.pop-up .pop-up__container .select-time .content-space {
+  height: 209px;
+}
+
+.orderModal .car-card-item.active {
+  top: 65% !important;
+}
+
+/*facebook browser*/

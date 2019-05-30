@@ -1,0 +1,126 @@
+/*start impressum page*/
+body {
+  background: #f3f3f3;
+}
+
+.roboto-reg {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.impressum-page {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.impressum-page .impressum {
+  background: #f9f9f9;
+  min-height: 50rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.impressum-page .impressum h1 {
+  background: #213f7d;
+  color: #FFF;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  font-size: 2.6rem;
+  min-width: 25rem;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 350px) {
+  .impressum-page .impressum h1 {
+    font-size: 2rem;
+  }
+}
+
+.impressum-page .impressum .provider {
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.impressum-page .impressum .provider p {
+  color: #213f7d;
+  font-size: 1.4rem;
+}
+
+.impressum-page .impressum .provider span {
+  display: block;
+  color: #949494;
+}
+
+.impressum-page .impressum .company-info {
+  margin-bottom: 3rem;
+}
+
+.impressum-page .impressum .company-info p {
+  font-size: 1.4rem;
+  color: #949494;
+  width: 90%;
+  text-align: left;
+}
+
+.impressum-page .impressum .company-info p a {
+    display: block  ;
+    word-wrap: break-word ;
+}
+
+.impressum-page .impressum .company-info p.contact-impress a {
+  display: inline !important;
+  word-wrap: unset !important;
+}
+
+.impressum-page .impressum .company-info p span {
+  font-weight: 500;
+  color: #213f7d;
+  margin-right: .5rem;
+  display: inline-block;
+  min-width: 6rem;
+  cursor: pointer;
+}
+
+.impressum-page .main-heading-impress {
+  position: relative;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+  color: #213f7d;
+  margin-bottom: 3rem;
+}
+
+.impressum-page .main-heading-impress:after {
+  content: "";
+  display: inline-block;
+  width: 10rem;
+  height: .2rem;
+  background: #E4e4e4;
+  position: absolute;
+  top: 150%;
+  left: 0;
+}
+
+.impressum-page .main-heading-impress:before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: #213f7d;
+  position: absolute;
+  top: 130%;
+  left: 0;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+/*start impressum page*/

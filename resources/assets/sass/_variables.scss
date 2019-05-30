@@ -1,0 +1,39 @@
+
+// Body
+$body-bg: #f5f8fa;
+$header-height:65px;
+
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+$main-color:#6dace6;
+$main-color-light:rgba(109, 172, 230, 0.7);
+$main-color-with-pattern:rgba(0,123,255,.5);
+$second-color:#82b03a;
+$logo-beside-color:#999;
+//main pattern
+$main-pattern:url('/images/rounded-plus-connected.svg') repeat;
+
+
+//fonts and sizes
+$font-family:'Abel', sans-serif;
+
+$general-text-color:#222;
+$general-animation-time:.5s;
+
+
+
+//main page 
+$main-tips-size:200px;
+$main-map-height: calc( 100vh - #{$main-tips-size} - #{$header-height} );
+
+$textColor : #222222;
+$boxColor:#ffffff;
+$backgroundColor:#e9ebee;
+$inputSpanColor:#f5f6f7;
+$borderColor:#dddfe2;
+$borderRadius:5px;

@@ -1,0 +1,229 @@
+<svg version="1.1" id="SyJm502y7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 508 508" style="enable-background:new 0 0 508 508;" xml:space="preserve"><style>@-webkit-keyframes BkrJ79Rnym_BJSL3C3kQ_Animation {
+	0% {
+		-webkit-transform: scale(1.2, 1.2);
+		transform: scale(1.2, 1.2);
+	}
+	33.33% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	66.6% {
+		-webkit-transform: scale(1.2, 1.2);
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	100% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes BkrJ79Rnym_BJSL3C3kQ_Animation {
+	0% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	50%{
+		-webkit-transform: scale(.1, .1);
+		transform: scale(.1, .1);
+	}
+	
+	100% {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+
+@-webkit-keyframes BkVkX90nym_Hy7qsR31X_Animation {
+	0% {
+		-webkit-transform: translate(0px, -70px) rotateY(90DEG);
+		transform: translate(0px, -70px) rotateY(90DEG);
+		
+	}
+	50% {
+		-webkit-transform: translate(0px, 0px) rotateY(0DEG);
+		transform: translate(0px, 0px) rotateY(0DEG);
+	}
+	100% {
+		-webkit-transform: translate(0px, -70px) rotateY(90DEG);
+		transform: translate(0px, -70px) rotateY(90DEG);
+	}
+	
+	
+}
+
+@keyframes BkVkX90nym_Hy7qsR31X_Animation {
+	0% {
+		-webkit-transform: translate(0px, -70px) rotateY(90DEG);
+		transform: translate(0px, -70px) rotateY(90DEG);
+	}
+	50% {
+		-webkit-transform: translate(0px, 0px) rotateY(0DEG);
+		transform: translate(0px, 0px) rotateY(0DEG);
+	}
+	100% {
+		-webkit-transform: translate(0px, -70px) rotateY(90DEG);
+		transform: translate(0px, -70px) rotateY(90DEG);
+	}
+}
+
+@-webkit-keyframes Bkz17qChkQ_By0oqC3JQ_Animation {
+	0% {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+}
+
+@keyframes Bkz17qChkQ_By0oqC3JQ_Animation {
+	0% {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+}
+@-webkit-keyframes opacity {
+	0%{
+		fill-opacity:0;
+		r:0;
+	}
+	100%{
+		fill-opacity:1;
+		r:254;
+	}
+}
+@-webkit-keyframes rJZymcChJ7_Hk1MoR3yQ_Animation {
+	0% {
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes rJZymcChJ7_Hk1MoR3yQ_Animation {
+	0% {
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	
+}
+
+#SyJm502y7 * {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+	animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+#Hklk7q0n17 {
+	fill: #FF525D;
+	animation-name:opacity;
+	animation-duration:1s;
+	animation-iteration-count:1;
+}
+
+#rJZymcChJ7 {
+	fill: #FFFFFF;
+}
+
+#Bkz17qChkQ {
+	fill: #f6ab36;
+}
+
+#BkVkX90nym {
+	fill: #FFFFFF;
+}
+
+#BkrJ79Rnym {
+	fill: #FFFFFF;
+}
+
+#rJZymcChJ7_Hk1MoR3yQ {
+	-webkit-animation-name: rJZymcChJ7_Hk1MoR3yQ_Animation;
+	animation-name: rJZymcChJ7_Hk1MoR3yQ_Animation;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#Bkz17qChkQ_By0oqC3JQ {
+	-webkit-animation-name: Bkz17qChkQ_By0oqC3JQ_Animation;
+	animation-name: Bkz17qChkQ_By0oqC3JQ_Animation;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#BkVkX90nym_Hy7qsR31X {
+	-webkit-animation-name: BkVkX90nym_Hy7qsR31X_Animation;
+	animation-name: BkVkX90nym_Hy7qsR31X_Animation;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation-duration:.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	
+}
+
+#BkrJ79Rnym_BJSL3C3kQ {
+	-webkit-animation-name: BkrJ79Rnym_BJSL3C3kQ_Animation;
+	animation-name: BkrJ79Rnym_BJSL3C3kQ_Animation;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	-webkit-transform: scale(1.2, 1.2);
+	transform: scale(1.2, 1.2);
+	animation-iteration-count:infinite;
+	animation-duration:.5s;
+}
+
+</style><circle cx="254" cy="254" r="254" id="Hklk7q0n17"/><g id="rJZymcChJ7_Hk1MoR3yQ" data-animator-group="true" data-animator-type="1"><path d="M445.6,237.2L270.8,62.4c-9.2-9.2-24-9.2-33.2,0L62.4,237.2c-9.2,9.2-9.2,24,0,33.2l174.8,174.8&#10;&#9;c9.2,9.2,24,9.2,33.2,0l174.8-174.8C454.8,261.6,454.8,246.4,445.6,237.2z" id="rJZymcChJ7"/></g><g id="Bkz17qChkQ_By0oqC3JQ" data-animator-group="true" data-animator-type="1"><path d="M254,433.6c-0.8,0-2-0.4-3.2-1.2L76,257.2c-1.2-1.2-1.2-2.4-1.2-3.2c0-0.8,0.4-2,1.2-3.2L250.8,76&#10;&#9;c1.2-1.2,2.4-1.2,3.2-1.2c0.8,0,2,0.4,3.2,1.2L432,250.8c1.2,1.2,1.2,2.4,1.2,3.2c0,0.8-0.4,2-1.2,3.2L257.2,432&#10;&#9;C256,433.2,254.8,433.6,254,433.6z" id="Bkz17qChkQ"/></g><g id="SJm1Q50h1Q"><g id="BkVkX90nym_Hy7qsR31X" data-animator-group="true" data-animator-type="0"><path d="M280,201.2c0,37.2-11.6,92.4-26,92.4s-26-54.8-26-92.4s11.6-42.8,26-42.8&#10;&#9;&#9;C268.4,158.4,280,164,280,201.2z" id="BkVkX90nym"/></g><g id="BkrJ79Rnym_BJSL3C3kQ" data-animator-group="true" data-animator-type="2"><circle cx="254" cy="326.4" r="22.8" id="BkrJ79Rnym"/></g></g><g id="BJ8y7cA3k7"></g><g id="rkwJmqRn1Q"></g><g id="SyOyQcRnyX"></g><g id="HJFyQq0317"></g><g id="ry9JQ9A3kQ"></g><g id="H1okXqC2JX"></g><g id="rJ2Jm5AhJX"></g><g id="SJay7q03yX"></g><g id="ryCymq02y7"></g><g id="rkklyXcR3yX"></g><g id="Skelym5ChkX"></g><g id="SJZe1Qc02ym"></g><g id="ByMlkmcC31X"></g><g id="Bk7gyQc0hy7"></g><g id="HyVgkmcC31X"></g><script>(function() {
+	var a=document.querySelector('#SyJm502y7'), b=a.querySelectorAll('style'), c=function(d) {
+		b.forEach(function(f) {
+			var g=f.textContent;
+			g&amp;
+			&amp;
+			(f.textContent=g.replace(/transform-box: [^;
+			\r\n]*/gi, 'transform-box: '+d))
+		}
+		)
+	}
+	;
+	c('initial'), window.requestAnimationFrame(function() {
+		return c('fill-box')
+	}
+	)
+}
+
+)();
+</script></svg>

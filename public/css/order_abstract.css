@@ -1,0 +1,354 @@
+.play {
+  font-family: 'Playfair Display', serif;
+}
+
+.rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.05);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 117rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: calc(100vw - 33rem);
+  }
+}
+
+/*company invoice*/
+.company-invoice .company-heading {
+  margin-top: 2rem;
+  position: relative;
+  background: #ffb137;
+  background: -moz-linear-gradient(90deg, #ffb137 0%, #ffa922 33%, #fa9800 100%);
+  background: -webkit-linear-gradient(90deg, #ffb137 0%, #ffa922 33%, #fa9800 100%);
+  background: linear-gradient(90deg, #ffb137 0%, #ffa922 33%, #fa9800 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb137",endColorstr="#fa9800",GradientType=1);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media screen {
+  .company-invoice .company-heading {
+    padding-left: 2rem;
+    width:99%;
+  }
+}
+
+.company-invoice .company-heading:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 3.3rem solid transparent;
+  border-left-color: #fa9800;
+}
+
+
+
+@media (max-width: 767px) {
+  .company-invoice .company-heading:after {
+    display: none;
+  }
+}
+
+.company-invoice .company-heading h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.company-invoice .company-heading p {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.company-invoice .company-address {
+  padding-top: 3rem;
+  cursor: pointer;
+}
+
+.company-invoice .company-address span {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+}
+
+.company-invoice .bill-information {
+  padding-top: 3rem;
+}
+
+.company-invoice .bill-information .invoice-dates {
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+}
+
+
+
+.company-invoice .bill-information .invoice-dates p {
+  font-size: 1.4rem;
+}
+
+.company-invoice .bill-information .invoice-dates span {
+  display: inline-block;
+  min-width: 8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.company-invoice .bill-information .bill-to {
+  text-align: left;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .company-invoice .bill-information .bill-to {
+    text-align: left;
+  }
+}
+
+.company-invoice .bill-information .bill-to p {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.company-invoice .bill-information .bill-to span {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+}
+
+.company-invoice .invoice-number {
+  text-align: center;
+  padding-top: 3rem;
+  cursor: pointer;
+}
+
+.company-invoice .invoice-number .invoice {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.company-invoice .invoice-number .num {
+  font-size: 1.6rem;
+}
+
+.company-invoice .total {
+  text-align: right;
+}
+
+.company-invoice .total .total-value {
+  text-align: left;
+  float: right;
+  cursor: pointer;
+}
+
+@media screen {
+  .company-invoice .total .total-value {
+    background: #f6ab36;
+    padding: 2rem;
+    border-radius: .5rem;
+    color: #FFF;
+    margin-bottom: 3rem;
+  }
+}
+
+.company-invoice .total .total-value p {
+  font-size: 1.6rem;
+}
+
+.company-invoice .total .total-value span {
+  display: inline-block;
+  min-width: 15rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.company-invoice .total .total-value .due-amount {
+  border-top: .3rem solid #FFF;
+  padding-top: .5rem;
+}
+
+.order-space {
+  margin-top: 1.5rem;
+}
+
+.order-space .orderCard {
+  background: #FFF;
+  width: 100%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 970px) and (min-width: 768px) {
+  .order-space .orderCard {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 725px) {
+  .order-space .orderCard {
+    overflow-x: scroll;
+  }
+}
+
+
+.order-space .orderCard .order-head {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.05);
+}
+
+.order-space .orderCard .order-head h3.order-heading {
+  color: #263238;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  position: relative;
+}
+
+.order-space .orderCard .order-head h3.order-heading::before {
+  content: "";
+  position: absolute;
+  top: -.5rem;
+  left: -2rem;
+  height: 3rem;
+  width: .2rem;
+  background: #398bf7;
+}
+
+.order-space .orderCard .order-head p.order-paragraph {
+  text-transform: capitalize;
+  color: #b1b1b1;
+}
+
+.order-space .orderCard .table__header--row th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 1.4rem;
+  background: #EEE;
+}
+
+.order-space .orderCard .table__body--row {
+  transition: background .5s;
+  cursor: pointer;
+  /*td*/
+}
+
+.order-space .orderCard .table__body--row:hover {
+  background: #f3f3f3;
+}
+
+.order-space .orderCard .table__body--row td {
+  padding: 1.2rem;
+  padding-left: .8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  vertical-align: middle;
+  color: #455a64;
+  border-top: none;
+  /*car details*/
+}
+
+.order-space .orderCard .table__body--row td .car-img {
+  width: 3rem;
+  height: 3rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.order-space .orderCard .table__body--row td .car-img img {
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+@media (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+.order-space .orderCard .table__body--row td .car-details {
+  float: left;
+}
+
+@media (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+.order-space .orderCard .table__body--row td.operation button.btn {
+  margin-bottom: 1rem;
+}
+
+.order-space .orderCard .table__body--row td.operation span.fas {
+  margin-left: 1rem;
+}
+
+.order-space .orderCard .table__body--row td.car-head {
+  font-size: 1.8rem;
+}
+
+.order-space .orderCard .table__body--row td.car-head .fas {
+  margin-right: 1rem;
+  color: #398bf7;
+}
+
+@media (max-width: 1310px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td.car-head {
+    width: 200px;
+  }
+}

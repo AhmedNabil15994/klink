@@ -1,0 +1,32 @@
+<?php 
+   return[
+      "cookie" => "Wir verwenden Cookies, um die Benutzererfahrung zu verbessern. Durch Klicken auf \"Akzeptieren\" geben Sie Ihre Einwilligung zum Erhalt von Cookies: ",
+      "accept" => "Akzeptieren und weiter",
+      "home" => "Home",
+      "about" => "Über uns",
+      "service" => "Dienstleistung",
+      "contact" => "Kontakt",
+      "login" => "Anmeldung",
+      "rights" => "Alle Rechte vorbehalten",
+      "terms" => "Nutzungsbedingungen",
+      "and" => "und",
+      "privacy" => "Datenschutzbestimmungen",
+      "make" => "Jetzt buchen noch heute transportieren \n",
+      "move" => "Einkäufe, Umzüge, Express Lieferung, Sperrgut und Sonstiges. Zu und von dir liefern Lassen, schnell günstig und vertrauswurdig!",
+      "calc" => "Transporte Angebote berechnen",
+      "oh" => "Oh! Sieht so aus als ob jemand Probleme hat ...",
+      "page" => "Die von Ihnen gesuchte Seite wurde verschoben, entfernt, umbenannt oder hat nie existiert.",
+      "go_home" => "Zurück",
+      "register" => "Registrieren",
+      "support" => "Unterstützung",
+      "follow" => "Folge uns auf",
+      "get" => "Neuigkeiten bekommen",
+      "enter_email" => "Geben Sie E-Mail ein, um Nachrichten zu erhalten",
+      "imp" => "Impressum",
+
+      'p1'  => 'Einkäufe, Umzüge, Express Lieferung.',
+      'p2'  => 'Sperrgut und Sonstige.',
+      'p3'  => 'Zu und von dir liefern Lassen.',
+      'p4'  => 'Schnell, Günstig und Vertrauswurdig!',
+
+    ];

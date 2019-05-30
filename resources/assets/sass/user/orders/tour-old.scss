@@ -1,0 +1,360 @@
+.slick-tour-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tour-slick {
+        .slick-next {
+            right: 0;
+            z-index: 1;
+        }
+
+        .slick-prev {
+            left: 0;
+            z-index: 1;
+        }
+
+        flex: 3;
+        max-width: 70%;
+        margin-top: 20px;
+
+        img {
+            max-height: 350px;
+        }
+    }
+
+    .slick-tour-side {
+        flex: 1;
+        max-width: 100%;
+        margin-top: 15px;
+
+        .side-tour-row {
+            margin-left: initial;
+            margin-right: initial;
+            padding: 5px;
+
+            .input-parent {
+                margin-bottom: initial;
+            }
+
+            .week-days {
+
+                // width: 100%;
+                &:last-child {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-left: 0;
+                }
+
+                border: 1.5px solid $borderColor;
+                justify-content: center;
+                padding: 5px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .day {
+
+                    min-width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    margin: 5px;
+                    text-align: center;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border: 1.5px solid $second-color;
+                    transition: .3s;
+
+                    &.active {
+                        color: #ffffff;
+                        background: $second-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.stops-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+}
+
+.stop-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+    flex: 1;
+    min-width: 100%;
+    margin-bottom: 10px;
+    .stop-row-top {
+
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        min-height: 70px;
+        margin: 10px;
+        margin-bottom: 0px;
+        background: $inputSpanColor;
+        border-radius: $borderRadius;
+        border: 1.5px solid $borderColor;
+        box-shadow: 0px 0px 5px 1px $backgroundColor;
+        .stops-operations-row{
+            .stop-down-head{
+                flex: 1;
+            }
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 10px;
+            margin-top: 5px;
+            img.stop-shown{
+                width: 25px;
+                cursor: pointer;
+                transition: .3s;
+                height: 25px;
+                &.down{
+                    transform: rotate(180DEG);
+                }
+            }
+        }
+    }
+
+    .stop-row-down {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        margin: 0 10px;
+        border-radius: 0 0 $borderRadius $borderRadius;
+        height: 0;
+        transition: .3s;
+        overflow: hidden;
+        .add-package{
+            display: flex;
+            flex-wrap: wrap;
+            .new-package-details{
+                display: flex;
+                flex-wrap: wrap;
+                min-width: 390px;
+                max-width: 100%;
+                flex: 1 0 390px;
+                
+            }
+            .package-types{
+                // width: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                .package-type{
+                    flex: 1;
+                    margin: 5px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1.5px solid #63b65d;
+                    &.active{
+                        background: #63b65d;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        &.shown {
+            height: initial;
+            border: 1.5px solid $borderColor;
+            border-top: 0px;
+        }
+        .stop-down-head{
+            width: 100%;
+            
+
+        }
+    }
+}
+
+
+
+.stop-row-down {
+    .persons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+
+
+    .person-information {
+        max-width: 30%;
+        padding-right: 5px;
+        border-right: 1.5px solid $borderColor;
+    }
+
+    .packages-information {
+        flex: 1;
+        padding: 5px;
+
+        .load-up-packages {
+            display: flex;
+            flex-wrap: wrap;
+            .load-up-package-person{
+                // flex: 1;
+                min-width: 300px;
+                max-width: 100%;
+                margin: 5px;
+                border-radius: $borderRadius;
+                border: 1px solid $borderColor;
+                padding: 0 5px;
+
+            }
+            .add-new-package{
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+
+    }
+
+    .head-information {
+        width: 100%;
+
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            margin: 5px;
+            transition: .3s;
+            // &:hover{
+            //     background: #f29f1f;
+            //     filter: 'grayscale()';
+            // }
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.create-order-container {
+    .row.tour-type-row {
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+
+        &.left {
+            justify-content: flex-start;
+        }
+
+        .tourtype {
+
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 100px;
+            max-width: 200px;
+
+            &.active {
+                span {
+                    background: $second-color;
+                    color: #ffffff;
+                }
+            }
+
+            span {
+                display: block;
+                height: 50px;
+                width: 100%;
+                cursor: pointer;
+                justify-content: center;
+                transition: .3s;
+                padding: 0 5px;
+                display: flex;
+                align-items: center;
+                border: 1.5px solid $borderColor;
+                background: $inputSpanColor;
+                border-radius: $borderRadius;
+            }
+        }
+    }
+}
+.form-map-container .new-package-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.create-order-container .form-map-container .order-form-wrapper .stop-row-top {
+    padding: 5px;
+
+    .input-parent {
+        background: #ffffff;
+        padding: 0;
+        width: initial;
+        margin-bottom: 0;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        span {
+            background: $backgroundColor;
+        }
+
+        &.order-time-card {
+            margin: 5px;
+            overflow: hidden;
+
+            // border: 0px;
+            // border-bottom-left-radius: 0;
+            // border-top-left-radius: 0;
+            // border-bottom-right-radius: 0;
+            // border-top-right-radius: 0;
+            span.label-span {
+                border-radius: 0;
+                // border-top-left-radius: 0;
+                // border-top-right-radius: 0;
+            }
+        }
+
+        &.location {
+
+            flex: 2;
+            min-width: 250px;
+            max-width: 100%;
+
+        }
+
+        &.datetimepicker,
+        &.stopTime {
+
+            flex: 1;
+            min-width: 100px;
+            max-width: 100%;
+        }
+
+        .rating-input-child {
+            width: 100%;
+            padding: 2px 0;
+            position: relative;
+            display: flex;
+
+            >div {
+                margin: 0 auto;
+            }
+
+            text {
+                font-size: 20px !important;
+            }
+        }
+    }
+
+}
+

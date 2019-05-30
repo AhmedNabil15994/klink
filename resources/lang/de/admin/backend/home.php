@@ -1,0 +1,25 @@
+<?php
+return [
+    'name'=>'Name',
+    'email'=>'Email',
+    'phone'=>'Telefon',
+    'address'=>'Adresse',
+    'offers'=>'bietet an',
+    'information'=>'Informationen',
+    'companyName'=>'Firma',
+    'total'=>'Gesamt',
+    'status'=>'ist akzeptiert',
+    'noOffers'=>'Es gibt keine Angebote',
+    'Sender'=>'Absender',
+    'Receiver'=>'Empfänger',
+    'otherBillings'=>'andereBillings',
+    'close'=>'schließen',
+    'offer'=>'Angebot Nr',
+    'companies'=>'Firmen',
+    'orders'=>'Aufträge',
+    'vehicles'=>'Fahrzeuge',
+    'shipTitle'=>'Schiffsname',
+    'weight'=>'Maximalgewicht',
+    'driver'=>'Fahrer',
+
+];

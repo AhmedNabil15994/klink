@@ -1,0 +1,168 @@
+<svg width="490" height="480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <style type="text/css">.circle {
+				    fill: none;
+				    stroke: #1E4164;
+				    stroke-width: 6;
+				    stroke-linecap: round;
+				    stroke-miterlimit: 10;
+                    
+                    
+				}
+				.circle-dash {
+				    fill: none;
+				    stroke: #1E4164;
+				    stroke-width: 6;
+				    stroke-linecap: round;
+				    stroke-miterlimit: 10;
+                    
+				}
+
+				.check {
+				    fill: none;
+				    stroke: #1E4164;
+				    stroke-width: 6;
+				    stroke-linecap: round;
+				    stroke-linejoin: round;
+				    stroke-miterlimit: 10;
+				}
+
+				.check-dash {
+				    fill: none;
+				    stroke: #1E4164;
+				    stroke-width: 6;
+				    stroke-linecap: round;
+				    stroke-linejoin: round;
+				    stroke-miterlimit: 10;
+                    
+				}
+
+				.check {
+					stroke-dasharray: 294 490;
+					animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
+					-webkit-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
+					-moz-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
+					-o-animation: check 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards 0.15s; 
+					opacity: 0;
+				}
+
+				@-webkit-keyframes check {
+					from {stroke-dashoffset: 60;
+					opacity: 1;}
+
+					to {stroke-dashoffset: 00;
+					opacity: 1;}
+				}
+
+				@-moz-keyframes check {
+					from {stroke-dashoffset: 60;
+					opacity: 1;}
+
+					to {stroke-dashoffset: 00;
+					opacity: 1;}
+				}
+
+				@keyframes check {
+					from {stroke-dashoffset: 60;
+					opacity: 1;}
+
+					to {stroke-dashoffset: 00;
+					opacity: 1;}
+				}
+
+				.check-dash {
+					stroke-dasharray: 49 490;
+					animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
+					-webkit-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
+					-moz-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
+					-o-animation: check-dash 1.2s cubic-bezier(0.5, 0, 0.6, 1) forwards; 
+				}
+
+				@-webkit-keyframes check-dash {
+					from {stroke-dashoffset: 120;}
+					to {stroke-dashoffset: 45;}
+				}
+
+				@-moz-keyframes check-dash {
+					from {stroke-dashoffset: 120;}
+					to {stroke-dashoffset: 45;}
+				}
+
+				@keyframes check-dash {
+					from {stroke-dashoffset: 120;}
+					to {stroke-dashoffset: 45;}
+				}
+
+				.circle {
+					stroke-dasharray: 1470 1470;
+					animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
+					-webkit-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
+					-moz-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
+					-o-animation: circle 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.15s; 
+					opacity: 0;
+				}
+
+				@-webkit-keyframes circle {
+					from {stroke-dashoffset:147;
+					opacity: 1;}
+					to {stroke-dashoffset:0;
+					opacity: 1;}
+				}
+
+				@-moz-keyframes circle {
+					from {stroke-dashoffset:147;
+					opacity: 1;}
+					to {stroke-dashoffset:0;
+					opacity: 1;}
+				}
+
+				@keyframes circle {
+					from {stroke-dashoffset:147;
+					opacity: 1;}
+					to {stroke-dashoffset:0;
+					opacity: 1;}
+				}
+
+				.circle-dash {
+					stroke-dasharray: 490 1470;
+					animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+					-webkit-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+					-moz-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+					-o-animation: circledash 1.5s cubic-bezier(0.5, 0, 0.5, 1) forwards 0.05s;
+					opacity: 0;
+				}
+
+				@-webkit-keyframes circledash {
+					from {stroke-dashoffset:1568;
+					opacity: 1;}
+					to {stroke-dashoffset: 98;
+					opacity: 1;}
+				}
+
+				@-moz-keyframes circledash {
+					from {stroke-dashoffset:1568;
+					opacity: 1;}
+					to {stroke-dashoffset: 98;
+					opacity: 1;}
+				}
+
+				@keyframes circledash {
+					from {stroke-dashoffset:1568;
+					opacity: 1;}
+					to {stroke-dashoffset: 98;
+					opacity: 1;}
+				}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="482" width="492" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1">
+   <circle stroke="null" id="svg_2" r="229.500008" cy="238.499973" cx="244.999992" class="circle"/>
+   <circle stroke="null" id="svg_3" r="229.500008" cy="238.499973" cx="244.999992" class="circle-dash"/>
+   <polyline stroke="null" id="svg_4" points="120.61874548969354,250.29708210108583 199.65396962828163,328.1451088665817 369.3812392515174,160.96735758527575 " class="check"/>
+   <polyline stroke="null" id="svg_5" points="120.61874548969354,250.29708210108583 199.65396962828163,328.1451088665817 369.3812392515174,160.96735758527575 " class="check-dash"/>
+  </g>
+ </g>
+</svg>

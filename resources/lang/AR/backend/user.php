@@ -1,0 +1,76 @@
+<?php 
+
+return[
+
+	'title' => 'Benutzer',
+	'list'  => 'Benutzerliste',
+	'all'   => 'Alle',
+    'new'   => 'Neue Nutzer',
+    'susp'  => 'Angehaltene Benutzer',
+    'pend'  => 'Ausstehende Benutzer',
+    'role' => "Rollen Benutzer",          
+    'expired' => 'Ablaufen bei', 
+    'admin' => 'Administrator',
+    'notact' => 'Inaktivierte Benutzer',
+    'roles' => 'Rollen',  
+    'create' => 'Erstellen',
+    'no#'	=> 'Nummer.',
+    'email' => 'Email',
+    'delete'=> 'Löschen',
+    'cancel'=> 'Stornieren',
+    'save'  => 'sparen',
+    'edit'	=> 'Bearbeiten',
+    'action'=> 'Aktion',
+    'new_one'=> 'Neu',
+    'create_new' => 'Erstellen Sie einen neuen Benutzer',
+    'admin_access' => 'Administratorzugriff',
+    'password'	=> 'Passwort',
+    'password_confirmation' => 'Passwort erneut eingeben',
+    'select_item_from_list' => 'Wählen Sie ein Objekt aus der Liste',
+    'created'	=> 'Hergestellt in',
+
+    'no_result' => 'Es gibt keine Ergebnisse',
+    'no_result_now' => 'Keine Ergebnisse stimmen jetzt überein',
+    'con_error' => 'Verbindungsfehler',
+    'try_again' => 'Ein Fehler ist aufgetreten, während die Verbindung in Verbindung unterbrochen werden konnte. Versuch es noch einmal :)',
+    'expire'  => 'Abgelaufene Benutzer',
+
+    'role_list' => 'Rollenliste',
+    'name' => 'Name',
+    'description' => 'Beschreibung',
+
+    'create_new_role'   => 'Erstelle eine neue Rolle',
+    'display_name'   => 'Anzeigename',
+    'permission' => 'Genehmigung',
+
+    'user_status' => 'Benutzerstatus',
+    'edit_form'=> 'Benutzer bearbeiten',
+    'user_profile_edit'=> 'Profil bearbeiten',
+    'address_edit'=> 'Adresse bearbeiten',
+
+    'user_profile_details' => 'Benutzerprofildetails',
+    'user_account_details' => 'Kontodetails',
+    'user_address_details' => 'Adressen Details',
+    'profile_details' => 'Profildetails',
+
+
+    'first_name' => 'Vorname',
+    'last_name' => 'Familienname',
+    'company' => 'Unternehmen',
+    'phone' => 'Telefon',
+    'fax' => 'Fax',
+    'expire_date' => 'Ablaufdatum',
+
+    'country' => 'Land',
+    'address' => 'Adresse',
+    'district' => 'Kreis',
+    'postal_code' => 'Postleitzahl',
+
+    'create_new_admin' => 'Erstellen Sie einen neuen Administrator',
+    'edit_admin'    => 'Administrator bearbeiten',
+
+
+
+
+
+];

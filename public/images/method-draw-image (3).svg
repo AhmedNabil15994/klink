@@ -1,0 +1,15 @@
+<svg width="297.81" height="297.81" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <polygon id="svg_2" points="141.592,76.897 141.592,167.897 199.592,167.897 199.592,151.897 157.592,151.897 157.592,76.897  "/>
+   <path id="svg_3" d="m297.81,149.866c0,-76.252 -62.121,-138.271 -138.372,-138.271c-68.394,0 -125.319,50.302 -136.331,115.302l-22.21,0l38.302,66l39.424,-66l-22.959,0c10.506,-48 53.096,-83.302 103.848,-83.302c58.605,0 106.298,47.673 106.298,106.278c0,50.642 -36.218,93.111 -83.218,103.721l0,32.621c65,-11.013 115.218,-67.957 115.218,-136.349z"/>
+   <text stroke="null" transform="matrix(3.24216,0,0,3.1096,-244.64185068383384,-542.5231694893341) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="21" id="svg_7" y="264.840113" x="78.305206" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">24h</text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,267 @@
+.weight-container .number-style span,
+.items-container .number-style span{
+    right:-3px;
+    width:30px;
+    height: 18px;
+}
+
+.weight-container .number-style,
+.items-container .number-style{
+    width:115px;
+}
+
+.weight-container .number-style span.number-plus,
+.items-container .number-style span.number-plus{
+    top: 0px;
+    right: -13px;
+
+}
+
+.weight-container .number-style span.number-minus,
+.items-container .number-style span.number-minus{
+    top:17px;
+    right:-13px;
+}
+
+.weight-container .number-style span.number-plus::after,
+.weight-container .number-style span.number-minus::after,
+.items-container .number-style span.number-plus::after,
+.items-container .number-style span.number-minus::after{
+    top:0px;
+}
+
+
+@media(min-width:992px) and (max-width:1200px){
+    .weight-container .number-style span,
+    .items-container .number-style span{
+        right:-16px;
+    }
+
+
+
+    .weight-container .number-style span.number-plus,
+    .items-container .number-style span.number-plus{
+        right:-16px;
+
+    }
+
+    .number-style span.number-plus{
+        right:-16px;
+    }
+    .number-style span{
+        right:-16px;
+    }
+
+    .weight-container .number-style span,
+    .items-container .number-style span{
+        right:-16px;
+    }
+
+
+
+    .weight-container .number-style span.number-minus,
+    .items-container .number-style span.number-minus{
+        right:-16px;
+
+    }
+
+    .number-style span.number-minus{
+        right:-16px;
+    }
+}
+
+
+
+
+.number-style {
+    position: relative;
+    display: inline-block;
+    width:110px
+}
+
+
+.number-style input{
+
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    border: none;
+    font-size: 15px;
+    color: #000000;
+
+}
+
+.number-style span{
+    position: absolute;
+    right:-3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    /*background: #eaeaea;*/
+    border-radius: 4px;
+
+}
+
+.number-style span.number-minus{
+    top:18px;
+}
+
+.number-style span.number-minus::after{
+
+    content: "\f107";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 10px;
+    height: 2px;
+    right:11px;
+}
+
+.number-style span.number-plus{
+    top:0;
+}
+
+.number-style span.number-plus::after{
+
+    content: '';
+    position: absolute;
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 10px;
+    height: 2px;
+    right:11px;
+   
+}
+
+/*
+.number-style span.number-plus::before{
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -1px;
+    width: 2px;
+    height: 10px;
+    background-color: #00fe02;
+}
+*/
+
+.number-style span.disabled{
+}
+
+.number-style span.disabled::after,
+.number-style span.disabled::before{
+
+
+}
+
+.number-style input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+.number-style input::-webkit-outer-spin-button,
+.number-style input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+
+
+@media (max-width:767px){
+
+    .number-style{
+        display: block;
+        width:unset;
+    }
+
+    .weight-container .number-style,
+    .items-container .number-style{
+        width:unset;
+    }
+
+    .weight-container .number-style span.number-plus,
+    .items-container .number-style span.number-plus{
+        top: 0px;
+        right: -5px;
+
+    }
+
+    .weight-container .number-style span.number-minus,
+    .items-container .number-style span.number-minus{
+        top:17px;
+        right:-5px;
+    }
+
+    
+}
+
+/*
+@media (max-width:550px){
+
+    .number-style span{
+        right:-40px;
+        height: 36px;
+    }
+
+    .number-style span.number-plus{
+        top:0px;
+        right: -85px;
+
+    }
+
+    .number-style span.number-minus{
+        top:0;
+    }
+
+    .number-style span.number-plus::after,
+    .number-style span.number-minus::after{
+        top:8px;
+    }
+
+    
+
+}
+
+@media(max-width:550px){
+    .number-style {
+        position: relative;
+        display: inline-block;
+        width:70%;
+    }
+
+    .number-style #weight,
+    .number-style #items{
+    }
+}
+
+@media (max-width:360px){
+
+    .number-style span{
+        right:-40px;
+        height: 36px;
+    }
+
+    .number-style span.number-minus{
+        right:-15px;
+    }
+
+    .number-style span.number-plus{
+        right:-60px;
+    }
+
+    .weight-container .number-style span.number-plus,
+    .items-container .number-style span.number-plus{
+        top:0px;
+        right: -60px;
+
+    }
+
+}
+
+*/
+

@@ -1,0 +1,32 @@
+page interface bc
+
+type of Tour
+banner (explan every type of tour)
+(stop) - time - paket 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+time 
+    - min
+    - hour
+day
+    - day (1,2,3,4)
+    - week (1,2,3,4)
+    - month (1,2,3,4)
+    - year (1,2,3,4)
+stop
+    - stop dynamic 
+    - stop static 
+paket
+    - number paket 

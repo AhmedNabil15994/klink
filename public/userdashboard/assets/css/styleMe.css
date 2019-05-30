@@ -1,0 +1,1474 @@
+/*abstracts*/
+/*variables*/
+/*variables*/
+/*start animations*/
+@keyframes dropDown {
+  50% {
+    top: 6.5rem;
+  }
+  100% {
+    top: 5.725rem;
+  }
+}
+
+/*start animations*/
+/*abstracts*/
+/*component*/
+/*card style*/
+.card {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card__counter {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+
+.card__counter .counterIcon .fas.plane {
+  transform: rotate(-90deg);
+}
+
+.card__counter .counterIcon .fas {
+  color: #FFF;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 1010px) and (min-width: 992px) {
+  .card__counter .counterIcon .fas {
+    font-size: 2.9rem;
+  }
+}
+
+.card__counter .counterInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #FFF;
+}
+
+.card__counter .counterInfo .number {
+  font-size: 2.2rem;
+}
+
+.card__counter .counterInfo .type {
+  font-size: 2.2rem;
+}
+
+.card__go {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.card__go .card_name {
+  color: #FFF;
+  margin-top: .4rem;
+  display: inline-block;
+}
+
+.card__go .arrow {
+  text-align: right;
+  color: #FFF;
+  position: absolute;
+  right: 1.5rem;
+  top: .5rem;
+}
+
+.card--yellow {
+  background: #fdb714;
+}
+
+.card--blue {
+  background: #01b7f2;
+}
+
+.card--red {
+  background: #e01a33;
+}
+
+.card--green {
+  background: #98ce44;
+}
+
+/*card style*/
+/*order card*/
+.order-space {
+  margin-top: 6rem;
+}
+
+.order-space .orderCard {
+  background: #FFF;
+  width: 100%;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  /*order head*/
+  /*order head*/
+  /*order data*/
+  /*order data*/
+}
+
+@media (max-width: 520px) {
+  .order-space .orderCard {
+    overflow-x: scroll;
+  }
+}
+
+.order-space .orderCard .order-head {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.05);
+}
+
+.order-space .orderCard .order-head h3.order-heading {
+  color: #263238;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  position: relative;
+  font-size: 2rem;
+}
+
+.order-space .orderCard .order-head h3.order-heading::before {
+  content: "";
+  position: absolute;
+  top: -.5rem;
+  left: -2rem;
+  height: 3rem;
+  width: .2rem;
+  background: #5fbeaa;
+}
+
+.order-space .orderCard .order-head p.order-paragraph {
+  text-transform: capitalize;
+  color: #b1b1b1;
+  font-size: 1.4rem;
+}
+
+.order-space .orderCard .table {
+  /*table header*/
+  /*table body*/
+  /*table body*/
+}
+
+.order-space .orderCard .table__header--row th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.order-space .orderCard .table__body--row {
+  transition: background .5s;
+  cursor: pointer;
+  /*td*/
+}
+
+.order-space .orderCard .table__body--row:hover {
+  background: #f3f3f3;
+}
+
+.order-space .orderCard .table__body--row td {
+  padding: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  vertical-align: middle;
+  color: #455a64;
+  border-top: none;
+  font-size: 1.4rem;
+  /*car details*/
+}
+
+.order-space .orderCard .table__body--row td .car-img {
+  width: 3rem;
+  height: 3rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.order-space .orderCard .table__body--row td .car-img img {
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+@media (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-img {
+    float: none;
+  }
+}
+
+.order-space .orderCard .table__body--row td .car-details {
+  float: left;
+}
+
+@media (max-width: 1055px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 768px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .order-space .orderCard .table__body--row td .car-details {
+    float: none;
+  }
+}
+
+@media (max-width: 1310px) and (min-width: 1025px) {
+  .order-space .orderCard .table__body--row td.car-head {
+    width: 20rem;
+  }
+}
+
+/*order card*/
+/*modal style*/
+.modal .modal-dialog .modal-content .modal-header {
+  border-bottom-width: .1rem;
+}
+
+.modal-header .close {
+  font-size: 2rem;
+}
+
+.modal-content {
+  padding: 1rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal h4 {
+  font-size: 2rem;
+  color: #5fbeaa;
+}
+
+.modal h4 span {
+  margin-right: 1rem;
+}
+
+#imgEditModal .custom-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+#imgEditModal #img-upload {
+  visibility: hidden;
+}
+
+#imgEditModal .file-info {
+  background: #f8f8f8;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+#imgEditModal .choose-button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: auto;
+  border-radius: .3rem;
+  color: #fff;
+  background: #5fbeaa;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#imgEditModal .choose-button:focus {
+  outline: none;
+}
+
+#imgEditModal .uploaded-view {
+  margin-top: 2.5rem;
+}
+
+#imgEditModal .uploaded-view img {
+  max-width: 100%;
+}
+
+/*update modal*/
+#infoEditModal .user-profile-update {
+  padding: 2rem;
+  height: 55rem;
+  overflow-y: scroll;
+}
+
+#infoEditModal .user-profile-update .update-group {
+  margin-bottom: 2.5rem;
+}
+
+#infoEditModal .user-profile-update .update-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+#infoEditModal .user-profile-update .update-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#infoEditModal .user-profile-update textarea {
+  width: 100%;
+  padding: 5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+#infoEditModal .user-profile-update textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#infoEditModal .user-profile-update label {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+#infoEditModal .user-profile-update h5 {
+  color: #000;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+}
+
+/*modal style*/
+/*update modal*/
+#updateInfo .user-profile-update {
+  padding: 2rem;
+  height: 55rem;
+  overflow-y: scroll;
+}
+
+#updateInfo .user-profile-update .update-group {
+  margin-bottom: 2.5rem;
+}
+
+#updateInfo .user-profile-update .update-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+#updateInfo .user-profile-update .update-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#updateInfo .user-profile-update textarea {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+#updateInfo .user-profile-update textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#updateInfo .user-profile-update label {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+#updateInfo .user-profile-update h5 {
+  color: #000;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+}
+
+/*modal style*/
+#addDocAccount .custom-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+#addDocAccount #img-upload {
+  visibility: hidden;
+}
+
+#addDocAccount .file-info {
+  background: #f8f8f8;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+#addDocAccount .choose-button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: auto;
+  border-radius: .3rem;
+  color: #fff;
+  background: #5fbeaa;
+  font-size: 1.5rem;
+}
+
+#addDocAccount .choose-button:focus {
+  outline: none;
+}
+
+#addDocAccount .uploaded-view {
+  margin-top: 2.5rem;
+}
+
+#addDocAccount .uploaded-view textarea {
+  width: 100%;
+  height: 6rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  resize: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+}
+
+#addDocAccount .uploaded-view textarea:focus {
+  outline: none;
+  border-color: #5fbeaa;
+}
+
+/*upload file modal*/
+#uploadFileModal .custom-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+#uploadFileModal #img-upload {
+  visibility: hidden;
+}
+
+#uploadFileModal .file-info {
+  background: #f8f8f8;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+#uploadFileModal .choose-button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: auto;
+  border-radius: .3rem;
+  color: #fff;
+  background: #5fbeaa;
+  font-size: 1.5rem;
+}
+
+#uploadFileModal .choose-button:focus {
+  outline: none;
+}
+
+#uploadFileModal .uploaded-view {
+  margin-top: 2.5rem;
+}
+
+#uploadFileModal .uploaded-view textarea {
+  width: 100%;
+  height: 6rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  resize: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+}
+
+#uploadFileModal .uploaded-view textarea:focus {
+  outline: none;
+  border-color: #5fbeaa;
+}
+
+/*add vehcile modal*/
+#addVehcileModal {
+  /*upload image*/
+}
+
+#addVehcileModal .add-vehcile-content {
+  padding: 2rem;
+}
+
+#addVehcileModal .add-vehcile-content .add-group {
+  margin-bottom: 2.5rem;
+}
+
+#addVehcileModal .add-vehcile-content .add-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+#addVehcileModal .add-vehcile-content .add-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#addVehcileModal .add-vehcile-content textarea {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+}
+
+#addVehcileModal .add-vehcile-content textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#addVehcileModal .add-vehcile-content label {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+#addVehcileModal .custom-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+#addVehcileModal #img-upload {
+  visibility: hidden;
+}
+
+#addVehcileModal .file-info {
+  background: #f8f8f8;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+#addVehcileModal .choose-button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: auto;
+  border-radius: .3rem;
+  color: #fff;
+  background: #5fbeaa;
+  font-size: 1.4rem;
+}
+
+#addVehcileModal .choose-button:focus {
+  outline: none;
+}
+
+#addVehcileModal .uploaded-view {
+  margin-top: 2.5rem;
+}
+
+#addVehcileModal .uploaded-view img {
+  max-width: 100%;
+}
+
+/*add vehcile modal*/
+#editVehcileModal {
+  /*upload image*/
+}
+
+#editVehcileModal .edit-vehcile-content {
+  padding: 2rem;
+}
+
+#editVehcileModal .edit-vehcile-content .edit-group {
+  margin-bottom: 2.5rem;
+}
+
+#editVehcileModal .edit-vehcile-content .edit-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+#editVehcileModal .edit-vehcile-content .edit-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#editVehcileModal .edit-vehcile-content textarea {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+#editVehcileModal .edit-vehcile-content textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+#editVehcileModal .edit-vehcile-content label {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+#editVehcileModal .custom-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+#editVehcileModal #img-upload {
+  visibility: hidden;
+}
+
+#editVehcileModal #img-upload2 {
+  visibility: hidden;
+}
+
+#editVehcileModal .file-info {
+  background: #f8f8f8;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+#editVehcileModal .choose-button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: auto;
+  border-radius: .3rem;
+  color: #fff;
+  background: #5fbeaa;
+  font-size: 1.4rem;
+}
+
+#editVehcileModal .choose-button:focus {
+  outline: none;
+}
+
+#editVehcileModal .uploaded-view {
+  margin-top: 2.5rem;
+}
+
+#editVehcileModal .uploaded-view img {
+  max-width: 100%;
+}
+
+#deleteDocModal .modal-body {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+#deletevehcileModal .modal-body {
+  font-size: 1.4rem;
+}
+
+/*tables plug*/
+div.dataTables_wrapper div.dataTables_filter input {
+  border: 0.1rem solid #b1b1b1;
+  padding: .5rem 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_filter input:focus {
+  outline: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  color: #5fbeaa;
+}
+
+div.dataTables_wrapper .dataTables_length {
+  float: left;
+}
+
+div.dataTables_wrapper .dataTables_length label {
+  color: #5fbeaa;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+  padding: .5rem 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_length select:focus {
+  outline: none;
+}
+
+div.dataTables_wrapper .dataTables_filter {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 500px) {
+  div.dataTables_wrapper .dataTables_filter {
+    position: relative;
+    text-align: left;
+  }
+}
+
+div.dataTables_wrapper .dataTables_info {
+  float: left;
+  margin-right: 1.5rem;
+}
+
+div.dataTables_wrapper .dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+  font-size: 2rem;
+}
+
+div.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+  margin-right: 1rem;
+}
+
+div.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+  margin-left: 1rem;
+}
+
+div.dataTables_wrapper .dataTables_paginate .paginate_button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+div.dataTables_wrapper .dataTables_paginate span a {
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+div.dataTables_wrapper .dataTables_paginate span a:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 500px) {
+  div.dataTables_wrapper .dataTables_paginate div.dataTables_filter {
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px) {
+  div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
+    text-align: left;
+  }
+}
+
+div.dataTables_wrapper .dataTables_info {
+  font-size: 1.4rem !important;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+  font-size: 1rem !important;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  font-size: 1.5rem !important;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+  font-size: 1.4rem !important;
+  padding: .5rem 2rem !important;
+}
+
+/*tables plug*/
+/*custom button*/
+.custom-button {
+  border: none;
+  padding: 1rem 3rem;
+  color: #FFF;
+  position: relative;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow .5s;
+  border-radius: .3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.custom-button .fas {
+  margin-left: 1rem;
+}
+
+.custom-button:focus {
+  outline: none;
+}
+
+.custom-button:hover {
+  box-shadow: inset 300px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-button--blue {
+  background: #398bf7;
+}
+
+.custom-button--new {
+  background: #5fbeaa;
+}
+
+.custom-button--red {
+  background: #c9302c;
+}
+
+.custom-align {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .custom-align {
+    text-align: left;
+    margin-top: 2.5rem;
+  }
+}
+
+/*custom button*/
+/*component*/
+/*pages*/
+/*profile setting*/
+html {
+  font-size: 62.25%;
+}
+
+.profile-setting .update-button {
+  margin-top: 3rem;
+}
+
+.profile-setting .new {
+  color: #5fbeaa;
+}
+
+.profile-setting .profile-img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background: #FFF;
+}
+
+.profile-setting .profile-img .img-overlay {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(95, 190, 170, 0.4);
+  text-align: center;
+  line-height: 22rem;
+  transition: all 0.5s cubic-bezier(0, 0.83, 0.8, 1.05);
+}
+
+.profile-setting .profile-img .img-overlay i {
+  color: #FFF;
+  font-size: 4rem;
+}
+
+.profile-setting .profile-img:hover .img-overlay {
+  top: 0;
+}
+
+.profile-setting .profile-img .picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.profile-setting .profile-img .picture img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.5s cubic-bezier(0, 0.83, 0.8, 1.05);
+}
+
+.profile-setting .profile-img:hover .picture img {
+  transform: scale(1.07);
+}
+
+.profile-setting .user-full {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+
+.profile-setting .user-information {
+  margin-top: 3rem;
+}
+
+.profile-setting .user-information .user-info-block {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.profile-setting .user-information .user-info-block .attr-value {
+  text-align: left;
+  padding-top: 1rem;
+}
+
+@media (max-width: 575px) {
+  .profile-setting .user-information .user-info-block .attr-value {
+    margin-top: 0;
+  }
+}
+
+/*profile setting*/
+/*account setting*/
+.account-setting fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.account-setting fieldset .notification-heading {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.account-setting fieldset .want-deactivate h4 {
+  text-transform: uppercase;
+  color: #5fbeaa;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.account-setting fieldset .custom-align {
+  text-align: right;
+}
+
+.account-setting fieldset .custom-button i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.account-setting fieldset legend {
+  background: #5fbeaa;
+  color: #FFF;
+  width: 35rem;
+  padding: 1rem 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+}
+
+@media (max-width: 500px) {
+  .account-setting fieldset legend {
+    margin-left: 0;
+  }
+}
+
+.account-setting fieldset legend i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.account-setting fieldset .update-group {
+  margin-bottom: 2.5rem;
+}
+
+.account-setting fieldset .update-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+.account-setting fieldset .update-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.account-setting fieldset textarea {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+.account-setting fieldset textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.account-setting fieldset label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #5fbeaa;
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+/*account setting*/
+/*account document*/
+.account-document fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.account-document fieldset .notification-heading {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.account-document fieldset .want-deactivate h4 {
+  text-transform: uppercase;
+  color: #5fbeaa;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.account-document fieldset .custom-align {
+  text-align: right;
+}
+
+.account-document fieldset .custom-button i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.account-document fieldset legend {
+  background: #5fbeaa;
+  color: #FFF;
+  width: 35rem;
+  padding: 1rem 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+}
+
+@media (max-width: 500px) {
+  .account-document fieldset legend {
+    margin-left: 0;
+  }
+}
+
+.account-document fieldset legend i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.account-document fieldset .update-group {
+  margin-bottom: 2.5rem;
+}
+
+.account-document fieldset .update-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+.account-document fieldset .update-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.account-document fieldset textarea {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+.account-document fieldset textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.account-document fieldset label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #5fbeaa;
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+@media (max-width: 850px) {
+  .account-document .order-space .orderCard .btn {
+    min-width: 8.5rem;
+    margin-bottom: .5rem;
+  }
+}
+
+/*account document*/
+/*notification-setting*/
+.notification-setting fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.notification-setting fieldset .notification-heading {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.notification-setting fieldset .want-deactivate h4 {
+  text-transform: uppercase;
+  color: #5fbeaa;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.notification-setting fieldset .custom-align {
+  text-align: right;
+}
+
+.notification-setting fieldset .custom-button i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.notification-setting fieldset legend {
+  background: #5fbeaa;
+  color: #FFF;
+  width: 35rem;
+  padding: 1rem 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+}
+
+@media (max-width: 500px) {
+  .notification-setting fieldset legend {
+    margin-left: 0;
+  }
+}
+
+.notification-setting fieldset legend i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.notification-setting fieldset .update-group {
+  margin-bottom: 2.5rem;
+}
+
+.notification-setting fieldset .update-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+.notification-setting fieldset .update-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.notification-setting fieldset textarea {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+.notification-setting fieldset textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.notification-setting fieldset label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #5fbeaa;
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+/*notification-setting*/
+/*pay ment setting*/
+.payment-setting fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.payment-setting fieldset .notification-heading {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.payment-setting fieldset .want-deactivate h4 {
+  text-transform: uppercase;
+  color: #5fbeaa;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.payment-setting fieldset .custom-align {
+  text-align: right;
+}
+
+.payment-setting fieldset .custom-button i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.payment-setting fieldset legend {
+  background: #5fbeaa;
+  color: #FFF;
+  width: 35rem;
+  padding: 1rem 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+}
+
+@media (max-width: 500px) {
+  .payment-setting fieldset legend {
+    margin-left: 0;
+  }
+}
+
+.payment-setting fieldset legend i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.payment-setting fieldset .update-group {
+  margin-bottom: 2.5rem;
+}
+
+.payment-setting fieldset .update-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+.payment-setting fieldset .update-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.payment-setting fieldset textarea {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+.payment-setting fieldset textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.payment-setting fieldset label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #5fbeaa;
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+/*list*/
+/*pay ment setting*/
+/*invoice-index*/
+.invoice-index fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.invoice-index fieldset .notification-heading {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.invoice-index fieldset .want-deactivate h4 {
+  text-transform: uppercase;
+  color: #5fbeaa;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.invoice-index fieldset .custom-align {
+  text-align: right;
+}
+
+.invoice-index fieldset .custom-button i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.invoice-index fieldset legend {
+  background: #5fbeaa;
+  color: #FFF;
+  width: 35rem;
+  padding: 1rem 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+}
+
+@media (max-width: 500px) {
+  .invoice-index fieldset legend {
+    margin-left: 0;
+  }
+}
+
+.invoice-index fieldset legend i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.invoice-index fieldset .update-group {
+  margin-bottom: 2.5rem;
+}
+
+.invoice-index fieldset .update-input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  font-size: 1.4rem;
+}
+
+.invoice-index fieldset .update-input:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.invoice-index fieldset textarea {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: .3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  height: 12rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+.invoice-index fieldset textarea:focus {
+  outline: none;
+  border: 0.1rem solid #5fbeaa;
+}
+
+.invoice-index fieldset label {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #5fbeaa;
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+@media (max-width: 850px) {
+  .invoice-index .order-space .orderCard {
+    overflow-x: scroll;
+  }
+  .invoice-index .order-space .orderCard .btn {
+    min-width: 8.5rem;
+    margin-bottom: .5rem;
+  }
+}
+
+/*invoice-index*/
+/*pages*/

@@ -1,0 +1,1359 @@
+/*start step*/
+/*progress list*/
+body{
+  overflow-x: hidden;
+}
+.steplist {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.steplist .step {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.steplist .step li {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border: .2rem solid #f6ab36;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20%;
+  text-align: center;
+  line-height: 4rem;
+  position: relative;
+  background: #FFF;
+  color: #f6ab36;
+  cursor: pointer;
+}
+/*shadow element*/
+
+/*shadow element*/
+.steplist .step li:last-of-type{
+  margin-right: 0;
+}
+/*
+@media screen and (max-width: 700px) {
+  .steplist .step li {
+    margin-right: 8%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .steplist .step li {
+    margin-right: 5%;
+  }
+}
+*/
+/*
+@media screen and (max-width: 400px) {
+  .steplist .step li {
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+  }
+}
+*/
+.steplist .step li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: .5rem;
+  width: 14rem;
+  background: #f0f0f0;
+  top: 1.7rem;
+  z-index: -1;
+  left: -11.1rem;
+}
+/*before responsive*/
+.glyphicon{
+  top:0;
+  right:.5rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width:1200px){
+  .steplist .step li:before{
+    width:25rem;
+    left:-25rem;
+  }
+}
+@media (max-width:1200px) and (min-width:992px){
+  .steplist .step li:before{
+    width:20rem;
+    left:-20rem;
+  }
+  .steplist .step li {
+    margin-right: 19%;
+  }
+}
+@media (max-width:991px) and  (min-width:762px){
+  .steplist .step li:before{
+      width:16rem;
+      left:-16rem;
+  }
+  .steplist .step li {
+    margin-right: 18%;
+  }
+}
+@media (max-width:761px) and (min-width:731px) {
+  .steplist .step li:before{
+    width:15rem;
+    left: -15rem;   
+}
+  .steplist .step li {
+    margin-right: 17%;
+  }
+}
+
+@media (max-width:730px) and (min-width:682px) {
+  .steplist .step li:before{
+    width:15rem;
+    left: -15rem;   
+}
+  .steplist .step li {
+    margin-right: 17%;
+  }
+}
+
+@media (max-width:681px) and (min-width:600px) {
+  .steplist .step li:before{
+    width:12rem;
+    left: -12rem;   
+}
+  .steplist .step li {
+    margin-right: 16%;
+  }
+}
+
+@media (max-width:603px) and (min-width:550px) {
+  .steplist .step li:before{
+    width:10rem;
+    left: -10rem;   
+}
+  .steplist .step li {
+    margin-right: 15%;
+  }
+}
+
+@media (max-width:549px) and (min-width:465px) {
+  .steplist .step li:before{
+    width:8rem;
+    left: -8rem;   
+}
+  .steplist .step li {
+    margin-right: 13%;
+  }
+}
+@media (max-width:464px) and (min-width:405px) {
+  .steplist .step li:before{
+    width:5rem;
+    left: -5rem;   
+}
+  .steplist .step li {
+    margin-right: 11%;
+  }
+}
+@media (max-width:404px) and (min-width:381px) {
+  .steplist .step li:before{
+    width:4rem;
+    left: -4rem;   
+}
+  .steplist .step li {
+    margin-right: 10%;
+  }
+}
+@media (max-width:380px) and (min-width:342px) {
+  .steplist .step li:before{
+    width:4rem;
+    left: -4rem;   
+}
+  .steplist .step li {
+    margin-right: 8%;
+  }
+}
+@media (max-width:341px) and (min-width:315px) {
+  .steplist .step li:before{
+    width:2.5rem;
+    left: -2.5rem;   
+}
+  .steplist .step li {
+    margin-right: 6%;
+  }
+}
+
+@media (max-width:314px) and (min-width:300px) {
+  .steplist .step li:before{
+    width:1.5rem;
+    left: -1.5rem;   
+}
+  .steplist .step li {
+    margin-right: 4%;
+  }
+}
+
+/*before responsive*/
+/*
+@media screen and (max-width: 730px) {
+  .steplist .step li:before {
+    width: 80px;
+    left: -70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .steplist .step li:before {
+    width: 70px;
+    left: -46px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .steplist .step li:before {
+    top: 11px;
+    width: 40px;
+    left: -30px;
+  }
+}
+*/
+.steplist .step li:first-child:before {
+  content: none;
+}
+
+.steplist .step li.active {
+  background: #f6ab36;
+  color: #FFF;
+}
+
+.steplist .step li.active + li::before {
+  background: #f6ab36;
+  color: #FFF;
+}
+
+.steplist .step li.compelete {
+  background: #98b71b;
+  border-color:#98b71b;
+  color: #FFF;
+}
+
+.steplist .step li.compelete + li::before {
+  background: #98b71b;
+  color: #FFF;
+}
+
+/*progress list*/
+/*content*/
+.content {
+  margin-top: 2.5rem;
+  /*step one*/
+  /*step one*/
+  /*step two*/
+  /*step two*/
+  /*step four*/
+  /*payment ,method*/
+  /*step four*/
+  /**slide content**/
+  /*slide content*/
+  /*slide data*/
+  /*data list*/
+  /*step 5 */
+  /*step 5*/
+  /*Next prev button*/
+  /*automation*/
+  /*automation*/
+}
+
+.content .step_item {
+  box-shadow: .1rem .1rem .5rem rgba(95, 95, 95, 0.1), -1px -1px 5px rgba(95, 95, 95, 0.1);
+}
+
+.content .step__one,
+.content .step__two,
+.content .step__three {
+  padding: 2.5rem;
+  border: .1rem solid #e4e4e4;
+  margin-bottom: 2.5rem;
+}
+
+.content .step__three {
+  margin-bottom: 30rem !important;
+}
+
+@media (max-width:1500px) and (min-width:992px){
+
+  .content .step__three{
+    margin-bottom: 50rem !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content .step__one .image-delv,
+  .content .step__two .image-delv,
+  .content .step__three .image-delv {
+    width: 20rem;
+    margin: auto;
+  }
+}
+
+.content .step__one .image-delv img,
+.content .step__two .image-delv img,
+.content .step__three .image-delv img {
+  max-width: 100%;
+}
+
+.content .step__one h3.car,
+.content .step__two h3.car,
+.content .step__three h3.car {
+  margin: 0;
+  position: relative;
+  font-size: 2.1rem;
+}
+
+@media(max-width:500px){
+
+  .content .step__three h3.car {
+    margin: 0;
+    position: relative;
+    font-size: 2.1rem;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .content .step__one h3.car {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .content .step__one h3.car {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+  
+}
+
+.content .step__one h3.car:after,
+.content .step__two h3.car:after,
+.content .step__three h3.car:after {
+  content: "";
+  position: absolute;
+  top:100%;
+  left: .5rem;
+  background: #f6ab36;
+  height: .2rem;
+  width: 30%;
+}
+
+@media screen and (max-width: 400px) {
+  .content .step__one h3.car:after,
+  .content .step__two h3.car:after,
+  .content .step__three h3.car:after {
+    top: 4rem;
+    left: .5rem;
+  }
+}
+
+.content .step__one h4,
+.content .step__two h4,
+.content .step__three h4 {
+  color: #abaaaa;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.content .step__one .cal_button,
+.content .step__two .cal_button,
+.content .step__three .cal_button {
+  border: none;
+  padding: .7rem 1.5rem;
+  color: #FFF;
+  background: #f6ab36;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  width: 20rem;
+}
+
+@media screen and (min-width: 992px) {
+  .content .step__one .cal_button,
+  .content .step__two .cal_button,
+  .content .step__three .cal_button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content .step__one .cal_button,
+  .content .step__two .cal_button,
+  .content .step__three .cal_button {
+    width: 18rem;
+  }
+}
+
+.content .step__one .calc_space .heading,
+.content .step__one .sender .heading,
+.content .step__one .reciever .heading,
+.content .step__one .other-details .heading,
+.content .step__one .pick-up .heading,
+.content .step__one .deliver .heading,
+.content .step__two .calc_space .heading,
+.content .step__two .sender .heading,
+.content .step__two .reciever .heading,
+.content .step__two .other-details .heading,
+.content .step__two .pick-up .heading,
+.content .step__two .deliver .heading,
+.content .step__three .calc_space .heading,
+.content .step__three .sender .heading,
+.content .step__three .reciever .heading,
+.content .step__three .other-details .heading,
+.content .step__three .pick-up .heading,
+.content .step__three .deliver .heading {
+  margin-bottom: 5rem;
+}
+
+.content .step__one .calc_space .input__group input, .content .step__one .calc_space .input__group textarea,
+.content .step__one .sender .input__group input,
+.content .step__one .sender .input__group textarea,
+.content .step__one .reciever .input__group input,
+.content .step__one .reciever .input__group textarea,
+.content .step__one .other-details .input__group input,
+.content .step__one .other-details .input__group textarea,
+.content .step__one .pick-up .input__group input,
+.content .step__one .pick-up .input__group textarea,
+.content .step__one .deliver .input__group input,
+.content .step__one .deliver .input__group textarea,
+.content .step__two .calc_space .input__group input,
+.content .step__two .calc_space .input__group textarea,
+.content .step__two .sender .input__group input,
+.content .step__two .sender .input__group textarea,
+.content .step__two .reciever .input__group input,
+.content .step__two .reciever .input__group textarea,
+.content .step__two .other-details .input__group input,
+.content .step__two .other-details .input__group textarea,
+.content .step__two .pick-up .input__group input,
+.content .step__two .pick-up .input__group textarea,
+.content .step__two .deliver .input__group input,
+.content .step__two .deliver .input__group textarea,
+.content .step__three .calc_space .input__group input,
+.content .step__three .calc_space .input__group textarea,
+.content .step__three .sender .input__group input,
+.content .step__three .sender .input__group textarea,
+.content .step__three .reciever .input__group input,
+.content .step__three .reciever .input__group textarea,
+.content .step__three .other-details .input__group input,
+.content .step__three .other-details .input__group textarea,
+.content .step__three .pick-up .input__group input,
+.content .step__three .pick-up .input__group textarea,
+.content .step__three .deliver .input__group input,
+.content .step__three .deliver .input__group textarea {
+  width: 100%;
+  padding: .7rem 1rem;
+  border: .1rem solid #CCC;
+  border-radius: .5rem;
+  transition: border .5s;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .content .step__one .calc_space .input__group input, .content .step__one .calc_space .input__group textarea,
+  .content .step__one .sender .input__group input,
+  .content .step__one .sender .input__group textarea,
+  .content .step__one .reciever .input__group input,
+  .content .step__one .reciever .input__group textarea,
+  .content .step__one .other-details .input__group input,
+  .content .step__one .other-details .input__group textarea,
+  .content .step__one .pick-up .input__group input,
+  .content .step__one .pick-up .input__group textarea,
+  .content .step__one .deliver .input__group input,
+  .content .step__one .deliver .input__group textarea,
+  .content .step__two .calc_space .input__group input,
+  .content .step__two .calc_space .input__group textarea,
+  .content .step__two .sender .input__group input,
+  .content .step__two .sender .input__group textarea,
+  .content .step__two .reciever .input__group input,
+  .content .step__two .reciever .input__group textarea,
+  .content .step__two .other-details .input__group input,
+  .content .step__two .other-details .input__group textarea,
+  .content .step__two .pick-up .input__group input,
+  .content .step__two .pick-up .input__group textarea,
+  .content .step__two .deliver .input__group input,
+  .content .step__two .deliver .input__group textarea,
+  .content .step__three .calc_space .input__group input,
+  .content .step__three .calc_space .input__group textarea,
+  .content .step__three .sender .input__group input,
+  .content .step__three .sender .input__group textarea,
+  .content .step__three .reciever .input__group input,
+  .content .step__three .reciever .input__group textarea,
+  .content .step__three .other-details .input__group input,
+  .content .step__three .other-details .input__group textarea,
+  .content .step__three .pick-up .input__group input,
+  .content .step__three .pick-up .input__group textarea,
+  .content .step__three .deliver .input__group input,
+  .content .step__three .deliver .input__group textarea {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    padding: .7rem 1rem;
+  }
+}
+
+.content .step__one .calc_space .input__group input:focus, .content .step__one .calc_space .input__group textarea:focus,
+.content .step__one .sender .input__group input:focus,
+.content .step__one .sender .input__group textarea:focus,
+.content .step__one .reciever .input__group input:focus,
+.content .step__one .reciever .input__group textarea:focus,
+.content .step__one .other-details .input__group input:focus,
+.content .step__one .other-details .input__group textarea:focus,
+.content .step__one .pick-up .input__group input:focus,
+.content .step__one .pick-up .input__group textarea:focus,
+.content .step__one .deliver .input__group input:focus,
+.content .step__one .deliver .input__group textarea:focus,
+.content .step__two .calc_space .input__group input:focus,
+.content .step__two .calc_space .input__group textarea:focus,
+.content .step__two .sender .input__group input:focus,
+.content .step__two .sender .input__group textarea:focus,
+.content .step__two .reciever .input__group input:focus,
+.content .step__two .reciever .input__group textarea:focus,
+.content .step__two .other-details .input__group input:focus,
+.content .step__two .other-details .input__group textarea:focus,
+.content .step__two .pick-up .input__group input:focus,
+.content .step__two .pick-up .input__group textarea:focus,
+.content .step__two .deliver .input__group input:focus,
+.content .step__two .deliver .input__group textarea:focus,
+.content .step__three .calc_space .input__group input:focus,
+.content .step__three .calc_space .input__group textarea:focus,
+.content .step__three .sender .input__group input:focus,
+.content .step__three .sender .input__group textarea:focus,
+.content .step__three .reciever .input__group input:focus,
+.content .step__three .reciever .input__group textarea:focus,
+.content .step__three .other-details .input__group input:focus,
+.content .step__three .other-details .input__group textarea:focus,
+.content .step__three .pick-up .input__group input:focus,
+.content .step__three .pick-up .input__group textarea:focus,
+.content .step__three .deliver .input__group input:focus,
+.content .step__three .deliver .input__group textarea:focus {
+  outline: none;
+  border: .1rem solid #f6ab36;
+}
+
+.content .step__one .calc_space .input__group textarea,
+.content .step__one .sender .input__group textarea,
+.content .step__one .reciever .input__group textarea,
+.content .step__one .other-details .input__group textarea,
+.content .step__one .pick-up .input__group textarea,
+.content .step__one .deliver .input__group textarea,
+.content .step__two .calc_space .input__group textarea,
+.content .step__two .sender .input__group textarea,
+.content .step__two .reciever .input__group textarea,
+.content .step__two .other-details .input__group textarea,
+.content .step__two .pick-up .input__group textarea,
+.content .step__two .deliver .input__group textarea,
+.content .step__three .calc_space .input__group textarea,
+.content .step__three .sender .input__group textarea,
+.content .step__three .reciever .input__group textarea,
+.content .step__three .other-details .input__group textarea,
+.content .step__three .pick-up .input__group textarea,
+.content .step__three .deliver .input__group textarea {
+  resize: none;
+  height: 15rem;
+}
+
+.content .step__one .calc_space .car_image,
+.content .step__one .sender .car_image,
+.content .step__one .reciever .car_image,
+.content .step__one .other-details .car_image,
+.content .step__one .pick-up .car_image,
+.content .step__one .deliver .car_image,
+.content .step__two .calc_space .car_image,
+.content .step__two .sender .car_image,
+.content .step__two .reciever .car_image,
+.content .step__two .other-details .car_image,
+.content .step__two .pick-up .car_image,
+.content .step__two .deliver .car_image,
+.content .step__three .calc_space .car_image,
+.content .step__three .sender .car_image,
+.content .step__three .reciever .car_image,
+.content .step__three .other-details .car_image,
+.content .step__three .pick-up .car_image,
+.content .step__three .deliver .car_image {
+  max-width: 15rem;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 50%;
+  background: #FFF;
+  transition: all .5s;
+  transform: scale(1);
+}
+
+.content .step__one .calc_space .car_image img,
+.content .step__one .sender .car_image img,
+.content .step__one .reciever .car_image img,
+.content .step__one .other-details .car_image img,
+.content .step__one .pick-up .car_image img,
+.content .step__one .deliver .car_image img,
+.content .step__two .calc_space .car_image img,
+.content .step__two .sender .car_image img,
+.content .step__two .reciever .car_image img,
+.content .step__two .other-details .car_image img,
+.content .step__two .pick-up .car_image img,
+.content .step__two .deliver .car_image img,
+.content .step__three .calc_space .car_image img,
+.content .step__three .sender .car_image img,
+.content .step__three .reciever .car_image img,
+.content .step__three .other-details .car_image img,
+.content .step__three .pick-up .car_image img,
+.content .step__three .deliver .car_image img {
+  max-width: 100%;
+}
+
+.content .step__one .calc_space .car_image:hover,
+.content .step__one .sender .car_image:hover,
+.content .step__one .reciever .car_image:hover,
+.content .step__one .other-details .car_image:hover,
+.content .step__one .pick-up .car_image:hover,
+.content .step__one .deliver .car_image:hover,
+.content .step__two .calc_space .car_image:hover,
+.content .step__two .sender .car_image:hover,
+.content .step__two .reciever .car_image:hover,
+.content .step__two .other-details .car_image:hover,
+.content .step__two .pick-up .car_image:hover,
+.content .step__two .deliver .car_image:hover,
+.content .step__three .calc_space .car_image:hover,
+.content .step__three .sender .car_image:hover,
+.content .step__three .reciever .car_image:hover,
+.content .step__three .other-details .car_image:hover,
+.content .step__three .pick-up .car_image:hover,
+.content .step__three .deliver .car_image:hover {
+  transform: scale(1.2);
+  background: #f6ab36;
+}
+
+.content .step__two,
+.content .step__three {
+  margin-bottom: 2.5rem;
+}
+
+.content .step__two .type-heading,
+.content .step__three .type-heading {
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  position: relative;
+}
+
+.content .step__two .type-heading:after,
+.content .step__three .type-heading:after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 15%;
+  background: #f6ab36;
+  position: absolute;
+  left: 0;
+  top: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+  .content .step__two .type-heading,
+  .content .step__three .type-heading {
+    font-size: 1.8rem;
+  }
+}
+
+.content .step__two label,
+.content .step__three label {
+  text-transform: capitalize;
+  letter-spacing: .1rem;
+  color: #5f5454;
+  font-weight: 700;
+  margin-top: .8rem;
+  font-size: 1.3rem;
+}
+
+.content .step__two .billing,
+.content .step__three .billing {
+  margin-bottom: 5rem;
+}
+
+.content .step__two .other-details,
+.content .step__three .other-details {
+  display: none;
+}
+
+.content .step__two .other-details .other-para,
+.content .step__three .other-details .other-para {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.content .step__four {
+  padding: 2.5rem;
+  border: .1rem solid #e4e4e4;
+  margin-bottom: 2.5rem;
+  min-height: 72rem;
+  /**/
+  /*further*/
+}
+
+.content .step__four .order_info {
+  border-bottom: .1rem solid #ececec;
+  padding-bottom: 1rem;
+}
+
+.content .step__four .order_cart {
+  display: flex;
+}
+
+.content .step__four .order_cart .cart_img {
+  width: 7rem;
+}
+
+.content .step__four .order_cart .cart_img img {
+  max-width: 100%;
+}
+
+.content .step__four .order_cart .order-title {
+  margin-left: 1.5rem;
+  font-size: 1.7rem;
+}
+
+.content .step__four .order_cart .order-title .order_number {
+  color: #838383;
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.content .step__four .order_heading {
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.content .step__four .order_heading:after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 15%;
+  background: #f6ab36;
+  position: absolute;
+  left: 0;
+  top: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+  .content .step__four .order_heading {
+    font-size: 1.8rem;
+  }
+}
+
+.content .step__four .time_info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.content .step__four .store {
+  text-align: right;
+  color: #6dace6;
+  cursor: default;
+  font-size: 1.5rem;
+}
+
+.content .step__four .store p {
+  margin: 0;
+  color: #838383;
+  font-size: 1.1rem;
+}
+
+.content .step__four .time_icon {
+  color: #f6ab36;
+  font-size: 1.7rem;
+  cursor: default;
+}
+
+.content .step__four .deliver {
+  text-align: left;
+  color: #6dace6;
+  cursor: default;
+  font-size: 1.5rem;
+}
+
+.content .step__four .deliver p {
+  margin: 0;
+  color: #838383;
+  font-size: 1.1rem;
+  cursor: default;
+}
+
+.content .step__four .values {
+  list-style: none;
+  padding: 0;
+}
+
+.content .step__four .values li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .1rem solid #ececec;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.content .step__four .values li .value_title {
+  color: #6dace6;
+  font-size: 1.2rem;
+  cursor: default;
+}
+.content .step__four .payment_method .values li .value_title:last-of-type{
+  text-align: center;
+}
+.content .step__four .payment_method .values li .value,
+.content .step__four .payment_method .values li .value_title {
+  width: 33.33333%;
+} 
+.content .step__four .values li .value {
+  color: #838383;
+  font-size: 1.1rem;
+  cursor: default;
+}
+
+.content .step__four .values li .total {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.content .step__four .values li .total_value {
+  color: #f6ab36;
+}
+
+.content .payment_heading {
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.content .data-button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  padding: .6rem 1rem;
+  background: #f6ab36;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border-radius: .3rem;
+}
+
+.content .data-button:focus {
+  outline: none;
+}
+
+.content .data-button span.icon {
+  float: right;
+  transform: rotate(0);
+  transition: transform .5s;
+}
+
+.content .data-button span.icon.active {
+  transform: rotate(180deg);
+}
+
+.content .data-button .but-text {
+  letter-spacing: .1rem;
+}
+
+.content .slide_data {
+  display: none;
+  background: #f9f9f9;
+}
+
+.content .own-data {
+  list-style: none;
+  padding: 0;
+  padding-top: 1rem;
+}
+
+.content .own-data li {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content .own-data li .data-title {
+  color: #6dace6;
+  font-size: 1.5rem;
+  cursor: default;
+  text-transform: capitalize;
+}
+
+.content .own-data li .data-value {
+  color: #838383;
+  cursor: default;
+  font-size: 1.4rem;
+  padding: .5rem 1rem;
+  border: 1px dotted;
+  
+}
+
+.content .step__five {
+  padding: 2.5rem;
+  border: .1rem solid #e4e4e4;
+  margin-bottom: 2.5rem;
+}
+
+.content .step__five .billing-heading {
+  border-bottom: .1rem solid #ececec;
+  padding-bottom: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.content .step__five .step_five_heading {
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.content .step__five .step_five_heading:after {
+  content: "";
+  display: block;
+  height: .3rem;
+  width: 10%;
+  background: #f6ab36;
+  position: absolute;
+  left: 1.4rem;
+  top: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+  .content .step__five .step_five_heading {
+    font-size: 1.8rem;
+  }
+}
+
+.content .step__five .transfer-para {
+  color: #838383;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.content .step__five .compelete-button {
+  border: none;
+  padding: 1rem 2rem;
+  background: #f6ab36;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.content .step__five .compelete-button:hover {
+  outline: none;
+}
+
+.content .step__five .billing-content {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.content .step__five .confirm-order .confirm-icon {
+  color: #f6ab36;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: .1rem solid #f6ab36;
+  text-align: center;
+  line-height: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+/*edit custom radio*/
+.content .step__five .confirm-order .log_space .form-group{
+}
+.content .step__five .confirm-order .confirm-icon{
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.content .step__five .confirm-order .confirm-icon .form-group label{
+  padding-left: 0;
+}
+@media (max-width:430px){
+
+  .content .step__five .confirm-order .confirm-icon{
+      margin-bottom: 2.5rem;
+  }
+
+
+}
+/*edit custom radio*/
+
+.content .step__five .confirm-message {
+  margin-left: 1.5rem;
+}
+.content .step__five .confirm-message p{
+  font-size: 1.4rem;
+}
+
+@media (min-width: 992px) {
+  .content .step__five .confirm-message {
+    margin-left: -3rem;
+  }
+}
+
+@media (min-width: 459px) and (max-width: 650px) {
+  .content .step__five .confirm-message {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 458px) {
+  .content .step__five .confirm-message {
+    padding-left: 0;
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 458px) {
+  .content .step__five .confirm-message {
+   margin-top: 7rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .content .step__five .confirm-message {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .content .step__five .confirm-message {
+    margin-left: 5rem;
+    margin-top: -6rem;
+  }
+
+  .content .step__five .negative-margin .confirm-message{
+    margin-top: -6rem;
+  }
+}
+
+.content .step__five .confirm-head {
+  font-size: 1.5rem;
+  color: #6dace6;
+  cursor: default;
+}
+
+.content .submit_button {
+  border: none;
+  padding: 1rem 5rem;
+  background: #f6ab36;
+  color: #FFF;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.1), -.1rem -.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  transition: background .5s;
+  margin-bottom: 1rem;
+}
+
+.content .submit_button.prev{
+  background: #98b71b;
+}
+@media screen and (max-width: 580px) and (min-width:450px){
+
+  .content .submit_button {
+    padding: .5rem 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 449px) and (min-width:400px){
+  .content .submit_button {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 399px){
+  .content .submit_button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 350px){
+  .content .submit_button {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.content .submit_button:hover {
+  background: #e99000;
+}
+
+.content .submit_button:disabled {
+  background: #838383;
+}
+
+.content .step__one .submit_button.prev {
+  visibility: hidden;
+}
+
+.content .step__five .submit_button.next {
+  visibility: hidden;
+}
+
+.content .submit_button.next {
+  float: right;
+}
+
+.content .step_item {
+  display: none;
+}
+
+.content .step_item.active {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*date picker*/
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.billing .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  margin-left: -1.5rem;
+}
+
+/*content*/
+/*date picker*/
+.input-group.date .input-group-addon {
+  position: relative;
+  right: .4rem;
+}
+
+.input-group-addon {
+  background: #f6ab36;
+  color: #FFF;
+  border: none;
+}
+
+.margin-cancel {
+  margin-bottom: 0 !important;
+}
+
+@media (min-width:1600px){
+  .fullHeight{
+    min-height:calc(100vh - 27rem);
+  }
+}
+
+
+/*date time picker style*/
+/*date time picker style*/
+
+
+/*custom style for reciever fields*/
+.content .step__two .type-heading.reciever{
+  color:#4786ff;
+}
+
+.content .step__two .type-heading.reciever:after{
+ background:#4786ff;
+}
+
+.content .step__two .reciever .input__group.reciever input {
+    border:1px solid #4786ff;
+}
+/*custom style for reciever fields*/
+
+
+/**/
+@media(max-width:767px) and (min-width:400px){
+  .step__five .custom-width .col-xs-2{
+    width: 8%;
+  }
+}
+/**/
+
+.steplist .step li span{
+
+  position: absolute;
+  top:1rem;
+  left:.4rem;
+}
+
+.input__group label{
+    font-size: 1.4rem;
+}
+.input__group input,.input__group textarea{
+  font-size: 1.4rem;
+}
+
+.car-loads h4{
+  font-size: 2rem;
+}
+
+.car-loads .car-image img{
+      width:5rem !important;
+}
+
+.bootstrap-select.btn-group .dropdown-menu.inner{
+  font-size: 1.4rem;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a{
+  padding: .5rem;
+}
+
+.input-group-addon {
+  padding: .6rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: .4rem;
+}
+
+.step_item step__five .custom-heading {
+  font-size: 2rem !important;
+  margin-bottom: 1.5rem;
+}
+.h4, h4{
+  font-size: 2rem !important;
+  margin-bottom: 1.5rem;
+}
+
+.payment_info .valid_heading{
+      font-size: 1.5rem;
+}
+.payment_info .valid_until{
+  font-size: 1.4rem;
+}
+
+
+/*modal*/
+
+@media (min-width: 768px){
+.modal-dialog {
+    width: 60rem;
+    margin: 3rem auto;
+}
+}
+@media (min-width: 992px){
+
+  .modal-lg {
+      width: 900px;
+  }
+}
+
+@media (min-width: 768px){
+.modal-content {
+  
+    padding: 1rem;
+}
+}
+
+.content .step__five .negative-margin .confirm-message {
+    margin-top: 0;
+  
+}
+.content .step__five .negative-margin .confirm-order {
+  margin-top: -7rem;
+}
+
+@media (max-width:428px){
+  .content .step__five .negative-margin .confirm-message{
+    margin-top: -6rem;
+  }
+}
+
+
+@media (max-width:457px) and (min-width:429px){
+  .content .step__five .confirm-order.first {
+    margin-top: -7.5rem;
+  }
+}
+
+@media (max-width:550px){
+  .content .step__five .col-xs-11{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*input check pointer*/
+.content .step__two .icon{
+  display: none;
+}
+.content .step__two .filled .icon {
+  display: inline-block;
+} 
+.content .step__two .custom-input-order.filled{
+  position: relative;
+}
+
+.content .step__two .custom-input-order.filled .icon{
+    position: absolute;
+    top: 1rem;
+    left: 2.5rem;
+    color:#98b71b;
+}
+
+.content .step__two .custom-input-order.filled input{
+  padding-left: 2.8rem !important;
+  border-color:#98b71b !important;
+}
+
+
+
+
+.content .step__one .icon{
+  display: none;
+}
+.content .step__one .filled .icon {
+  display: inline-block;
+} 
+.content .step__one .custom-input-order.filled{
+  position: relative;
+}
+
+.content .step__one .custom-input-order.filled .icon{
+    position: absolute;
+    top: 1rem;
+    left: 2.5rem;
+    color:#98b71b;
+    z-index: 10;
+}
+
+.content .step__one .custom-input-order.filled input[type="text"],
+.content .step__one .custom-input-order.filled textarea{
+  padding-left: 2.8rem !important;
+  border-color:#98b71b !important;
+}

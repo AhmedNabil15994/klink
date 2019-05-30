@@ -1,0 +1,201 @@
+.package-types-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin-top: 10px;
+
+    .package-type {
+        flex: 1 0 150px;
+        max-width: 125px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        //styles
+        cursor: pointer;
+        background: #e6e6e8;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+        border-radius: $borderRadius;
+        min-height: 200px;
+        transition: .3s;
+        border: 1.5px solid transparent;
+        //
+        position: relative;
+
+        .package-type-title {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        &:hover {
+            border: 1.5px solid rgba($color: #f6ab36, $alpha: .3);
+
+            &:not(.active) {
+                transform: scale(1.1);
+            }
+
+            img.packcage-img {
+                transform: scale(1.1);
+
+            }
+        }
+
+        &.active {
+            border: 1.5px solid #f6ab36;
+        }
+
+        @for $i from 1 through 5 {
+            &.package-#{$i} {
+                $smallestOne: 25px;
+                $largestOne: $smallestOne + 10 + 5*10;
+                $packageWidth: $smallestOne + $i * 10;
+                $packageMargin: ($largestOne - $packageWidth) /2;
+
+                .packcage-img {
+                    transition: .3s;
+                    width: $packageWidth;
+                    height: $packageWidth;
+                    margin: 0 auto;
+                    animation-delay: .05s * $i;
+                    animation-duration: .2s;
+                    background: url('/images/package.svg');
+                    background-size: contain;
+                    position: relative;
+                }
+
+                .package-dimentions {
+                    max-width: $packageWidth;
+                    height: $largestOne !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+
+
+
+                    .length {
+                        transform: rotateZ(-29DEG);
+                        right: 0;
+                    }
+
+                    .height {
+
+                        top: $packageWidth/2;
+                        transform: translateY(-60%);
+                        left: 100%;
+                        background: #f6ab36;
+                        border: 1px solid $borderColor;
+                        border-radius: $borderRadius;
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+                        padding: 0 2.5px;
+                        height: $packageWidth/2;
+                        line-height: $packageWidth/2;
+                        text-align: center;
+
+                    }
+
+                    .width {
+                        top: 90%;
+                        left: -20%;
+
+                        transform: rotate(29DEG);
+                        width: 48%;
+                        text-align: center;
+                        background: #f6ab36;
+                        border: 1px solid $borderColor;
+                        border-radius: $borderRadius;
+
+                    }
+
+                    .length {
+                        top: 90%;
+                        right: -10%;
+                        $transformation: 0px - $i*2;
+                        transform: rotateZ(-29DEG);
+                        width: 48%;
+                        text-align: center;
+                        background: #f6ab36;
+                        border: 1px solid $borderColor;
+                        border-radius: $borderRadius;
+
+                        span {
+                            // transform: rotateZ(29DEG);
+                            // display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .package-dimentions {
+            position: relative;
+            // margin: 0 auto;
+
+            .width,
+            .length,
+            .height {
+                position: absolute;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .width,
+            .length {
+                // outline: blue 1px solid;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+
+
+
+            }
+
+        }
+
+
+
+    }
+
+    .package-dimensions-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .width,
+        .length,
+        .height {
+            flex: 1 0 auto;
+            max-width: 50px;
+            margin: 5px;
+            text-align: center;
+
+            span,
+            b {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .input-parent-wrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        .input-parent-reverse {
+            max-width: 90%;
+            background: #f5f6f7;
+
+            &.focused {
+                .input-child {
+                    input {
+                        border-color: $borderColor;
+                    }
+                }
+            }
+        }
+    }
+}
