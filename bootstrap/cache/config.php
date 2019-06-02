@@ -190,7 +190,7 @@
         'options' => 
         array (
           'cluster' => 'eu',
-          'encrypted' => true,
+          'encrypted' => false,
         ),
       ),
       'redis' => 
@@ -230,7 +230,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/framework/cache/data',
+        'path' => '/var/www/Server/Projects/kurier-link/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -341,10 +341,10 @@
     'orientation' => 'portrait',
     'defines' => 
     array (
-      'font_dir' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/fonts/',
-      'font_cache' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/fonts/',
+      'font_dir' => '/var/www/Server/Projects/kurier-link/storage/fonts/',
+      'font_cache' => '/var/www/Server/Projects/kurier-link/storage/fonts/',
       'temp_dir' => '/tmp',
-      'chroot' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link',
+      'chroot' => '/var/www/Server/Projects/kurier-link',
       'enable_font_subsetting' => false,
       'pdf_backend' => 'CPDF',
       'default_media_type' => 'screen',
@@ -382,6 +382,16 @@
       array (
         'formatter' => 'slug',
       ),
+      'csv' => 
+      array (
+        'delimiter' => ',',
+        'enclosure' => '"',
+        'line_ending' => '
+',
+        'use_bom' => false,
+        'include_separator_line' => false,
+        'excel_compatibility' => false,
+      ),
     ),
     'extension_detector' => 
     array (
@@ -401,6 +411,19 @@
       'csv' => 'Csv',
       'pdf' => 'Dompdf',
     ),
+    'value_binder' => 
+    array (
+      'default' => 'Maatwebsite\\Excel\\DefaultValueBinder',
+    ),
+    'transactions' => 
+    array (
+      'handler' => 'db',
+    ),
+    'temporary_files' => 
+    array (
+      'local_path' => '/tmp',
+      'remote_disk' => NULL,
+    ),
   ),
   'filesystems' => 
   array (
@@ -411,12 +434,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/app',
+        'root' => '/var/www/Server/Projects/kurier-link/storage/app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/app/public',
+        'root' => '/var/www/Server/Projects/kurier-link/storage/app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -476,13 +499,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/logs/laravel.log',
+        'path' => '/var/www/Server/Projects/kurier-link/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/logs/laravel.log',
+        'path' => '/var/www/Server/Projects/kurier-link/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 7,
       ),
@@ -535,7 +558,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/resources/views/vendor/mail',
+        0 => '/var/www/Server/Projects/kurier-link/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -550,7 +573,7 @@
       'mode' => 'sandbox',
       'http.ConnectionTimeOut' => 3000,
       'log.LongEnabled' => true,
-      'log.FileName' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/logs/paypal.log',
+      'log.FileName' => '/var/www/Server/Projects/kurier-link/storage/logs/paypal.log',
       'log.LogLevel' => 'DEBUG',
     ),
   ),
@@ -655,7 +678,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/framework/sessions',
+    'files' => '/var/www/Server/Projects/kurier-link/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -702,10 +725,10 @@
   array (
     'paths' => 
     array (
-      0 => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/resources/views',
-      1 => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/app/Modules',
+      0 => '/var/www/Server/Projects/kurier-link/resources/views',
+      1 => '/var/www/Server/Projects/kurier-link/app/Modules',
     ),
-    'compiled' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/storage/framework/views',
+    'compiled' => '/var/www/Server/Projects/kurier-link/storage/framework/views',
   ),
   'gravatar' => 
   array (
@@ -742,7 +765,7 @@
       ),
       'local' => 
       array (
-        'path' => '/home/ahmed/MyFolderS/Server/Projects/kurier-link/database/maxmind/GeoLite2-City.mmdb',
+        'path' => '/var/www/Server/Projects/kurier-link/database/maxmind/GeoLite2-City.mmdb',
       ),
     ),
     'testing' => 
