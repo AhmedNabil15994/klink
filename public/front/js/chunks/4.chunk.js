@@ -1,1 +1,4944 @@
-webpackJsonp([4],{631:function(e,t,i){"use strict";var s=i(58),o=i.n(s);"undefined"!=typeof window&&Promise.resolve().then(function(){return f});var r={props:{options:{type:Object,default:function(){return{}}}},mounted:function(){this.create()},destroyed:function(){o()(this.$el).slick("unslick")},methods:{create:function(){var e=o()(this.$el);e.on("afterChange",this.onAfterChange),e.on("beforeChange",this.onBeforeChange),e.on("breakpoint",this.onBreakpoint),e.on("destroy",this.onDestroy),e.on("edge",this.onEdge),e.on("init",this.onInit),e.on("reInit",this.onReInit),e.on("setPosition",this.onSetPosition),e.on("swipe",this.onSwipe),e.on("lazyLoaded",this.onLazyLoaded),e.on("lazyLoadError",this.onLazyLoadError),e.slick(this.options)},destroy:function(){var e=o()(this.$el);e.off("afterChange",this.onAfterChange),e.off("beforeChange",this.onBeforeChange),e.off("breakpoint",this.onBreakpoint),e.off("destroy",this.onDestroy),e.off("edge",this.onEdge),e.off("init",this.onInit),e.off("reInit",this.onReInit),e.off("setPosition",this.onSetPosition),e.off("swipe",this.onSwipe),e.off("lazyLoaded",this.onLazyLoaded),e.off("lazyLoadError",this.onLazyLoadError),o()(this.$el).slick("unslick")},reSlick:function(){this.destroy(),this.create()},next:function(){o()(this.$el).slick("slickNext")},prev:function(){o()(this.$el).slick("slickPrev")},pause:function(){o()(this.$el).slick("slickPause")},play:function(){o()(this.$el).slick("slickPlay")},goTo:function(e,t){o()(this.$el).slick("slickGoTo",e,t)},currentSlide:function(){return o()(this.$el).slick("slickCurrentSlide")},add:function(e,t,i){o()(this.$el).slick("slickAdd",e,t,i)},remove:function(e,t){o()(this.$el).slick("slickRemove",e,t)},filter:function(e){o()(this.$el).slick("slickFilter",e)},unfilter:function(){o()(this.$el).slick("slickUnfilter")},getOption:function(e){o()(this.$el).slick("slickGetOption",e)},setOption:function(e,t,i){o()(this.$el).slick("slickSetOption",e,t,i)},setPosition:function(){o()(this.$el).slick("setPosition")},onAfterChange:function(e,t,i){this.$emit("afterChange",e,t,i)},onBeforeChange:function(e,t,i,s){this.$emit("beforeChange",e,t,i,s)},onBreakpoint:function(e,t,i){this.$emit("breakpoint",e,t,i)},onDestroy:function(e,t){this.$emit("destroy",e,t)},onEdge:function(e,t,i){this.$emit("edge",e,t,i)},onInit:function(e,t){this.$emit("init",e,t)},onReInit:function(e,t){this.$emit("reInit",e,t)},onSetPosition:function(e,t){this.$emit("setPosition",e,t)},onSwipe:function(e,t,i){this.$emit("swipe",e,t,i)},onLazyLoaded:function(e,t,i,s){this.$emit("lazyLoaded",e,t,i,s)},onLazyLoadError:function(e,t,i,s){this.$emit("lazyLoadError",e,t,i,s)}}},n=function(){var e=this.$createElement;return(this._self._c||e)("div",[this._t("default")],2)};n._withStripped=!0;var a,l,d,c,p,u=(a={render:n,staticRenderFns:[]},d=void 0,c=!1,(p=("function"==typeof(l=r)?l.options:l)||{}).__file="/Users/staskjs/Projects/vue-slick/src/slickCarousel.vue",p.render||(p.render=a.render,p.staticRenderFns=a.staticRenderFns,p._compiled=!0,c&&(p.functional=!0)),p._scopeId=d,p);var h=function(e,t){return e(t={exports:{}},t.exports),t.exports}(function(e,t){var i,s,r;e.exports=(s=o.a,r=window.Slick||{},(i=0,r=function(e,t){var o,r=this;r.defaults={accessibility:!0,adaptiveHeight:!1,appendArrows:s(e),appendDots:s(e),arrows:!0,asNavFor:null,prevArrow:'<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',nextArrow:'<button class="slick-next" aria-label="Next" type="button">Next</button>',autoplay:!1,autoplaySpeed:3e3,centerMode:!1,centerPadding:"50px",cssEase:"ease",customPaging:function(e,t){return s('<button type="button" />').text(t+1)},dots:!1,dotsClass:"slick-dots",draggable:!0,easing:"linear",edgeFriction:.35,fade:!1,focusOnSelect:!1,focusOnChange:!1,infinite:!0,initialSlide:0,lazyLoad:"ondemand",mobileFirst:!1,pauseOnHover:!0,pauseOnFocus:!0,pauseOnDotsHover:!1,respondTo:"window",responsive:null,rows:1,rtl:!1,slide:"",slidesPerRow:1,slidesToShow:1,slidesToScroll:1,speed:500,swipe:!0,swipeToSlide:!1,touchMove:!0,touchThreshold:5,useCSS:!0,useTransform:!0,variableWidth:!1,vertical:!1,verticalSwiping:!1,waitForAnimate:!0,zIndex:1e3},r.initials={animating:!1,dragging:!1,autoPlayTimer:null,currentDirection:0,currentLeft:null,currentSlide:0,direction:1,$dots:null,listWidth:null,listHeight:null,loadIndex:0,$nextArrow:null,$prevArrow:null,scrolling:!1,slideCount:null,slideWidth:null,$slideTrack:null,$slides:null,sliding:!1,slideOffset:0,swipeLeft:null,swiping:!1,$list:null,touchObject:{},transformsEnabled:!1,unslicked:!1},s.extend(r,r.initials),r.activeBreakpoint=null,r.animType=null,r.animProp=null,r.breakpoints=[],r.breakpointSettings=[],r.cssTransitions=!1,r.focussed=!1,r.interrupted=!1,r.hidden="hidden",r.paused=!0,r.positionProp=null,r.respondTo=null,r.rowCount=1,r.shouldClick=!0,r.$slider=s(e),r.$slidesCache=null,r.transformType=null,r.transitionType=null,r.visibilityChange="visibilitychange",r.windowWidth=0,r.windowTimer=null,o=s(e).data("slick")||{},r.options=s.extend({},r.defaults,t,o),r.currentSlide=r.options.initialSlide,r.originalSettings=r.options,void 0!==document.mozHidden?(r.hidden="mozHidden",r.visibilityChange="mozvisibilitychange"):void 0!==document.webkitHidden&&(r.hidden="webkitHidden",r.visibilityChange="webkitvisibilitychange"),r.autoPlay=s.proxy(r.autoPlay,r),r.autoPlayClear=s.proxy(r.autoPlayClear,r),r.autoPlayIterator=s.proxy(r.autoPlayIterator,r),r.changeSlide=s.proxy(r.changeSlide,r),r.clickHandler=s.proxy(r.clickHandler,r),r.selectHandler=s.proxy(r.selectHandler,r),r.setPosition=s.proxy(r.setPosition,r),r.swipeHandler=s.proxy(r.swipeHandler,r),r.dragHandler=s.proxy(r.dragHandler,r),r.keyHandler=s.proxy(r.keyHandler,r),r.instanceUid=i++,r.htmlExpr=/^(?:\s*(<[\w\W]+>)[^>]*)$/,r.registerBreakpoints(),r.init(!0)}).prototype.activateADA=function(){this.$slideTrack.find(".slick-active").attr({"aria-hidden":"false"}).find("a, input, button, select").attr({tabindex:"0"})},r.prototype.addSlide=r.prototype.slickAdd=function(e,t,i){var o=this;if("boolean"==typeof t)i=t,t=null;else if(t<0||t>=o.slideCount)return!1;o.unload(),"number"==typeof t?0===t&&0===o.$slides.length?s(e).appendTo(o.$slideTrack):i?s(e).insertBefore(o.$slides.eq(t)):s(e).insertAfter(o.$slides.eq(t)):!0===i?s(e).prependTo(o.$slideTrack):s(e).appendTo(o.$slideTrack),o.$slides=o.$slideTrack.children(this.options.slide),o.$slideTrack.children(this.options.slide).detach(),o.$slideTrack.append(o.$slides),o.$slides.each(function(e,t){s(t).attr("data-slick-index",e)}),o.$slidesCache=o.$slides,o.reinit()},r.prototype.animateHeight=function(){var e=this;if(1===e.options.slidesToShow&&!0===e.options.adaptiveHeight&&!1===e.options.vertical){var t=e.$slides.eq(e.currentSlide).outerHeight(!0);e.$list.animate({height:t},e.options.speed)}},r.prototype.animateSlide=function(e,t){var i={},o=this;o.animateHeight(),!0===o.options.rtl&&!1===o.options.vertical&&(e=-e),!1===o.transformsEnabled?!1===o.options.vertical?o.$slideTrack.animate({left:e},o.options.speed,o.options.easing,t):o.$slideTrack.animate({top:e},o.options.speed,o.options.easing,t):!1===o.cssTransitions?(!0===o.options.rtl&&(o.currentLeft=-o.currentLeft),s({animStart:o.currentLeft}).animate({animStart:e},{duration:o.options.speed,easing:o.options.easing,step:function(e){e=Math.ceil(e),!1===o.options.vertical?(i[o.animType]="translate("+e+"px, 0px)",o.$slideTrack.css(i)):(i[o.animType]="translate(0px,"+e+"px)",o.$slideTrack.css(i))},complete:function(){t&&t.call()}})):(o.applyTransition(),e=Math.ceil(e),!1===o.options.vertical?i[o.animType]="translate3d("+e+"px, 0px, 0px)":i[o.animType]="translate3d(0px,"+e+"px, 0px)",o.$slideTrack.css(i),t&&setTimeout(function(){o.disableTransition(),t.call()},o.options.speed))},r.prototype.getNavTarget=function(){var e=this.options.asNavFor;return e&&null!==e&&(e=s(e).not(this.$slider)),e},r.prototype.asNavFor=function(e){var t=this.getNavTarget();null!==t&&"object"==typeof t&&t.each(function(){var t=s(this).slick("getSlick");t.unslicked||t.slideHandler(e,!0)})},r.prototype.applyTransition=function(e){var t=this,i={};!1===t.options.fade?i[t.transitionType]=t.transformType+" "+t.options.speed+"ms "+t.options.cssEase:i[t.transitionType]="opacity "+t.options.speed+"ms "+t.options.cssEase,!1===t.options.fade?t.$slideTrack.css(i):t.$slides.eq(e).css(i)},r.prototype.autoPlay=function(){var e=this;e.autoPlayClear(),e.slideCount>e.options.slidesToShow&&(e.autoPlayTimer=setInterval(e.autoPlayIterator,e.options.autoplaySpeed))},r.prototype.autoPlayClear=function(){this.autoPlayTimer&&clearInterval(this.autoPlayTimer)},r.prototype.autoPlayIterator=function(){var e=this,t=e.currentSlide+e.options.slidesToScroll;e.paused||e.interrupted||e.focussed||(!1===e.options.infinite&&(1===e.direction&&e.currentSlide+1===e.slideCount-1?e.direction=0:0===e.direction&&(t=e.currentSlide-e.options.slidesToScroll,e.currentSlide-1==0&&(e.direction=1))),e.slideHandler(t))},r.prototype.buildArrows=function(){var e=this;!0===e.options.arrows&&(e.$prevArrow=s(e.options.prevArrow).addClass("slick-arrow"),e.$nextArrow=s(e.options.nextArrow).addClass("slick-arrow"),e.slideCount>e.options.slidesToShow?(e.$prevArrow.removeClass("slick-hidden").removeAttr("aria-hidden tabindex"),e.$nextArrow.removeClass("slick-hidden").removeAttr("aria-hidden tabindex"),e.htmlExpr.test(e.options.prevArrow)&&e.$prevArrow.prependTo(e.options.appendArrows),e.htmlExpr.test(e.options.nextArrow)&&e.$nextArrow.appendTo(e.options.appendArrows),!0!==e.options.infinite&&e.$prevArrow.addClass("slick-disabled").attr("aria-disabled","true")):e.$prevArrow.add(e.$nextArrow).addClass("slick-hidden").attr({"aria-disabled":"true",tabindex:"-1"}))},r.prototype.buildDots=function(){var e,t,i=this;if(!0===i.options.dots&&i.slideCount>i.options.slidesToShow){for(i.$slider.addClass("slick-dotted"),t=s("<ul />").addClass(i.options.dotsClass),e=0;e<=i.getDotCount();e+=1)t.append(s("<li />").append(i.options.customPaging.call(this,i,e)));i.$dots=t.appendTo(i.options.appendDots),i.$dots.find("li").first().addClass("slick-active")}},r.prototype.buildOut=function(){var e=this;e.$slides=e.$slider.children(e.options.slide+":not(.slick-cloned)").addClass("slick-slide"),e.slideCount=e.$slides.length,e.$slides.each(function(e,t){s(t).attr("data-slick-index",e).data("originalStyling",s(t).attr("style")||"")}),e.$slider.addClass("slick-slider"),e.$slideTrack=0===e.slideCount?s('<div class="slick-track"/>').appendTo(e.$slider):e.$slides.wrapAll('<div class="slick-track"/>').parent(),e.$list=e.$slideTrack.wrap('<div class="slick-list"/>').parent(),e.$slideTrack.css("opacity",0),!0!==e.options.centerMode&&!0!==e.options.swipeToSlide||(e.options.slidesToScroll=1),s("img[data-lazy]",e.$slider).not("[src]").addClass("slick-loading"),e.setupInfinite(),e.buildArrows(),e.buildDots(),e.updateDots(),e.setSlideClasses("number"==typeof e.currentSlide?e.currentSlide:0),!0===e.options.draggable&&e.$list.addClass("draggable")},r.prototype.buildRows=function(){var e,t,i,s,o,r,n,a=this;if(s=document.createDocumentFragment(),r=a.$slider.children(),a.options.rows>0){for(n=a.options.slidesPerRow*a.options.rows,o=Math.ceil(r.length/n),e=0;e<o;e++){var l=document.createElement("div");for(t=0;t<a.options.rows;t++){var d=document.createElement("div");for(i=0;i<a.options.slidesPerRow;i++){var c=e*n+(t*a.options.slidesPerRow+i);r.get(c)&&d.appendChild(r.get(c))}l.appendChild(d)}s.appendChild(l)}a.$slider.empty().append(s),a.$slider.children().children().children().css({width:100/a.options.slidesPerRow+"%",display:"inline-block"})}},r.prototype.checkResponsive=function(e,t){var i,o,r,n=this,a=!1,l=n.$slider.width(),d=window.innerWidth||s(window).width();if("window"===n.respondTo?r=d:"slider"===n.respondTo?r=l:"min"===n.respondTo&&(r=Math.min(d,l)),n.options.responsive&&n.options.responsive.length&&null!==n.options.responsive){for(i in o=null,n.breakpoints)n.breakpoints.hasOwnProperty(i)&&(!1===n.originalSettings.mobileFirst?r<n.breakpoints[i]&&(o=n.breakpoints[i]):r>n.breakpoints[i]&&(o=n.breakpoints[i]));null!==o?null!==n.activeBreakpoint?(o!==n.activeBreakpoint||t)&&(n.activeBreakpoint=o,"unslick"===n.breakpointSettings[o]?n.unslick(o):(n.options=s.extend({},n.originalSettings,n.breakpointSettings[o]),!0===e&&(n.currentSlide=n.options.initialSlide),n.refresh(e)),a=o):(n.activeBreakpoint=o,"unslick"===n.breakpointSettings[o]?n.unslick(o):(n.options=s.extend({},n.originalSettings,n.breakpointSettings[o]),!0===e&&(n.currentSlide=n.options.initialSlide),n.refresh(e)),a=o):null!==n.activeBreakpoint&&(n.activeBreakpoint=null,n.options=n.originalSettings,!0===e&&(n.currentSlide=n.options.initialSlide),n.refresh(e),a=o),e||!1===a||n.$slider.trigger("breakpoint",[n,a])}},r.prototype.changeSlide=function(e,t){var i,o,r,n=this,a=s(e.currentTarget);switch(a.is("a")&&e.preventDefault(),a.is("li")||(a=a.closest("li")),r=n.slideCount%n.options.slidesToScroll!=0,i=r?0:(n.slideCount-n.currentSlide)%n.options.slidesToScroll,e.data.message){case"previous":o=0===i?n.options.slidesToScroll:n.options.slidesToShow-i,n.slideCount>n.options.slidesToShow&&n.slideHandler(n.currentSlide-o,!1,t);break;case"next":o=0===i?n.options.slidesToScroll:i,n.slideCount>n.options.slidesToShow&&n.slideHandler(n.currentSlide+o,!1,t);break;case"index":var l=0===e.data.index?0:e.data.index||a.index()*n.options.slidesToScroll;n.slideHandler(n.checkNavigable(l),!1,t),a.children().trigger("focus");break;default:return}},r.prototype.checkNavigable=function(e){var t,i;if(t=this.getNavigableIndexes(),i=0,e>t[t.length-1])e=t[t.length-1];else for(var s in t){if(e<t[s]){e=i;break}i=t[s]}return e},r.prototype.cleanUpEvents=function(){var e=this;e.options.dots&&null!==e.$dots&&(s("li",e.$dots).off("click.slick",e.changeSlide).off("mouseenter.slick",s.proxy(e.interrupt,e,!0)).off("mouseleave.slick",s.proxy(e.interrupt,e,!1)),!0===e.options.accessibility&&e.$dots.off("keydown.slick",e.keyHandler)),e.$slider.off("focus.slick blur.slick"),!0===e.options.arrows&&e.slideCount>e.options.slidesToShow&&(e.$prevArrow&&e.$prevArrow.off("click.slick",e.changeSlide),e.$nextArrow&&e.$nextArrow.off("click.slick",e.changeSlide),!0===e.options.accessibility&&(e.$prevArrow&&e.$prevArrow.off("keydown.slick",e.keyHandler),e.$nextArrow&&e.$nextArrow.off("keydown.slick",e.keyHandler))),e.$list.off("touchstart.slick mousedown.slick",e.swipeHandler),e.$list.off("touchmove.slick mousemove.slick",e.swipeHandler),e.$list.off("touchend.slick mouseup.slick",e.swipeHandler),e.$list.off("touchcancel.slick mouseleave.slick",e.swipeHandler),e.$list.off("click.slick",e.clickHandler),s(document).off(e.visibilityChange,e.visibility),e.cleanUpSlideEvents(),!0===e.options.accessibility&&e.$list.off("keydown.slick",e.keyHandler),!0===e.options.focusOnSelect&&s(e.$slideTrack).children().off("click.slick",e.selectHandler),s(window).off("orientationchange.slick.slick-"+e.instanceUid,e.orientationChange),s(window).off("resize.slick.slick-"+e.instanceUid,e.resize),s("[draggable!=true]",e.$slideTrack).off("dragstart",e.preventDefault),s(window).off("load.slick.slick-"+e.instanceUid,e.setPosition)},r.prototype.cleanUpSlideEvents=function(){var e=this;e.$list.off("mouseenter.slick",s.proxy(e.interrupt,e,!0)),e.$list.off("mouseleave.slick",s.proxy(e.interrupt,e,!1))},r.prototype.cleanUpRows=function(){var e,t=this;t.options.rows>0&&((e=t.$slides.children().children()).removeAttr("style"),t.$slider.empty().append(e))},r.prototype.clickHandler=function(e){!1===this.shouldClick&&(e.stopImmediatePropagation(),e.stopPropagation(),e.preventDefault())},r.prototype.destroy=function(e){var t=this;t.autoPlayClear(),t.touchObject={},t.cleanUpEvents(),s(".slick-cloned",t.$slider).detach(),t.$dots&&t.$dots.remove(),t.$prevArrow&&t.$prevArrow.length&&(t.$prevArrow.removeClass("slick-disabled slick-arrow slick-hidden").removeAttr("aria-hidden aria-disabled tabindex").css("display",""),t.htmlExpr.test(t.options.prevArrow)&&t.$prevArrow.remove()),t.$nextArrow&&t.$nextArrow.length&&(t.$nextArrow.removeClass("slick-disabled slick-arrow slick-hidden").removeAttr("aria-hidden aria-disabled tabindex").css("display",""),t.htmlExpr.test(t.options.nextArrow)&&t.$nextArrow.remove()),t.$slides&&(t.$slides.removeClass("slick-slide slick-active slick-center slick-visible slick-current").removeAttr("aria-hidden").removeAttr("data-slick-index").each(function(){s(this).attr("style",s(this).data("originalStyling"))}),t.$slideTrack.children(this.options.slide).detach(),t.$slideTrack.detach(),t.$list.detach(),t.$slider.append(t.$slides)),t.cleanUpRows(),t.$slider.removeClass("slick-slider"),t.$slider.removeClass("slick-initialized"),t.$slider.removeClass("slick-dotted"),t.unslicked=!0,e||t.$slider.trigger("destroy",[t])},r.prototype.disableTransition=function(e){var t=this,i={};i[t.transitionType]="",!1===t.options.fade?t.$slideTrack.css(i):t.$slides.eq(e).css(i)},r.prototype.fadeSlide=function(e,t){var i=this;!1===i.cssTransitions?(i.$slides.eq(e).css({zIndex:i.options.zIndex}),i.$slides.eq(e).animate({opacity:1},i.options.speed,i.options.easing,t)):(i.applyTransition(e),i.$slides.eq(e).css({opacity:1,zIndex:i.options.zIndex}),t&&setTimeout(function(){i.disableTransition(e),t.call()},i.options.speed))},r.prototype.fadeSlideOut=function(e){var t=this;!1===t.cssTransitions?t.$slides.eq(e).animate({opacity:0,zIndex:t.options.zIndex-2},t.options.speed,t.options.easing):(t.applyTransition(e),t.$slides.eq(e).css({opacity:0,zIndex:t.options.zIndex-2}))},r.prototype.filterSlides=r.prototype.slickFilter=function(e){var t=this;null!==e&&(t.$slidesCache=t.$slides,t.unload(),t.$slideTrack.children(this.options.slide).detach(),t.$slidesCache.filter(e).appendTo(t.$slideTrack),t.reinit())},r.prototype.focusHandler=function(){var e=this;e.$slider.off("focus.slick blur.slick").on("focus.slick blur.slick","*",function(t){t.stopImmediatePropagation();var i=s(this);setTimeout(function(){e.options.pauseOnFocus&&(e.focussed=i.is(":focus"),e.autoPlay())},0)})},r.prototype.getCurrent=r.prototype.slickCurrentSlide=function(){return this.currentSlide},r.prototype.getDotCount=function(){var e=this,t=0,i=0,s=0;if(!0===e.options.infinite)if(e.slideCount<=e.options.slidesToShow)++s;else for(;t<e.slideCount;)++s,t=i+e.options.slidesToScroll,i+=e.options.slidesToScroll<=e.options.slidesToShow?e.options.slidesToScroll:e.options.slidesToShow;else if(!0===e.options.centerMode)s=e.slideCount;else if(e.options.asNavFor)for(;t<e.slideCount;)++s,t=i+e.options.slidesToScroll,i+=e.options.slidesToScroll<=e.options.slidesToShow?e.options.slidesToScroll:e.options.slidesToShow;else s=1+Math.ceil((e.slideCount-e.options.slidesToShow)/e.options.slidesToScroll);return s-1},r.prototype.getLeft=function(e){var t,i,s,o,r=this,n=0;return r.slideOffset=0,i=r.$slides.first().outerHeight(!0),!0===r.options.infinite?(r.slideCount>r.options.slidesToShow&&(r.slideOffset=r.slideWidth*r.options.slidesToShow*-1,o=-1,!0===r.options.vertical&&!0===r.options.centerMode&&(2===r.options.slidesToShow?o=-1.5:1===r.options.slidesToShow&&(o=-2)),n=i*r.options.slidesToShow*o),r.slideCount%r.options.slidesToScroll!=0&&e+r.options.slidesToScroll>r.slideCount&&r.slideCount>r.options.slidesToShow&&(e>r.slideCount?(r.slideOffset=(r.options.slidesToShow-(e-r.slideCount))*r.slideWidth*-1,n=(r.options.slidesToShow-(e-r.slideCount))*i*-1):(r.slideOffset=r.slideCount%r.options.slidesToScroll*r.slideWidth*-1,n=r.slideCount%r.options.slidesToScroll*i*-1))):e+r.options.slidesToShow>r.slideCount&&(r.slideOffset=(e+r.options.slidesToShow-r.slideCount)*r.slideWidth,n=(e+r.options.slidesToShow-r.slideCount)*i),r.slideCount<=r.options.slidesToShow&&(r.slideOffset=0,n=0),!0===r.options.centerMode&&r.slideCount<=r.options.slidesToShow?r.slideOffset=r.slideWidth*Math.floor(r.options.slidesToShow)/2-r.slideWidth*r.slideCount/2:!0===r.options.centerMode&&!0===r.options.infinite?r.slideOffset+=r.slideWidth*Math.floor(r.options.slidesToShow/2)-r.slideWidth:!0===r.options.centerMode&&(r.slideOffset=0,r.slideOffset+=r.slideWidth*Math.floor(r.options.slidesToShow/2)),t=!1===r.options.vertical?e*r.slideWidth*-1+r.slideOffset:e*i*-1+n,!0===r.options.variableWidth&&(s=r.slideCount<=r.options.slidesToShow||!1===r.options.infinite?r.$slideTrack.children(".slick-slide").eq(e):r.$slideTrack.children(".slick-slide").eq(e+r.options.slidesToShow),t=!0===r.options.rtl?s[0]?-1*(r.$slideTrack.width()-s[0].offsetLeft-s.width()):0:s[0]?-1*s[0].offsetLeft:0,!0===r.options.centerMode&&(s=r.slideCount<=r.options.slidesToShow||!1===r.options.infinite?r.$slideTrack.children(".slick-slide").eq(e):r.$slideTrack.children(".slick-slide").eq(e+r.options.slidesToShow+1),t=!0===r.options.rtl?s[0]?-1*(r.$slideTrack.width()-s[0].offsetLeft-s.width()):0:s[0]?-1*s[0].offsetLeft:0,t+=(r.$list.width()-s.outerWidth())/2)),t},r.prototype.getOption=r.prototype.slickGetOption=function(e){return this.options[e]},r.prototype.getNavigableIndexes=function(){var e,t=this,i=0,s=0,o=[];for(!1===t.options.infinite?e=t.slideCount:(i=-1*t.options.slidesToScroll,s=-1*t.options.slidesToScroll,e=2*t.slideCount);i<e;)o.push(i),i=s+t.options.slidesToScroll,s+=t.options.slidesToScroll<=t.options.slidesToShow?t.options.slidesToScroll:t.options.slidesToShow;return o},r.prototype.getSlick=function(){return this},r.prototype.getSlideCount=function(){var e,t,i=this;return t=!0===i.options.centerMode?i.slideWidth*Math.floor(i.options.slidesToShow/2):0,!0===i.options.swipeToSlide?(i.$slideTrack.find(".slick-slide").each(function(o,r){if(r.offsetLeft-t+s(r).outerWidth()/2>-1*i.swipeLeft)return e=r,!1}),Math.abs(s(e).attr("data-slick-index")-i.currentSlide)||1):i.options.slidesToScroll},r.prototype.goTo=r.prototype.slickGoTo=function(e,t){this.changeSlide({data:{message:"index",index:parseInt(e)}},t)},r.prototype.init=function(e){var t=this;s(t.$slider).hasClass("slick-initialized")||(s(t.$slider).addClass("slick-initialized"),t.buildRows(),t.buildOut(),t.setProps(),t.startLoad(),t.loadSlider(),t.initializeEvents(),t.updateArrows(),t.updateDots(),t.checkResponsive(!0),t.focusHandler()),e&&t.$slider.trigger("init",[t]),!0===t.options.accessibility&&t.initADA(),t.options.autoplay&&(t.paused=!1,t.autoPlay())},r.prototype.initADA=function(){var e=this,t=Math.ceil(e.slideCount/e.options.slidesToShow),i=e.getNavigableIndexes().filter(function(t){return t>=0&&t<e.slideCount});e.$slides.add(e.$slideTrack.find(".slick-cloned")).attr({"aria-hidden":"true",tabindex:"-1"}).find("a, input, button, select").attr({tabindex:"-1"}),null!==e.$dots&&(e.$slides.not(e.$slideTrack.find(".slick-cloned")).each(function(t){var o=i.indexOf(t);if(s(this).attr({role:"tabpanel",id:"slick-slide"+e.instanceUid+t,tabindex:-1}),-1!==o){var r="slick-slide-control"+e.instanceUid+o;s("#"+r).length&&s(this).attr({"aria-describedby":r})}}),e.$dots.attr("role","tablist").find("li").each(function(o){var r=i[o];s(this).attr({role:"presentation"}),s(this).find("button").first().attr({role:"tab",id:"slick-slide-control"+e.instanceUid+o,"aria-controls":"slick-slide"+e.instanceUid+r,"aria-label":o+1+" of "+t,"aria-selected":null,tabindex:"-1"})}).eq(e.currentSlide).find("button").attr({"aria-selected":"true",tabindex:"0"}).end());for(var o=e.currentSlide,r=o+e.options.slidesToShow;o<r;o++)e.options.focusOnChange?e.$slides.eq(o).attr({tabindex:"0"}):e.$slides.eq(o).removeAttr("tabindex");e.activateADA()},r.prototype.initArrowEvents=function(){var e=this;!0===e.options.arrows&&e.slideCount>e.options.slidesToShow&&(e.$prevArrow.off("click.slick").on("click.slick",{message:"previous"},e.changeSlide),e.$nextArrow.off("click.slick").on("click.slick",{message:"next"},e.changeSlide),!0===e.options.accessibility&&(e.$prevArrow.on("keydown.slick",e.keyHandler),e.$nextArrow.on("keydown.slick",e.keyHandler)))},r.prototype.initDotEvents=function(){var e=this;!0===e.options.dots&&e.slideCount>e.options.slidesToShow&&(s("li",e.$dots).on("click.slick",{message:"index"},e.changeSlide),!0===e.options.accessibility&&e.$dots.on("keydown.slick",e.keyHandler)),!0===e.options.dots&&!0===e.options.pauseOnDotsHover&&e.slideCount>e.options.slidesToShow&&s("li",e.$dots).on("mouseenter.slick",s.proxy(e.interrupt,e,!0)).on("mouseleave.slick",s.proxy(e.interrupt,e,!1))},r.prototype.initSlideEvents=function(){var e=this;e.options.pauseOnHover&&(e.$list.on("mouseenter.slick",s.proxy(e.interrupt,e,!0)),e.$list.on("mouseleave.slick",s.proxy(e.interrupt,e,!1)))},r.prototype.initializeEvents=function(){var e=this;e.initArrowEvents(),e.initDotEvents(),e.initSlideEvents(),e.$list.on("touchstart.slick mousedown.slick",{action:"start"},e.swipeHandler),e.$list.on("touchmove.slick mousemove.slick",{action:"move"},e.swipeHandler),e.$list.on("touchend.slick mouseup.slick",{action:"end"},e.swipeHandler),e.$list.on("touchcancel.slick mouseleave.slick",{action:"end"},e.swipeHandler),e.$list.on("click.slick",e.clickHandler),s(document).on(e.visibilityChange,s.proxy(e.visibility,e)),!0===e.options.accessibility&&e.$list.on("keydown.slick",e.keyHandler),!0===e.options.focusOnSelect&&s(e.$slideTrack).children().on("click.slick",e.selectHandler),s(window).on("orientationchange.slick.slick-"+e.instanceUid,s.proxy(e.orientationChange,e)),s(window).on("resize.slick.slick-"+e.instanceUid,s.proxy(e.resize,e)),s("[draggable!=true]",e.$slideTrack).on("dragstart",e.preventDefault),s(window).on("load.slick.slick-"+e.instanceUid,e.setPosition),s(e.setPosition)},r.prototype.initUI=function(){var e=this;!0===e.options.arrows&&e.slideCount>e.options.slidesToShow&&(e.$prevArrow.show(),e.$nextArrow.show()),!0===e.options.dots&&e.slideCount>e.options.slidesToShow&&e.$dots.show()},r.prototype.keyHandler=function(e){var t=this;e.target.tagName.match("TEXTAREA|INPUT|SELECT")||(37===e.keyCode&&!0===t.options.accessibility?t.changeSlide({data:{message:!0===t.options.rtl?"next":"previous"}}):39===e.keyCode&&!0===t.options.accessibility&&t.changeSlide({data:{message:!0===t.options.rtl?"previous":"next"}}))},r.prototype.lazyLoad=function(){var e,t,i,o=this;function r(e){s("img[data-lazy]",e).each(function(){var e=s(this),t=s(this).attr("data-lazy"),i=s(this).attr("data-srcset"),r=s(this).attr("data-sizes")||o.$slider.attr("data-sizes"),n=document.createElement("img");n.onload=function(){e.animate({opacity:0},100,function(){i&&(e.attr("srcset",i),r&&e.attr("sizes",r)),e.attr("src",t).animate({opacity:1},200,function(){e.removeAttr("data-lazy data-srcset data-sizes").removeClass("slick-loading")}),o.$slider.trigger("lazyLoaded",[o,e,t])})},n.onerror=function(){e.removeAttr("data-lazy").removeClass("slick-loading").addClass("slick-lazyload-error"),o.$slider.trigger("lazyLoadError",[o,e,t])},n.src=t})}if(!0===o.options.centerMode?!0===o.options.infinite?(t=o.currentSlide+(o.options.slidesToShow/2+1),i=t+o.options.slidesToShow+2):(t=Math.max(0,o.currentSlide-(o.options.slidesToShow/2+1)),i=o.options.slidesToShow/2+1+2+o.currentSlide):(t=o.options.infinite?o.options.slidesToShow+o.currentSlide:o.currentSlide,i=Math.ceil(t+o.options.slidesToShow),!0===o.options.fade&&(t>0&&t--,i<=o.slideCount&&i++)),e=o.$slider.find(".slick-slide").slice(t,i),"anticipated"===o.options.lazyLoad)for(var n=t-1,a=i,l=o.$slider.find(".slick-slide"),d=0;d<o.options.slidesToScroll;d++)n<0&&(n=o.slideCount-1),e=(e=e.add(l.eq(n))).add(l.eq(a)),n--,a++;r(e),o.slideCount<=o.options.slidesToShow?r(o.$slider.find(".slick-slide")):o.currentSlide>=o.slideCount-o.options.slidesToShow?r(o.$slider.find(".slick-cloned").slice(0,o.options.slidesToShow)):0===o.currentSlide&&r(o.$slider.find(".slick-cloned").slice(-1*o.options.slidesToShow))},r.prototype.loadSlider=function(){var e=this;e.setPosition(),e.$slideTrack.css({opacity:1}),e.$slider.removeClass("slick-loading"),e.initUI(),"progressive"===e.options.lazyLoad&&e.progressiveLazyLoad()},r.prototype.next=r.prototype.slickNext=function(){this.changeSlide({data:{message:"next"}})},r.prototype.orientationChange=function(){this.checkResponsive(),this.setPosition()},r.prototype.pause=r.prototype.slickPause=function(){this.autoPlayClear(),this.paused=!0},r.prototype.play=r.prototype.slickPlay=function(){var e=this;e.autoPlay(),e.options.autoplay=!0,e.paused=!1,e.focussed=!1,e.interrupted=!1},r.prototype.postSlide=function(e){var t=this;if(!t.unslicked&&(t.$slider.trigger("afterChange",[t,e]),t.animating=!1,t.slideCount>t.options.slidesToShow&&t.setPosition(),t.swipeLeft=null,t.options.autoplay&&t.autoPlay(),!0===t.options.accessibility&&(t.initADA(),t.options.focusOnChange))){var i=s(t.$slides.get(t.currentSlide));i.attr("tabindex",0).focus()}},r.prototype.prev=r.prototype.slickPrev=function(){this.changeSlide({data:{message:"previous"}})},r.prototype.preventDefault=function(e){e.preventDefault()},r.prototype.progressiveLazyLoad=function(e){e=e||1;var t,i,o,r,n,a=this,l=s("img[data-lazy]",a.$slider);l.length?(t=l.first(),i=t.attr("data-lazy"),o=t.attr("data-srcset"),r=t.attr("data-sizes")||a.$slider.attr("data-sizes"),(n=document.createElement("img")).onload=function(){o&&(t.attr("srcset",o),r&&t.attr("sizes",r)),t.attr("src",i).removeAttr("data-lazy data-srcset data-sizes").removeClass("slick-loading"),!0===a.options.adaptiveHeight&&a.setPosition(),a.$slider.trigger("lazyLoaded",[a,t,i]),a.progressiveLazyLoad()},n.onerror=function(){e<3?setTimeout(function(){a.progressiveLazyLoad(e+1)},500):(t.removeAttr("data-lazy").removeClass("slick-loading").addClass("slick-lazyload-error"),a.$slider.trigger("lazyLoadError",[a,t,i]),a.progressiveLazyLoad())},n.src=i):a.$slider.trigger("allImagesLoaded",[a])},r.prototype.refresh=function(e){var t,i,o=this;i=o.slideCount-o.options.slidesToShow,!o.options.infinite&&o.currentSlide>i&&(o.currentSlide=i),o.slideCount<=o.options.slidesToShow&&(o.currentSlide=0),t=o.currentSlide,o.destroy(!0),s.extend(o,o.initials,{currentSlide:t}),o.init(),e||o.changeSlide({data:{message:"index",index:t}},!1)},r.prototype.registerBreakpoints=function(){var e,t,i,o=this,r=o.options.responsive||null;if("array"===s.type(r)&&r.length){for(e in o.respondTo=o.options.respondTo||"window",r)if(i=o.breakpoints.length-1,r.hasOwnProperty(e)){for(t=r[e].breakpoint;i>=0;)o.breakpoints[i]&&o.breakpoints[i]===t&&o.breakpoints.splice(i,1),i--;o.breakpoints.push(t),o.breakpointSettings[t]=r[e].settings}o.breakpoints.sort(function(e,t){return o.options.mobileFirst?e-t:t-e})}},r.prototype.reinit=function(){var e=this;e.$slides=e.$slideTrack.children(e.options.slide).addClass("slick-slide"),e.slideCount=e.$slides.length,e.currentSlide>=e.slideCount&&0!==e.currentSlide&&(e.currentSlide=e.currentSlide-e.options.slidesToScroll),e.slideCount<=e.options.slidesToShow&&(e.currentSlide=0),e.registerBreakpoints(),e.setProps(),e.setupInfinite(),e.buildArrows(),e.updateArrows(),e.initArrowEvents(),e.buildDots(),e.updateDots(),e.initDotEvents(),e.cleanUpSlideEvents(),e.initSlideEvents(),e.checkResponsive(!1,!0),!0===e.options.focusOnSelect&&s(e.$slideTrack).children().on("click.slick",e.selectHandler),e.setSlideClasses("number"==typeof e.currentSlide?e.currentSlide:0),e.setPosition(),e.focusHandler(),e.paused=!e.options.autoplay,e.autoPlay(),e.$slider.trigger("reInit",[e])},r.prototype.resize=function(){var e=this;s(window).width()!==e.windowWidth&&(clearTimeout(e.windowDelay),e.windowDelay=window.setTimeout(function(){e.windowWidth=s(window).width(),e.checkResponsive(),e.unslicked||e.setPosition()},50))},r.prototype.removeSlide=r.prototype.slickRemove=function(e,t,i){var s=this;if(e="boolean"==typeof e?!0===(t=e)?0:s.slideCount-1:!0===t?--e:e,s.slideCount<1||e<0||e>s.slideCount-1)return!1;s.unload(),!0===i?s.$slideTrack.children().remove():s.$slideTrack.children(this.options.slide).eq(e).remove(),s.$slides=s.$slideTrack.children(this.options.slide),s.$slideTrack.children(this.options.slide).detach(),s.$slideTrack.append(s.$slides),s.$slidesCache=s.$slides,s.reinit()},r.prototype.setCSS=function(e){var t,i,s=this,o={};!0===s.options.rtl&&(e=-e),t="left"==s.positionProp?Math.ceil(e)+"px":"0px",i="top"==s.positionProp?Math.ceil(e)+"px":"0px",o[s.positionProp]=e,!1===s.transformsEnabled?s.$slideTrack.css(o):(o={},!1===s.cssTransitions?(o[s.animType]="translate("+t+", "+i+")",s.$slideTrack.css(o)):(o[s.animType]="translate3d("+t+", "+i+", 0px)",s.$slideTrack.css(o)))},r.prototype.setDimensions=function(){var e=this;!1===e.options.vertical?!0===e.options.centerMode&&e.$list.css({padding:"0px "+e.options.centerPadding}):(e.$list.height(e.$slides.first().outerHeight(!0)*e.options.slidesToShow),!0===e.options.centerMode&&e.$list.css({padding:e.options.centerPadding+" 0px"})),e.listWidth=e.$list.width(),e.listHeight=e.$list.height(),!1===e.options.vertical&&!1===e.options.variableWidth?(e.slideWidth=Math.ceil(e.listWidth/e.options.slidesToShow),e.$slideTrack.width(Math.ceil(e.slideWidth*e.$slideTrack.children(".slick-slide").length))):!0===e.options.variableWidth?e.$slideTrack.width(5e3*e.slideCount):(e.slideWidth=Math.ceil(e.listWidth),e.$slideTrack.height(Math.ceil(e.$slides.first().outerHeight(!0)*e.$slideTrack.children(".slick-slide").length)));var t=e.$slides.first().outerWidth(!0)-e.$slides.first().width();!1===e.options.variableWidth&&e.$slideTrack.children(".slick-slide").width(e.slideWidth-t)},r.prototype.setFade=function(){var e,t=this;t.$slides.each(function(i,o){e=t.slideWidth*i*-1,!0===t.options.rtl?s(o).css({position:"relative",right:e,top:0,zIndex:t.options.zIndex-2,opacity:0}):s(o).css({position:"relative",left:e,top:0,zIndex:t.options.zIndex-2,opacity:0})}),t.$slides.eq(t.currentSlide).css({zIndex:t.options.zIndex-1,opacity:1})},r.prototype.setHeight=function(){var e=this;if(1===e.options.slidesToShow&&!0===e.options.adaptiveHeight&&!1===e.options.vertical){var t=e.$slides.eq(e.currentSlide).outerHeight(!0);e.$list.css("height",t)}},r.prototype.setOption=r.prototype.slickSetOption=function(){var e,t,i,o,r,n=this,a=!1;if("object"===s.type(arguments[0])?(i=arguments[0],a=arguments[1],r="multiple"):"string"===s.type(arguments[0])&&(i=arguments[0],o=arguments[1],a=arguments[2],"responsive"===arguments[0]&&"array"===s.type(arguments[1])?r="responsive":void 0!==arguments[1]&&(r="single")),"single"===r)n.options[i]=o;else if("multiple"===r)s.each(i,function(e,t){n.options[e]=t});else if("responsive"===r)for(t in o)if("array"!==s.type(n.options.responsive))n.options.responsive=[o[t]];else{for(e=n.options.responsive.length-1;e>=0;)n.options.responsive[e].breakpoint===o[t].breakpoint&&n.options.responsive.splice(e,1),e--;n.options.responsive.push(o[t])}a&&(n.unload(),n.reinit())},r.prototype.setPosition=function(){var e=this;e.setDimensions(),e.setHeight(),!1===e.options.fade?e.setCSS(e.getLeft(e.currentSlide)):e.setFade(),e.$slider.trigger("setPosition",[e])},r.prototype.setProps=function(){var e=this,t=document.body.style;e.positionProp=!0===e.options.vertical?"top":"left","top"===e.positionProp?e.$slider.addClass("slick-vertical"):e.$slider.removeClass("slick-vertical"),void 0===t.WebkitTransition&&void 0===t.MozTransition&&void 0===t.msTransition||!0===e.options.useCSS&&(e.cssTransitions=!0),e.options.fade&&("number"==typeof e.options.zIndex?e.options.zIndex<3&&(e.options.zIndex=3):e.options.zIndex=e.defaults.zIndex),void 0!==t.OTransform&&(e.animType="OTransform",e.transformType="-o-transform",e.transitionType="OTransition",void 0===t.perspectiveProperty&&void 0===t.webkitPerspective&&(e.animType=!1)),void 0!==t.MozTransform&&(e.animType="MozTransform",e.transformType="-moz-transform",e.transitionType="MozTransition",void 0===t.perspectiveProperty&&void 0===t.MozPerspective&&(e.animType=!1)),void 0!==t.webkitTransform&&(e.animType="webkitTransform",e.transformType="-webkit-transform",e.transitionType="webkitTransition",void 0===t.perspectiveProperty&&void 0===t.webkitPerspective&&(e.animType=!1)),void 0!==t.msTransform&&(e.animType="msTransform",e.transformType="-ms-transform",e.transitionType="msTransition",void 0===t.msTransform&&(e.animType=!1)),void 0!==t.transform&&!1!==e.animType&&(e.animType="transform",e.transformType="transform",e.transitionType="transition"),e.transformsEnabled=e.options.useTransform&&null!==e.animType&&!1!==e.animType},r.prototype.setSlideClasses=function(e){var t,i,s,o,r=this;if(i=r.$slider.find(".slick-slide").removeClass("slick-active slick-center slick-current").attr("aria-hidden","true"),r.$slides.eq(e).addClass("slick-current"),!0===r.options.centerMode){var n=r.options.slidesToShow%2==0?1:0;t=Math.floor(r.options.slidesToShow/2),!0===r.options.infinite&&(e>=t&&e<=r.slideCount-1-t?r.$slides.slice(e-t+n,e+t+1).addClass("slick-active").attr("aria-hidden","false"):(s=r.options.slidesToShow+e,i.slice(s-t+1+n,s+t+2).addClass("slick-active").attr("aria-hidden","false")),0===e?i.eq(i.length-1-r.options.slidesToShow).addClass("slick-center"):e===r.slideCount-1&&i.eq(r.options.slidesToShow).addClass("slick-center")),r.$slides.eq(e).addClass("slick-center")}else e>=0&&e<=r.slideCount-r.options.slidesToShow?r.$slides.slice(e,e+r.options.slidesToShow).addClass("slick-active").attr("aria-hidden","false"):i.length<=r.options.slidesToShow?i.addClass("slick-active").attr("aria-hidden","false"):(o=r.slideCount%r.options.slidesToShow,s=!0===r.options.infinite?r.options.slidesToShow+e:e,r.options.slidesToShow==r.options.slidesToScroll&&r.slideCount-e<r.options.slidesToShow?i.slice(s-(r.options.slidesToShow-o),s+o).addClass("slick-active").attr("aria-hidden","false"):i.slice(s,s+r.options.slidesToShow).addClass("slick-active").attr("aria-hidden","false"));"ondemand"!==r.options.lazyLoad&&"anticipated"!==r.options.lazyLoad||r.lazyLoad()},r.prototype.setupInfinite=function(){var e,t,i,o=this;if(!0===o.options.fade&&(o.options.centerMode=!1),!0===o.options.infinite&&!1===o.options.fade&&(t=null,o.slideCount>o.options.slidesToShow)){for(i=!0===o.options.centerMode?o.options.slidesToShow+1:o.options.slidesToShow,e=o.slideCount;e>o.slideCount-i;e-=1)t=e-1,s(o.$slides[t]).clone(!0).attr("id","").attr("data-slick-index",t-o.slideCount).prependTo(o.$slideTrack).addClass("slick-cloned");for(e=0;e<i+o.slideCount;e+=1)t=e,s(o.$slides[t]).clone(!0).attr("id","").attr("data-slick-index",t+o.slideCount).appendTo(o.$slideTrack).addClass("slick-cloned");o.$slideTrack.find(".slick-cloned").find("[id]").each(function(){s(this).attr("id","")})}},r.prototype.interrupt=function(e){e||this.autoPlay(),this.interrupted=e},r.prototype.selectHandler=function(e){var t=this,i=s(e.target).is(".slick-slide")?s(e.target):s(e.target).parents(".slick-slide"),o=parseInt(i.attr("data-slick-index"));o||(o=0),t.slideCount<=t.options.slidesToShow?t.slideHandler(o,!1,!0):t.slideHandler(o)},r.prototype.slideHandler=function(e,t,i){var s,o,r,n,a,l=null,d=this;if(t=t||!1,!(!0===d.animating&&!0===d.options.waitForAnimate||!0===d.options.fade&&d.currentSlide===e))if(!1===t&&d.asNavFor(e),s=e,l=d.getLeft(s),n=d.getLeft(d.currentSlide),d.currentLeft=null===d.swipeLeft?n:d.swipeLeft,!1===d.options.infinite&&!1===d.options.centerMode&&(e<0||e>d.getDotCount()*d.options.slidesToScroll))!1===d.options.fade&&(s=d.currentSlide,!0!==i&&d.slideCount>d.options.slidesToShow?d.animateSlide(n,function(){d.postSlide(s)}):d.postSlide(s));else if(!1===d.options.infinite&&!0===d.options.centerMode&&(e<0||e>d.slideCount-d.options.slidesToScroll))!1===d.options.fade&&(s=d.currentSlide,!0!==i&&d.slideCount>d.options.slidesToShow?d.animateSlide(n,function(){d.postSlide(s)}):d.postSlide(s));else{if(d.options.autoplay&&clearInterval(d.autoPlayTimer),o=s<0?d.slideCount%d.options.slidesToScroll!=0?d.slideCount-d.slideCount%d.options.slidesToScroll:d.slideCount+s:s>=d.slideCount?d.slideCount%d.options.slidesToScroll!=0?0:s-d.slideCount:s,d.animating=!0,d.$slider.trigger("beforeChange",[d,d.currentSlide,o]),r=d.currentSlide,d.currentSlide=o,d.setSlideClasses(d.currentSlide),d.options.asNavFor&&(a=(a=d.getNavTarget()).slick("getSlick")).slideCount<=a.options.slidesToShow&&a.setSlideClasses(d.currentSlide),d.updateDots(),d.updateArrows(),!0===d.options.fade)return!0!==i?(d.fadeSlideOut(r),d.fadeSlide(o,function(){d.postSlide(o)})):d.postSlide(o),void d.animateHeight();!0!==i&&d.slideCount>d.options.slidesToShow?d.animateSlide(l,function(){d.postSlide(o)}):d.postSlide(o)}},r.prototype.startLoad=function(){var e=this;!0===e.options.arrows&&e.slideCount>e.options.slidesToShow&&(e.$prevArrow.hide(),e.$nextArrow.hide()),!0===e.options.dots&&e.slideCount>e.options.slidesToShow&&e.$dots.hide(),e.$slider.addClass("slick-loading")},r.prototype.swipeDirection=function(){var e,t,i,s,o=this;return e=o.touchObject.startX-o.touchObject.curX,t=o.touchObject.startY-o.touchObject.curY,i=Math.atan2(t,e),(s=Math.round(180*i/Math.PI))<0&&(s=360-Math.abs(s)),s<=45&&s>=0?!1===o.options.rtl?"left":"right":s<=360&&s>=315?!1===o.options.rtl?"left":"right":s>=135&&s<=225?!1===o.options.rtl?"right":"left":!0===o.options.verticalSwiping?s>=35&&s<=135?"down":"up":"vertical"},r.prototype.swipeEnd=function(e){var t,i,s=this;if(s.dragging=!1,s.swiping=!1,s.scrolling)return s.scrolling=!1,!1;if(s.interrupted=!1,s.shouldClick=!(s.touchObject.swipeLength>10),void 0===s.touchObject.curX)return!1;if(!0===s.touchObject.edgeHit&&s.$slider.trigger("edge",[s,s.swipeDirection()]),s.touchObject.swipeLength>=s.touchObject.minSwipe){switch(i=s.swipeDirection()){case"left":case"down":t=s.options.swipeToSlide?s.checkNavigable(s.currentSlide+s.getSlideCount()):s.currentSlide+s.getSlideCount(),s.currentDirection=0;break;case"right":case"up":t=s.options.swipeToSlide?s.checkNavigable(s.currentSlide-s.getSlideCount()):s.currentSlide-s.getSlideCount(),s.currentDirection=1}"vertical"!=i&&(s.slideHandler(t),s.touchObject={},s.$slider.trigger("swipe",[s,i]))}else s.touchObject.startX!==s.touchObject.curX&&(s.slideHandler(s.currentSlide),s.touchObject={})},r.prototype.swipeHandler=function(e){var t=this;if(!(!1===t.options.swipe||"ontouchend"in document&&!1===t.options.swipe||!1===t.options.draggable&&-1!==e.type.indexOf("mouse")))switch(t.touchObject.fingerCount=e.originalEvent&&void 0!==e.originalEvent.touches?e.originalEvent.touches.length:1,t.touchObject.minSwipe=t.listWidth/t.options.touchThreshold,!0===t.options.verticalSwiping&&(t.touchObject.minSwipe=t.listHeight/t.options.touchThreshold),e.data.action){case"start":t.swipeStart(e);break;case"move":t.swipeMove(e);break;case"end":t.swipeEnd(e)}},r.prototype.swipeMove=function(e){var t,i,s,o,r,n,a=this;return r=void 0!==e.originalEvent?e.originalEvent.touches:null,!(!a.dragging||a.scrolling||r&&1!==r.length)&&(t=a.getLeft(a.currentSlide),a.touchObject.curX=void 0!==r?r[0].pageX:e.clientX,a.touchObject.curY=void 0!==r?r[0].pageY:e.clientY,a.touchObject.swipeLength=Math.round(Math.sqrt(Math.pow(a.touchObject.curX-a.touchObject.startX,2))),n=Math.round(Math.sqrt(Math.pow(a.touchObject.curY-a.touchObject.startY,2))),!a.options.verticalSwiping&&!a.swiping&&n>4?(a.scrolling=!0,!1):(!0===a.options.verticalSwiping&&(a.touchObject.swipeLength=n),i=a.swipeDirection(),void 0!==e.originalEvent&&a.touchObject.swipeLength>4&&(a.swiping=!0,e.preventDefault()),o=(!1===a.options.rtl?1:-1)*(a.touchObject.curX>a.touchObject.startX?1:-1),!0===a.options.verticalSwiping&&(o=a.touchObject.curY>a.touchObject.startY?1:-1),s=a.touchObject.swipeLength,a.touchObject.edgeHit=!1,!1===a.options.infinite&&(0===a.currentSlide&&"right"===i||a.currentSlide>=a.getDotCount()&&"left"===i)&&(s=a.touchObject.swipeLength*a.options.edgeFriction,a.touchObject.edgeHit=!0),!1===a.options.vertical?a.swipeLeft=t+s*o:a.swipeLeft=t+s*(a.$list.height()/a.listWidth)*o,!0===a.options.verticalSwiping&&(a.swipeLeft=t+s*o),!0!==a.options.fade&&!1!==a.options.touchMove&&(!0===a.animating?(a.swipeLeft=null,!1):void a.setCSS(a.swipeLeft))))},r.prototype.swipeStart=function(e){var t,i=this;if(i.interrupted=!0,1!==i.touchObject.fingerCount||i.slideCount<=i.options.slidesToShow)return i.touchObject={},!1;void 0!==e.originalEvent&&void 0!==e.originalEvent.touches&&(t=e.originalEvent.touches[0]),i.touchObject.startX=i.touchObject.curX=void 0!==t?t.pageX:e.clientX,i.touchObject.startY=i.touchObject.curY=void 0!==t?t.pageY:e.clientY,i.dragging=!0},r.prototype.unfilterSlides=r.prototype.slickUnfilter=function(){var e=this;null!==e.$slidesCache&&(e.unload(),e.$slideTrack.children(this.options.slide).detach(),e.$slidesCache.appendTo(e.$slideTrack),e.reinit())},r.prototype.unload=function(){var e=this;s(".slick-cloned",e.$slider).remove(),e.$dots&&e.$dots.remove(),e.$prevArrow&&e.htmlExpr.test(e.options.prevArrow)&&e.$prevArrow.remove(),e.$nextArrow&&e.htmlExpr.test(e.options.nextArrow)&&e.$nextArrow.remove(),e.$slides.removeClass("slick-slide slick-active slick-visible slick-current").attr("aria-hidden","true").css("width","")},r.prototype.unslick=function(e){var t=this;t.$slider.trigger("unslick",[t,e]),t.destroy()},r.prototype.updateArrows=function(){var e=this;Math.floor(e.options.slidesToShow/2),!0===e.options.arrows&&e.slideCount>e.options.slidesToShow&&!e.options.infinite&&(e.$prevArrow.removeClass("slick-disabled").attr("aria-disabled","false"),e.$nextArrow.removeClass("slick-disabled").attr("aria-disabled","false"),0===e.currentSlide?(e.$prevArrow.addClass("slick-disabled").attr("aria-disabled","true"),e.$nextArrow.removeClass("slick-disabled").attr("aria-disabled","false")):e.currentSlide>=e.slideCount-e.options.slidesToShow&&!1===e.options.centerMode?(e.$nextArrow.addClass("slick-disabled").attr("aria-disabled","true"),e.$prevArrow.removeClass("slick-disabled").attr("aria-disabled","false")):e.currentSlide>=e.slideCount-1&&!0===e.options.centerMode&&(e.$nextArrow.addClass("slick-disabled").attr("aria-disabled","true"),e.$prevArrow.removeClass("slick-disabled").attr("aria-disabled","false")))},r.prototype.updateDots=function(){var e=this;null!==e.$dots&&(e.$dots.find("li").removeClass("slick-active").end(),e.$dots.find("li").eq(Math.floor(e.currentSlide/e.options.slidesToScroll)).addClass("slick-active"))},r.prototype.visibility=function(){var e=this;e.options.autoplay&&(document[e.hidden]?e.interrupted=!0:e.interrupted=!1)},void(s.fn.slick=function(){var e,t,i=this,s=arguments[0],o=Array.prototype.slice.call(arguments,1),n=i.length;for(e=0;e<n;e++)if("object"==typeof s||void 0===s?i[e].slick=new r(i[e],s):t=i[e].slick[s].apply(i[e].slick,o),void 0!==t)return t;return i}))}),f=Object.freeze({default:h,__moduleExports:h});t.a=u},666:function(e,t,i){var s=i(667);"string"==typeof s&&(s=[[e.i,s,""]]),s.locals&&(e.exports=s.locals);i(625)("d59e0984",s,!0,{})},667:function(e,t,i){(e.exports=i(76)(!1)).push([e.i,"",""])},668:function(e,t,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s=i(631);t.default={data:function(){return{slickOptions:{arrows:!1,autoplay:!0},fromFocused:!1,toFocused:!1,loading:!1,activatedOrder:!1,activatedOrderId:{},activatedOrderIndex:"",otherOrders:"",from:{adress:"",marker:{lat:51.165691,lng:10.451526},icon:"images/home.svg"},to:{adress:"",marker:{lat:51.165691,lng:10.451526},icon:"images/send.svg"},allOrders:this.$orders.getOrders(),isChecked:!1,tempRouteResult:{}}},components:{"app-orders":i(669),"app-other-orders":i(674),Slick:s.a},mounted:function(){var e=this;$("#FromGeoAdress").focus(function(){e.fromFocused=!0}),$("#FromGeoAdress").blur(function(){e.fromFocused=!1}),$("#ToGeoAdress").focus(function(){e.toFocused=!0}),$("#ToGeoAdress").blur(function(){e.toFocused=!1}),this.$genF.svg(),$('[data-toggle="tooltip"]').tooltip(),$(".deleteImage").tooltip(),$(".fullSize").tooltip(),$("#FromGeoAdress").change(function(){e.setFromPlace({})}),$("#ToGeoAdress").change(function(){e.setToPlace({})}),this.getOrders()},computed:{isThereLocation:function(){return!(!window.navigator||!window.navigator.geolocation)}},methods:{focused:function(e){alert(e)},slideChange:function(e){this.activatedOrder&&this.changeActiveOrder(this.allOrders[e].id)},getOrders:function(){var e=this;this.$http.get("/api/orders/other").then(function(t){t.body&&"adv"===t.body[1]?e.allOrders&&0!==e.allOrders.length||(e.otherOrders=t.body[0]):t.body&&"owner"===t.body[1]&&(e.allOrders=e.allOrders.concat(t.body[0].map(function(e){return e.id=e.encrypted,e})))})},isNumeric:function(e){return!isNaN(parseFloat(e))&&isFinite(e)},getLocationToFrom:function(){var e=this;navigator.geolocation.getCurrentPosition(function(t){e.from.marker={lat:t.coords.latitude,lng:t.coords.longitude};var i=new google.maps.Geocoder,s={lat:Number(t.coords.latitude),lng:Number(t.coords.longitude)};i.geocode({location:s},function(t,i){"OK"===i&&(t[0]?(e.from.icon="",$("#FromGeoAdress").val(t[0].formatted_address),e.from.adress=t[0].formatted_address,e.$nextTick(function(){e.from.icon="/images/checked.svg"}),e.activatedOrder&&e.ShowRoute()):alert("No results found"))})},function(t){e.$swal({title:t.message,text:t.message,type:"error",confirmButtonText:trans("front.main.ok"),onOpen:function(){$(".swal2-icon.swal2-error").html(""),$(".swal2-icon.swal2-error").html('<img src="/images/warming.svg"/>')}})},{maximumAge:6e5,timeout:5e3,enableHighAccuracy:!0})},changeActiveOrder:function(e){var t=this;this.activatedOrder=!0,this.$orders.getOrder(e).then(function(e){t.activatedOrderId=e,$("#FromGeoAdress").val(t.activatedOrderId.from),$("#ToGeoAdress").val(t.activatedOrderId.to),t.from.adress=e.from,t.to.adress=e.to,t.from.marker=t.getMarker(e.from_map),t.to.marker=t.getMarker(e.to_map);new window.google.maps.DirectionsService;t.directionsDisplay&&(t.directionsDisplay.setDirections({routes:[]}),t.directionsDisplay=null),t.directionsDisplay=new window.google.maps.DirectionsRenderer({suppressMarkers:!0}),t.directionsDisplay.setMap(null),t.directionsDisplay.setMap(t.$refs.map.$mapObject),t.directionsDisplay.setDirections(e.orderRoute)})},getMarker:function(e){return{lat:Number(e.split(",")[0]),lng:Number(e.split(",")[1])}},ShowRoute:function(){var e=this,t=new window.google.maps.DirectionsService;this.directionsDisplay&&(this.directionsDisplay.setDirections({routes:[]}),this.directionsDisplay=null),this.directionsDisplay=new window.google.maps.DirectionsRenderer({suppressMarkers:!0}),this.directionsDisplay.setMap(null),this.directionsDisplay.setMap(this.$refs.map.$mapObject);var i={origin:new window.google.maps.LatLng(this.from.marker.lat,this.from.marker.lng),destination:new window.google.maps.LatLng(this.to.marker.lat,this.to.marker.lng),travelMode:google.maps.TravelMode.DRIVING};t.route(i,function(t,i){if("OK"==i){e.tempRouteResult=t,e.activatedOrderId.orderRoute=t,e.directionsDisplay.setDirections(t);var s={from:e.from.adress,to:e.to.adress,from_map:e.from.marker.lat+","+e.from.marker.lng,to_map:e.to.marker.lat+","+e.to.marker.lng,orderRoute:e.tempRouteResult};for(var o in e.activatedOrderIndex&&e.allOrders[e.activatedOrderIndex].id===e.activatedOrderId.id||e.allOrders.map(function(t,i){t.id===e.activatedOrderId.id&&(e.activatedOrderIndex=i)}),s)e.allOrders[e.activatedOrderIndex][o]=s[o];e.$orders.updateOrder(e.activatedOrderId.id,s)}})},check:function(e){var t=this;this.loading=!0;var i={from:this.from.adress,to:this.to.adress,from_map:this.from.marker.lat+","+this.from.marker.lng,to_map:this.to.marker.lat+","+this.to.marker.lng,userId:this.$orders.OrdersUserId()};return this.orderValidate(i).then(function(e){t.gotto()},function(e){t.gotto()}),!0},orderValidate:function(e){var t=!1;return e.from&&e.to&&e.from_map&&e.to_map&&e.from_map!==e.to_map&&(t=!0),new Promise(function(e,i){return t?e(t):i({title:trans("front.main.wrongData"),text:trans("front.main.wrongDataMessage")})})},validateFromPlace:function(){var e=this;this.from.marker.lat&&this.from.marker.lng&&this.from.adress&&$("#FromGeoAdress").val()?(this.from.icon="",this.$nextTick(function(){e.from.icon="/images/checked.svg"})):(this.from.icon="",this.$nextTick(function(){e.from.icon="/images/warning.svg"}))},validateToPlace:function(){var e=this;this.to.marker.lat&&this.to.marker.lng&&this.to.adress&&$("#ToGeoAdress").val()?(this.to.icon="",this.$nextTick(function(){e.to.icon="/images/checked.svg"})):(this.to.icon="",this.$nextTick(function(){e.to.icon="/images/warning.svg"}))},validatePlace:function(e){if(!e||!e.address_components)return!1;var t=e.address_components.some(function(e){return-1!==e.types.indexOf("street_number")});return t||this.$snotify.warning(trans("front.main.placeError"),trans("front.main.placeErrorHead"),{timeout:3500,pauseOnHover:!0}),t},setFromPlace:function(e){if(this.from.adress=e.formatted_address,!e.geometry||!this.validatePlace(e))return this.from.marker={lat:"",lng:""},this.validateFromPlace(),"";$("#ToGeoAdress").focus(),this.from.marker={lat:e.geometry.location.lat(),lng:e.geometry.location.lng()},this.activatedOrder?this.ShowRoute():this.from.adress&&this.from.marker&&this.to.marker&&this.from.marker.lat&&this.from.marker.lng&&this.to.adress&&this.to.marker.lng&&this.to.marker.lat&&this.check(),this.validateFromPlace()},setToPlace:function(e){var t=this;if(this.to.adress=e.formatted_address,!e.geometry||!this.validatePlace(e))return this.to.marker={lat:"",lng:""},this.validateToPlace(),"";$("#SubmitFormButton").focus(),this.to.marker={lat:e.geometry.location.lat(),lng:e.geometry.location.lng()},this.validateToPlace(),this.activatedOrder?this.ShowRoute():this.from.adress&&this.from.marker.lat&&this.from.marker.lng&&this.to.adress&&this.to.marker.lng&&this.to.marker.lat&&this.check(),this.$nextTick(function(){t.saveNewOrder()})},setFromPlaceViaMarker:function(e){var t=this;this.from.marker={lat:e.latLng.lat(),lng:e.latLng.lng()};var i=new google.maps.Geocoder,s={lat:e.latLng.lat(),lng:e.latLng.lng()};i.geocode({location:s},function(e,i){"OK"===i&&(e[1]?($("#FromGeoAdress").val(e[1].formatted_address),t.from.adress=e[1].formatted_address,t.activatedOrder&&t.ShowRoute()):alert("No results found"))})},setToPlaceViaMarker:function(e){var t=this;this.to.marker={lat:e.latLng.lat(),lng:e.latLng.lng()};var i=new google.maps.Geocoder,s={lat:e.latLng.lat(),lng:e.latLng.lng()};i.geocode({location:s},function(e,i){"OK"===i&&(e[1]?($("#ToGeoAdress").val(e[1].formatted_address),t.to.adress=e[1].formatted_address,t.activatedOrder&&t.ShowRoute()):alert("No results found"))})},gotto:function(){var e=this,t=arguments.length>0&&void 0!==arguments[0]&&arguments[0],i=new window.google.maps.DirectionsService;this.directionsDisplay&&(this.directionsDisplay.setDirections({routes:[]}),this.directionsDisplay=null),this.directionsDisplay=new window.google.maps.DirectionsRenderer({suppressMarkers:!0}),this.directionsDisplay.setMap(null),this.directionsDisplay.setMap(this.$refs.map.$mapObject);var s={origin:new window.google.maps.LatLng(this.from.marker.lat,this.from.marker.lng),destination:new window.google.maps.LatLng(this.to.marker.lat,this.to.marker.lng),travelMode:google.maps.TravelMode.DRIVING};i.route(s,function(i,s){if("OK"==s){e.tempRouteResult=i;var o={from:e.from.adress,to:e.to.adress,from_map:e.from.marker.lat+","+e.from.marker.lng,to_map:e.to.marker.lat+","+e.to.marker.lng,orderRoute:e.tempRouteResult};!0===t&&e.$orders.NewOrder(o).then(function(t){e.allOrders=t,e.isChecked=!0,e.tempRouteResult={},e.$nextTick(function(){e.loading=!1,e.$router.push("/order/create_order/"+t[t.length-1].id)})}),e.directionsDisplay.setDirections(i),e.loading=!1}})},saveNewOrder:function(){var e=this;this.loading=!0;var t={from:this.from.adress,to:this.to.adress,from_map:this.from.marker.lat+","+this.from.marker.lng,to_map:this.to.marker.lat+","+this.to.marker.lng,orderRoute:this.tempRouteResult};this.orderValidate(t).then(function(t){e.gotto(!0)},function(t){e.from.marker&&e.from.adress&&e.from.marker.lat&&e.from.marker.lng||(e.from.icon="",e.$nextTick(function(){e.from.icon="/images/warning.svg"})),e.to.marker&&e.to.adress&&e.to.marker.lat&&e.to.marker.lng||(e.to.icon="",e.$nextTick(function(){e.to.icon="/images/warning.svg"})),e.loading=!1})}}}},669:function(e,t,i){var s=i(25)(i(672),i(673),!1,function(e){i(670)},null,null);e.exports=s.exports},670:function(e,t,i){var s=i(671);"string"==typeof s&&(s=[[e.i,s,""]]),s.locals&&(e.exports=s.locals);i(625)("007f9627",s,!0,{})},671:function(e,t,i){(e.exports=i(76)(!1)).push([e.i,"",""])},672:function(e,t,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={data:function(){return{loading:!1,ordeers:this.orders}},computed:{userId:function(){return this.$auth.isAuth?"user":localStorage.getItem("tempid")?localStorage.getItem("tempid"):"new"}},mounted:function(){this.$genF.svg()},props:["orders"],watch:{orders:function(e){var t=this;this.loading=!0,this.$nextTick(function(){t.loading=!1,t.ordeers=t.orders,t.$nextTick(function(){t.$refs.carsouel&&(t.$refs.carsouel.goSlide(e.length-1),t.$genF.svg())})})}},methods:{slideChange:function(e){this.$emit("slide-change",e)},activateOrder:function(e){this.$orders.setActiveOrder(e.id),this.$emit("activateOrder",e.id)},deleteOrder:function(e){var t=this;$(".deleteImage").tooltip("hide"),Vue.orders.removeOrder(e).then(function(e){$(".deleteImage").tooltip("hide"),t.loading=!0,t.ordeers=e,t.$nextTick(function(){$(".deleteImage").tooltip("hide"),t.loading=!1})})}}}},673:function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,i=e._self._c||t;return i("transition",{attrs:{name:"fade"}},[e.loading?e._e():i("div",{staticClass:"orders-small-wrapper"},[i("carousel-3d",{ref:"carsouel",attrs:{"controls-visible":!0,height:200,width:300},on:{"before-slide-change":e.slideChange}},e._l(e.ordeers,function(t,s){return i("slide",{key:"slide"+s,attrs:{index:s}},[i("div",{staticClass:"small-order"},[i("img",{staticClass:"deleteImage",attrs:{src:"/images/delete-order.svg",title:e.trans("front.main.delete"),alt:e.trans("front.main.delete")},on:{click:function(i){e.deleteOrder(t)}}}),e._v(" "),i("img",{staticClass:"fullSize",attrs:{src:"/images/full-size.svg",title:e.trans("front.main.fullSize"),alt:e.trans("front.main.fullSize")},on:{click:function(i){e.activateOrder(t)}}}),e._v(" "),i("div",{staticClass:"small-order-cell order-from"},[i("img",{staticClass:"svg",attrs:{src:"/images/home.svg",alt:"From",title:e.trans("front.main.from"),"data-toggle":"tooltip"}}),e._v(" "),i("span",{staticClass:"small-order-cell-adress"},[i("b",[e._v(e._s(e.trans("front.main.from")))]),i("span",[e._v(" : "+e._s(t.from))])])]),e._v(" "),i("div",{staticClass:"small-order-cell order-to"},[i("img",{staticClass:"svg",attrs:{src:"/images/send.svg",alt:e.trans("front.main.to"),title:e.trans("front.main.to"),"data-toggle":"tooltip"}}),e._v(" "),i("span",{staticClass:"small-order-cell-adress"},[i("b",[e._v(e._s(e.trans("front.main.to")))]),i("span",[e._v(" : "+e._s(t.to))])])]),e._v(" "),i("div",{staticClass:"small-order-cell completeIt"},[i("router-link",{staticClass:"letsComplete btn",attrs:{tag:"button",to:(e.$auth.isAuth(),"/order/create_order/"+t.id)}},[e._v(e._s(e.trans("front.main.letsComplete")))])],1),e._v(" "),i("img",{staticClass:"warning-order",attrs:{src:"/images/warning.svg",alt:"warning"}})])])}),1)],1)])},staticRenderFns:[]}},674:function(e,t,i){var s=i(25)(i(677),i(678),!1,function(e){i(675)},null,null);e.exports=s.exports},675:function(e,t,i){var s=i(676);"string"==typeof s&&(s=[[e.i,s,""]]),s.locals&&(e.exports=s.locals);i(625)("6e5aeb36",s,!0,{})},676:function(e,t,i){(e.exports=i(76)(!1)).push([e.i,"",""])},677:function(e,t,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={data:function(){return{loading:!1,ordeers:this.orders}},computed:{},props:{orders:{required:!0}},methods:{},created:function(){},mounted:function(){var e=this;this.$nextTick(function(){e.$genF.svg()})},watch:{orders:function(e){var t=this;this.loading=!0,this.$nextTick(function(){t.loading=!1,t.ordeers=t.orders,console.log(t.ordeers),t.$nextTick(function(){t.$refs.othercarsouel&&(t.$genF.svg(),t.$refs.othercarsouel.goSlide(e.length-1))})})}}}},678:function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,i=e._self._c||t;return i("transition",{attrs:{name:"fade"}},[e.loading?e._e():i("div",{staticClass:"orders-small-wrapper"},[i("carousel-3d",{ref:"othercarsouel",attrs:{autoplay:!0,dir:"ltr","autoplay-timeout":5e3,"controls-visible":!0,height:200,width:300}},e._l(e.ordeers,function(t,s){return i("slide",{key:"slide"+s,attrs:{index:s}},[i("div",{staticClass:"small-order"},[i("div",{staticClass:"advertise-order"},[i("div",{staticClass:"advertise-row"},[i("div",{staticClass:"advertise-address"},[i("div",{staticClass:"small-order-cell order-from"},[i("img",{staticClass:"svg",attrs:{src:"/images/home.svg",alt:"From",title:e.trans("front.main.from"),"data-toggle":"tooltip"}}),e._v(" "),i("span",{staticClass:"small-order-cell-adress"},[i("span",[e._v(e._s(t.from))])])]),e._v(" "),i("div",{staticClass:"small-order-cell order-to"},[i("img",{staticClass:"svg",attrs:{src:"/images/send.svg",alt:e.trans("front.main.to"),title:e.trans("front.main.to"),"data-toggle":"tooltip"}}),e._v(" "),i("span",{staticClass:"small-order-cell-adress"},[i("span",[e._v(e._s(t.to))])])])]),e._v(" "),i("div",{staticClass:"advertise-pricing"},[i("img",{attrs:{src:"/api/orders/images/icon?price="+t.price+"&distance="+t.distance,alt:""}})])]),e._v(" "),i("div",{staticClass:"advertise-row"},[t.ship?i("div",{staticClass:"advertise-address shipping"},[i("img",{attrs:{src:"/images/shippings/"+t.ship.img,alt:t.ship.title}}),e._v(" "),i("span",{staticStyle:{width:"100%"}},[e._v(e._s(t.ship.title))])]):e._e(),e._v(" "),i("div",{staticClass:"advertise-pricing"})])])])])}),1)],1)])},staticRenderFns:[]}},679:function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,i=e._self._c||t;return i("div",{staticClass:"main-page-div"},[i("div",{class:{"main-page-overlay":!0,checked:!1}},[i("form",{ref:"newOrderForm",staticClass:"main-page-form",attrs:{action:"#"},on:{submit:function(t){return t.preventDefault(),e.saveNewOrder(t)}}},[i("div",{staticClass:"form-head"},[i("h1",[e._v(e._s(e.trans("frontend.main.make")))]),e._v(" "),i("slick",{ref:"slick",staticClass:"text-slider",attrs:{options:e.slickOptions}},[i("div",[e._v(e._s(e.trans("frontend.main.p1")))]),e._v(" "),i("div",[e._v(e._s(e.trans("frontend.main.p2")))]),e._v(" "),i("div",[e._v(e._s(e.trans("frontend.main.p3")))]),e._v(" "),i("div",[e._v(e._s(e.trans("frontend.main.p4")))])])],1),e._v(" "),i("div",{staticClass:"form-container"},[i("div",{class:{"main-form-input":!0,focused:e.fromFocused}},[i("div",{staticClass:"main-from-span"},[e.from.icon?i("span",{staticClass:"icon"},[i("img",{staticClass:"svg",attrs:{src:e.from.icon,alt:e.trans("from.main.from")}})]):e._e(),e._v(" "),i("label",{attrs:{for:"FromGeoAdress"}},[e._v(e._s(e.trans("front.main.senderAdress")))])]),e._v(" "),i("gmap-autocomplete",{ref:"fromAdress",staticStyle:{"padding-right":"61.5px"},attrs:{placeholder:e.trans("front.main.addressPlaceHolder"),id:"FromGeoAdress",autofocus:""},on:{place_changed:e.setFromPlace}}),e._v(" "),i("div",{staticClass:"icons-wrapper"},[i("span",{attrs:{"data-placement":"right","data-toggle":"tooltip",role:"button"}},[i("label",{attrs:{for:"FromGeoAdress"}},[i("img",{staticClass:"right-image svg",attrs:{src:"/images/search.svg",alt:e.trans("front.main.gpsusage")}})])]),e._v(" "),i("span",{attrs:{"data-placement":"right","data-toggle":"tooltip",role:"button",title:e.trans("front.main.gpsusage")},on:{click:e.getLocationToFrom}},[e.isThereLocation?i("img",{staticClass:"right-image svg",attrs:{src:"/images/gps-fixed-indicator.svg",alt:e.trans("front.main.gpsusage")}}):e._e()])])],1),e._v(" "),i("div",{class:{"main-form-input":!0,focused:e.toFocused}},[i("div",{staticClass:"main-from-span"},[e.to.icon?i("span",{staticClass:"icon"},[i("img",{staticClass:"svg",attrs:{src:e.to.icon,alt:e.trans("from.main.to")}})]):e._e(),e._v(" "),i("label",{attrs:{for:"ToGeoAdress"}},[e._v(e._s(e.trans("front.main.receiverAdress")))])]),e._v(" "),i("gmap-autocomplete",{ref:"ToAdress",staticStyle:{"padding-right":"30px"},attrs:{placeholder:e.trans("front.main.addressPlaceHolder"),id:"ToGeoAdress"},on:{place_changed:e.setToPlace}}),e._v(" "),i("div",{staticClass:"icons-wrapper"},[i("span",{attrs:{"data-placement":"right","data-toggle":"tooltip",role:"button"}},[i("label",{attrs:{for:"ToGeoAdress"}},[i("img",{staticClass:"right-image svg",attrs:{src:"/images/search.svg",alt:e.trans("front.main.gpsusage")}})])])])],1)])]),e._v(" "),e.allOrders&&0!==e.allOrders.length?i("app-orders",{attrs:{orders:e.allOrders},on:{"slide-change":e.slideChange,activateOrder:e.changeActiveOrder}}):i("app-other-orders",{attrs:{orders:e.otherOrders}})],1),e._v(" "),i("div",{staticClass:"main-page-maps"},[i("gmap-map",{ref:"map",staticStyle:{width:"100%",height:"100%"},attrs:{center:{lat:51.165691,lng:10.451526},zoom:6,"map-type-id":"roadmap"}},[e.isNumeric(e.to.marker.lng)&&e.isNumeric(e.to.marker.lat)?i("gmap-marker",{attrs:{"data-toggle":"tooltip",icon:"/images/marker-to.svg",position:e.to.marker,title:"to",animation:2,draggable:!0},on:{dragend:e.setToPlaceViaMarker}}):e._e(),e._v(" "),e.isNumeric(e.from.marker.lng)&&e.isNumeric(e.from.marker.lat)?i("gmap-marker",{attrs:{"data-toggle":"tooltip",icon:"/images/home-marker.svg",position:e.from.marker,title:"from",animation:2,draggable:!0},on:{dragend:e.setFromPlaceViaMarker}}):e._e()],1)],1)])},staticRenderFns:[]}},816:function(e,t,i){var s=i(25)(i(668),i(679),!1,function(e){i(666)},null,null);e.exports=s.exports}});
+webpackJsonp([4],{
+
+/***/ 649:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(695)
+}
+var normalizeComponent = __webpack_require__(25)
+/* script */
+var __vue_script__ = __webpack_require__(697)
+/* template */
+var __vue_template__ = __webpack_require__(708)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/pages/mainPage.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0a49a3ac", Component.options)
+  } else {
+    hotAPI.reload("data-v-0a49a3ac", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 660:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+//
+
+// Check if the request came from the browser and is not server rendered
+if (typeof window !== 'undefined') {
+  Promise.resolve().then(function () { return slick$1; });
+}
+
+var script = {
+  props: {
+    options: {
+      type: Object,
+      default: function() {
+        return {};
+      },
+    },
+  },
+
+  mounted: function() {
+    this.create();
+  },
+
+  destroyed: function() {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('unslick');
+  },
+
+  methods: {
+    create: function() {
+      var $slick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el);
+
+      $slick.on('afterChange', this.onAfterChange);
+      $slick.on('beforeChange', this.onBeforeChange);
+      $slick.on('breakpoint', this.onBreakpoint);
+      $slick.on('destroy', this.onDestroy);
+      $slick.on('edge', this.onEdge);
+      $slick.on('init', this.onInit);
+      $slick.on('reInit', this.onReInit);
+      $slick.on('setPosition', this.onSetPosition);
+      $slick.on('swipe', this.onSwipe);
+      $slick.on('lazyLoaded', this.onLazyLoaded);
+      $slick.on('lazyLoadError', this.onLazyLoadError);
+
+      $slick.slick(this.options);
+    },
+
+    destroy: function() {
+      var $slick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el);
+
+      $slick.off('afterChange', this.onAfterChange);
+      $slick.off('beforeChange', this.onBeforeChange);
+      $slick.off('breakpoint', this.onBreakpoint);
+      $slick.off('destroy', this.onDestroy);
+      $slick.off('edge', this.onEdge);
+      $slick.off('init', this.onInit);
+      $slick.off('reInit', this.onReInit);
+      $slick.off('setPosition', this.onSetPosition);
+      $slick.off('swipe', this.onSwipe);
+      $slick.off('lazyLoaded', this.onLazyLoaded);
+      $slick.off('lazyLoadError', this.onLazyLoadError);
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('unslick');
+    },
+
+    reSlick: function() {
+      this.destroy();
+      this.create();
+    },
+
+    next: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickNext');
+    },
+
+    prev: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPrev');
+    },
+
+    pause: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPause');
+    },
+
+    play: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPlay');
+    },
+
+    goTo: function(index, dontAnimate) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickGoTo', index, dontAnimate);
+    },
+
+    currentSlide: function() {
+      return __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickCurrentSlide');
+    },
+
+    add: function(element, index, addBefore) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickAdd', element, index, addBefore);
+    },
+
+    remove: function(index, removeBefore) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickRemove', index, removeBefore);
+    },
+
+    filter: function(filterData) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickFilter', filterData);
+    },
+
+    unfilter: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickUnfilter');
+    },
+
+    getOption: function(option) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickGetOption', option);
+    },
+
+    setOption: function(option, value, refresh) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickSetOption', option, value, refresh);
+    },
+
+    setPosition: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('setPosition');
+    },
+
+    // Events
+    onAfterChange: function(event, slick, currentSlide) {
+      this.$emit('afterChange', event, slick, currentSlide);
+    },
+
+    onBeforeChange: function(event, slick, currentSlide, nextSlide) {
+      this.$emit('beforeChange', event, slick, currentSlide, nextSlide);
+    },
+
+    onBreakpoint: function(event, slick, breakpoint) {
+      this.$emit('breakpoint', event, slick, breakpoint);
+    },
+
+    onDestroy: function(event, slick) {
+      this.$emit('destroy', event, slick);
+    },
+
+    onEdge: function(event, slick, direction) {
+      this.$emit('edge', event, slick, direction);
+    },
+
+    onInit: function(event, slick) {
+      this.$emit('init', event, slick);
+    },
+
+    onReInit: function(event, slick) {
+      this.$emit('reInit', event, slick);
+    },
+
+    onSetPosition: function(event, slick) {
+      this.$emit('setPosition', event, slick);
+    },
+
+    onSwipe: function(event, slick, direction) {
+      this.$emit('swipe', event, slick, direction);
+    },
+
+    onLazyLoaded: function(event, slick, image, imageSource) {
+      this.$emit('lazyLoaded', event, slick, image, imageSource);
+    },
+
+    onLazyLoadError: function(event, slick, image, imageSource) {
+      this.$emit('lazyLoadError', event, slick, image, imageSource);
+    },
+  },
+
+};
+
+/* script */
+            var __vue_script__ = script;
+            
+/* template */
+var __vue_render__ = function() {
+  var _vm = this;
+  var _h = _vm.$createElement;
+  var _c = _vm._self._c || _h;
+  return _c("div", [_vm._t("default")], 2)
+};
+var __vue_staticRenderFns__ = [];
+__vue_render__._withStripped = true;
+
+  /* style */
+  var __vue_inject_styles__ = undefined;
+  /* scoped */
+  var __vue_scope_id__ = undefined;
+  /* module identifier */
+  var __vue_module_identifier__ = undefined;
+  /* functional template */
+  var __vue_is_functional_template__ = false;
+  /* component normalizer */
+  function __vue_normalize__(
+    template, style, script$$1,
+    scope, functional, moduleIdentifier,
+    createInjector, createInjectorSSR
+  ) {
+    var component = (typeof script$$1 === 'function' ? script$$1.options : script$$1) || {};
+
+    // For security concerns, we use only base name in production mode.
+    component.__file = "/Users/staskjs/Projects/vue-slick/src/slickCarousel.vue";
+
+    if (!component.render) {
+      component.render = template.render;
+      component.staticRenderFns = template.staticRenderFns;
+      component._compiled = true;
+
+      if (functional) { component.functional = true; }
+    }
+
+    component._scopeId = scope;
+
+    return component
+  }
+  /* style inject */
+  
+  /* style inject SSR */
+  
+
+  
+  var slickCarousel = __vue_normalize__(
+    { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
+    __vue_inject_styles__,
+    __vue_script__,
+    __vue_scope_id__,
+    __vue_is_functional_template__,
+    __vue_module_identifier__,
+    undefined,
+    undefined
+  );
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var slick = createCommonjsModule(function (module, exports) {
+(function(factory) {
+    {
+        module.exports = factory(__WEBPACK_IMPORTED_MODULE_0_jquery___default.a);
+    }
+
+}(function($$$1) {
+    var Slick = window.Slick || {};
+
+    Slick = (function() {
+
+        var instanceUid = 0;
+
+        function Slick(element, settings) {
+
+            var _ = this, dataSettings;
+
+            _.defaults = {
+                accessibility: true,
+                adaptiveHeight: false,
+                appendArrows: $$$1(element),
+                appendDots: $$$1(element),
+                arrows: true,
+                asNavFor: null,
+                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                autoplay: false,
+                autoplaySpeed: 3000,
+                centerMode: false,
+                centerPadding: '50px',
+                cssEase: 'ease',
+                customPaging: function(slider, i) {
+                    return $$$1('<button type="button" />').text(i + 1);
+                },
+                dots: false,
+                dotsClass: 'slick-dots',
+                draggable: true,
+                easing: 'linear',
+                edgeFriction: 0.35,
+                fade: false,
+                focusOnSelect: false,
+                focusOnChange: false,
+                infinite: true,
+                initialSlide: 0,
+                lazyLoad: 'ondemand',
+                mobileFirst: false,
+                pauseOnHover: true,
+                pauseOnFocus: true,
+                pauseOnDotsHover: false,
+                respondTo: 'window',
+                responsive: null,
+                rows: 1,
+                rtl: false,
+                slide: '',
+                slidesPerRow: 1,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 500,
+                swipe: true,
+                swipeToSlide: false,
+                touchMove: true,
+                touchThreshold: 5,
+                useCSS: true,
+                useTransform: true,
+                variableWidth: false,
+                vertical: false,
+                verticalSwiping: false,
+                waitForAnimate: true,
+                zIndex: 1000
+            };
+
+            _.initials = {
+                animating: false,
+                dragging: false,
+                autoPlayTimer: null,
+                currentDirection: 0,
+                currentLeft: null,
+                currentSlide: 0,
+                direction: 1,
+                $dots: null,
+                listWidth: null,
+                listHeight: null,
+                loadIndex: 0,
+                $nextArrow: null,
+                $prevArrow: null,
+                scrolling: false,
+                slideCount: null,
+                slideWidth: null,
+                $slideTrack: null,
+                $slides: null,
+                sliding: false,
+                slideOffset: 0,
+                swipeLeft: null,
+                swiping: false,
+                $list: null,
+                touchObject: {},
+                transformsEnabled: false,
+                unslicked: false
+            };
+
+            $$$1.extend(_, _.initials);
+
+            _.activeBreakpoint = null;
+            _.animType = null;
+            _.animProp = null;
+            _.breakpoints = [];
+            _.breakpointSettings = [];
+            _.cssTransitions = false;
+            _.focussed = false;
+            _.interrupted = false;
+            _.hidden = 'hidden';
+            _.paused = true;
+            _.positionProp = null;
+            _.respondTo = null;
+            _.rowCount = 1;
+            _.shouldClick = true;
+            _.$slider = $$$1(element);
+            _.$slidesCache = null;
+            _.transformType = null;
+            _.transitionType = null;
+            _.visibilityChange = 'visibilitychange';
+            _.windowWidth = 0;
+            _.windowTimer = null;
+
+            dataSettings = $$$1(element).data('slick') || {};
+
+            _.options = $$$1.extend({}, _.defaults, settings, dataSettings);
+
+            _.currentSlide = _.options.initialSlide;
+
+            _.originalSettings = _.options;
+
+            if (typeof document.mozHidden !== 'undefined') {
+                _.hidden = 'mozHidden';
+                _.visibilityChange = 'mozvisibilitychange';
+            } else if (typeof document.webkitHidden !== 'undefined') {
+                _.hidden = 'webkitHidden';
+                _.visibilityChange = 'webkitvisibilitychange';
+            }
+
+            _.autoPlay = $$$1.proxy(_.autoPlay, _);
+            _.autoPlayClear = $$$1.proxy(_.autoPlayClear, _);
+            _.autoPlayIterator = $$$1.proxy(_.autoPlayIterator, _);
+            _.changeSlide = $$$1.proxy(_.changeSlide, _);
+            _.clickHandler = $$$1.proxy(_.clickHandler, _);
+            _.selectHandler = $$$1.proxy(_.selectHandler, _);
+            _.setPosition = $$$1.proxy(_.setPosition, _);
+            _.swipeHandler = $$$1.proxy(_.swipeHandler, _);
+            _.dragHandler = $$$1.proxy(_.dragHandler, _);
+            _.keyHandler = $$$1.proxy(_.keyHandler, _);
+
+            _.instanceUid = instanceUid++;
+
+            // A simple way to check for HTML strings
+            // Strict HTML recognition (must start with <)
+            // Extracted from jQuery v1.11 source
+            _.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/;
+
+
+            _.registerBreakpoints();
+            _.init(true);
+
+        }
+
+        return Slick;
+
+    }());
+
+    Slick.prototype.activateADA = function() {
+        var _ = this;
+
+        _.$slideTrack.find('.slick-active').attr({
+            'aria-hidden': 'false'
+        }).find('a, input, button, select').attr({
+            'tabindex': '0'
+        });
+
+    };
+
+    Slick.prototype.addSlide = Slick.prototype.slickAdd = function(markup, index, addBefore) {
+
+        var _ = this;
+
+        if (typeof(index) === 'boolean') {
+            addBefore = index;
+            index = null;
+        } else if (index < 0 || (index >= _.slideCount)) {
+            return false;
+        }
+
+        _.unload();
+
+        if (typeof(index) === 'number') {
+            if (index === 0 && _.$slides.length === 0) {
+                $$$1(markup).appendTo(_.$slideTrack);
+            } else if (addBefore) {
+                $$$1(markup).insertBefore(_.$slides.eq(index));
+            } else {
+                $$$1(markup).insertAfter(_.$slides.eq(index));
+            }
+        } else {
+            if (addBefore === true) {
+                $$$1(markup).prependTo(_.$slideTrack);
+            } else {
+                $$$1(markup).appendTo(_.$slideTrack);
+            }
+        }
+
+        _.$slides = _.$slideTrack.children(this.options.slide);
+
+        _.$slideTrack.children(this.options.slide).detach();
+
+        _.$slideTrack.append(_.$slides);
+
+        _.$slides.each(function(index, element) {
+            $$$1(element).attr('data-slick-index', index);
+        });
+
+        _.$slidesCache = _.$slides;
+
+        _.reinit();
+
+    };
+
+    Slick.prototype.animateHeight = function() {
+        var _ = this;
+        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
+            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
+            _.$list.animate({
+                height: targetHeight
+            }, _.options.speed);
+        }
+    };
+
+    Slick.prototype.animateSlide = function(targetLeft, callback) {
+
+        var animProps = {},
+            _ = this;
+
+        _.animateHeight();
+
+        if (_.options.rtl === true && _.options.vertical === false) {
+            targetLeft = -targetLeft;
+        }
+        if (_.transformsEnabled === false) {
+            if (_.options.vertical === false) {
+                _.$slideTrack.animate({
+                    left: targetLeft
+                }, _.options.speed, _.options.easing, callback);
+            } else {
+                _.$slideTrack.animate({
+                    top: targetLeft
+                }, _.options.speed, _.options.easing, callback);
+            }
+
+        } else {
+
+            if (_.cssTransitions === false) {
+                if (_.options.rtl === true) {
+                    _.currentLeft = -(_.currentLeft);
+                }
+                $$$1({
+                    animStart: _.currentLeft
+                }).animate({
+                    animStart: targetLeft
+                }, {
+                    duration: _.options.speed,
+                    easing: _.options.easing,
+                    step: function(now) {
+                        now = Math.ceil(now);
+                        if (_.options.vertical === false) {
+                            animProps[_.animType] = 'translate(' +
+                                now + 'px, 0px)';
+                            _.$slideTrack.css(animProps);
+                        } else {
+                            animProps[_.animType] = 'translate(0px,' +
+                                now + 'px)';
+                            _.$slideTrack.css(animProps);
+                        }
+                    },
+                    complete: function() {
+                        if (callback) {
+                            callback.call();
+                        }
+                    }
+                });
+
+            } else {
+
+                _.applyTransition();
+                targetLeft = Math.ceil(targetLeft);
+
+                if (_.options.vertical === false) {
+                    animProps[_.animType] = 'translate3d(' + targetLeft + 'px, 0px, 0px)';
+                } else {
+                    animProps[_.animType] = 'translate3d(0px,' + targetLeft + 'px, 0px)';
+                }
+                _.$slideTrack.css(animProps);
+
+                if (callback) {
+                    setTimeout(function() {
+
+                        _.disableTransition();
+
+                        callback.call();
+                    }, _.options.speed);
+                }
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.getNavTarget = function() {
+
+        var _ = this,
+            asNavFor = _.options.asNavFor;
+
+        if ( asNavFor && asNavFor !== null ) {
+            asNavFor = $$$1(asNavFor).not(_.$slider);
+        }
+
+        return asNavFor;
+
+    };
+
+    Slick.prototype.asNavFor = function(index) {
+
+        var _ = this,
+            asNavFor = _.getNavTarget();
+
+        if ( asNavFor !== null && typeof asNavFor === 'object' ) {
+            asNavFor.each(function() {
+                var target = $$$1(this).slick('getSlick');
+                if(!target.unslicked) {
+                    target.slideHandler(index, true);
+                }
+            });
+        }
+
+    };
+
+    Slick.prototype.applyTransition = function(slide) {
+
+        var _ = this,
+            transition = {};
+
+        if (_.options.fade === false) {
+            transition[_.transitionType] = _.transformType + ' ' + _.options.speed + 'ms ' + _.options.cssEase;
+        } else {
+            transition[_.transitionType] = 'opacity ' + _.options.speed + 'ms ' + _.options.cssEase;
+        }
+
+        if (_.options.fade === false) {
+            _.$slideTrack.css(transition);
+        } else {
+            _.$slides.eq(slide).css(transition);
+        }
+
+    };
+
+    Slick.prototype.autoPlay = function() {
+
+        var _ = this;
+
+        _.autoPlayClear();
+
+        if ( _.slideCount > _.options.slidesToShow ) {
+            _.autoPlayTimer = setInterval( _.autoPlayIterator, _.options.autoplaySpeed );
+        }
+
+    };
+
+    Slick.prototype.autoPlayClear = function() {
+
+        var _ = this;
+
+        if (_.autoPlayTimer) {
+            clearInterval(_.autoPlayTimer);
+        }
+
+    };
+
+    Slick.prototype.autoPlayIterator = function() {
+
+        var _ = this,
+            slideTo = _.currentSlide + _.options.slidesToScroll;
+
+        if ( !_.paused && !_.interrupted && !_.focussed ) {
+
+            if ( _.options.infinite === false ) {
+
+                if ( _.direction === 1 && ( _.currentSlide + 1 ) === ( _.slideCount - 1 )) {
+                    _.direction = 0;
+                }
+
+                else if ( _.direction === 0 ) {
+
+                    slideTo = _.currentSlide - _.options.slidesToScroll;
+
+                    if ( _.currentSlide - 1 === 0 ) {
+                        _.direction = 1;
+                    }
+
+                }
+
+            }
+
+            _.slideHandler( slideTo );
+
+        }
+
+    };
+
+    Slick.prototype.buildArrows = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true ) {
+
+            _.$prevArrow = $$$1(_.options.prevArrow).addClass('slick-arrow');
+            _.$nextArrow = $$$1(_.options.nextArrow).addClass('slick-arrow');
+
+            if( _.slideCount > _.options.slidesToShow ) {
+
+                _.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
+                _.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
+
+                if (_.htmlExpr.test(_.options.prevArrow)) {
+                    _.$prevArrow.prependTo(_.options.appendArrows);
+                }
+
+                if (_.htmlExpr.test(_.options.nextArrow)) {
+                    _.$nextArrow.appendTo(_.options.appendArrows);
+                }
+
+                if (_.options.infinite !== true) {
+                    _.$prevArrow
+                        .addClass('slick-disabled')
+                        .attr('aria-disabled', 'true');
+                }
+
+            } else {
+
+                _.$prevArrow.add( _.$nextArrow )
+
+                    .addClass('slick-hidden')
+                    .attr({
+                        'aria-disabled': 'true',
+                        'tabindex': '-1'
+                    });
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.buildDots = function() {
+
+        var _ = this,
+            i, dot;
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$slider.addClass('slick-dotted');
+
+            dot = $$$1('<ul />').addClass(_.options.dotsClass);
+
+            for (i = 0; i <= _.getDotCount(); i += 1) {
+                dot.append($$$1('<li />').append(_.options.customPaging.call(this, _, i)));
+            }
+
+            _.$dots = dot.appendTo(_.options.appendDots);
+
+            _.$dots.find('li').first().addClass('slick-active');
+
+        }
+
+    };
+
+    Slick.prototype.buildOut = function() {
+
+        var _ = this;
+
+        _.$slides =
+            _.$slider
+                .children( _.options.slide + ':not(.slick-cloned)')
+                .addClass('slick-slide');
+
+        _.slideCount = _.$slides.length;
+
+        _.$slides.each(function(index, element) {
+            $$$1(element)
+                .attr('data-slick-index', index)
+                .data('originalStyling', $$$1(element).attr('style') || '');
+        });
+
+        _.$slider.addClass('slick-slider');
+
+        _.$slideTrack = (_.slideCount === 0) ?
+            $$$1('<div class="slick-track"/>').appendTo(_.$slider) :
+            _.$slides.wrapAll('<div class="slick-track"/>').parent();
+
+        _.$list = _.$slideTrack.wrap(
+            '<div class="slick-list"/>').parent();
+        _.$slideTrack.css('opacity', 0);
+
+        if (_.options.centerMode === true || _.options.swipeToSlide === true) {
+            _.options.slidesToScroll = 1;
+        }
+
+        $$$1('img[data-lazy]', _.$slider).not('[src]').addClass('slick-loading');
+
+        _.setupInfinite();
+
+        _.buildArrows();
+
+        _.buildDots();
+
+        _.updateDots();
+
+
+        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
+
+        if (_.options.draggable === true) {
+            _.$list.addClass('draggable');
+        }
+
+    };
+
+    Slick.prototype.buildRows = function() {
+
+        var _ = this, a, b, c, newSlides, numOfSlides, originalSlides,slidesPerSection;
+
+        newSlides = document.createDocumentFragment();
+        originalSlides = _.$slider.children();
+
+        if(_.options.rows > 0) {
+
+            slidesPerSection = _.options.slidesPerRow * _.options.rows;
+            numOfSlides = Math.ceil(
+                originalSlides.length / slidesPerSection
+            );
+
+            for(a = 0; a < numOfSlides; a++){
+                var slide = document.createElement('div');
+                for(b = 0; b < _.options.rows; b++) {
+                    var row = document.createElement('div');
+                    for(c = 0; c < _.options.slidesPerRow; c++) {
+                        var target = (a * slidesPerSection + ((b * _.options.slidesPerRow) + c));
+                        if (originalSlides.get(target)) {
+                            row.appendChild(originalSlides.get(target));
+                        }
+                    }
+                    slide.appendChild(row);
+                }
+                newSlides.appendChild(slide);
+            }
+
+            _.$slider.empty().append(newSlides);
+            _.$slider.children().children().children()
+                .css({
+                    'width':(100 / _.options.slidesPerRow) + '%',
+                    'display': 'inline-block'
+                });
+
+        }
+
+    };
+
+    Slick.prototype.checkResponsive = function(initial, forceUpdate) {
+
+        var _ = this,
+            breakpoint, targetBreakpoint, respondToWidth, triggerBreakpoint = false;
+        var sliderWidth = _.$slider.width();
+        var windowWidth = window.innerWidth || $$$1(window).width();
+
+        if (_.respondTo === 'window') {
+            respondToWidth = windowWidth;
+        } else if (_.respondTo === 'slider') {
+            respondToWidth = sliderWidth;
+        } else if (_.respondTo === 'min') {
+            respondToWidth = Math.min(windowWidth, sliderWidth);
+        }
+
+        if ( _.options.responsive &&
+            _.options.responsive.length &&
+            _.options.responsive !== null) {
+
+            targetBreakpoint = null;
+
+            for (breakpoint in _.breakpoints) {
+                if (_.breakpoints.hasOwnProperty(breakpoint)) {
+                    if (_.originalSettings.mobileFirst === false) {
+                        if (respondToWidth < _.breakpoints[breakpoint]) {
+                            targetBreakpoint = _.breakpoints[breakpoint];
+                        }
+                    } else {
+                        if (respondToWidth > _.breakpoints[breakpoint]) {
+                            targetBreakpoint = _.breakpoints[breakpoint];
+                        }
+                    }
+                }
+            }
+
+            if (targetBreakpoint !== null) {
+                if (_.activeBreakpoint !== null) {
+                    if (targetBreakpoint !== _.activeBreakpoint || forceUpdate) {
+                        _.activeBreakpoint =
+                            targetBreakpoint;
+                        if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
+                            _.unslick(targetBreakpoint);
+                        } else {
+                            _.options = $$$1.extend({}, _.originalSettings,
+                                _.breakpointSettings[
+                                    targetBreakpoint]);
+                            if (initial === true) {
+                                _.currentSlide = _.options.initialSlide;
+                            }
+                            _.refresh(initial);
+                        }
+                        triggerBreakpoint = targetBreakpoint;
+                    }
+                } else {
+                    _.activeBreakpoint = targetBreakpoint;
+                    if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
+                        _.unslick(targetBreakpoint);
+                    } else {
+                        _.options = $$$1.extend({}, _.originalSettings,
+                            _.breakpointSettings[
+                                targetBreakpoint]);
+                        if (initial === true) {
+                            _.currentSlide = _.options.initialSlide;
+                        }
+                        _.refresh(initial);
+                    }
+                    triggerBreakpoint = targetBreakpoint;
+                }
+            } else {
+                if (_.activeBreakpoint !== null) {
+                    _.activeBreakpoint = null;
+                    _.options = _.originalSettings;
+                    if (initial === true) {
+                        _.currentSlide = _.options.initialSlide;
+                    }
+                    _.refresh(initial);
+                    triggerBreakpoint = targetBreakpoint;
+                }
+            }
+
+            // only trigger breakpoints during an actual break. not on initialize.
+            if( !initial && triggerBreakpoint !== false ) {
+                _.$slider.trigger('breakpoint', [_, triggerBreakpoint]);
+            }
+        }
+
+    };
+
+    Slick.prototype.changeSlide = function(event, dontAnimate) {
+
+        var _ = this,
+            $target = $$$1(event.currentTarget),
+            indexOffset, slideOffset, unevenOffset;
+
+        // If target is a link, prevent default action.
+        if($target.is('a')) {
+            event.preventDefault();
+        }
+
+        // If target is not the <li> element (ie: a child), find the <li>.
+        if(!$target.is('li')) {
+            $target = $target.closest('li');
+        }
+
+        unevenOffset = (_.slideCount % _.options.slidesToScroll !== 0);
+        indexOffset = unevenOffset ? 0 : (_.slideCount - _.currentSlide) % _.options.slidesToScroll;
+
+        switch (event.data.message) {
+
+            case 'previous':
+                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : _.options.slidesToShow - indexOffset;
+                if (_.slideCount > _.options.slidesToShow) {
+                    _.slideHandler(_.currentSlide - slideOffset, false, dontAnimate);
+                }
+                break;
+
+            case 'next':
+                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : indexOffset;
+                if (_.slideCount > _.options.slidesToShow) {
+                    _.slideHandler(_.currentSlide + slideOffset, false, dontAnimate);
+                }
+                break;
+
+            case 'index':
+                var index = event.data.index === 0 ? 0 :
+                    event.data.index || $target.index() * _.options.slidesToScroll;
+
+                _.slideHandler(_.checkNavigable(index), false, dontAnimate);
+                $target.children().trigger('focus');
+                break;
+
+            default:
+                return;
+        }
+
+    };
+
+    Slick.prototype.checkNavigable = function(index) {
+
+        var _ = this,
+            navigables, prevNavigable;
+
+        navigables = _.getNavigableIndexes();
+        prevNavigable = 0;
+        if (index > navigables[navigables.length - 1]) {
+            index = navigables[navigables.length - 1];
+        } else {
+            for (var n in navigables) {
+                if (index < navigables[n]) {
+                    index = prevNavigable;
+                    break;
+                }
+                prevNavigable = navigables[n];
+            }
+        }
+
+        return index;
+    };
+
+    Slick.prototype.cleanUpEvents = function() {
+
+        var _ = this;
+
+        if (_.options.dots && _.$dots !== null) {
+
+            $$$1('li', _.$dots)
+                .off('click.slick', _.changeSlide)
+                .off('mouseenter.slick', $$$1.proxy(_.interrupt, _, true))
+                .off('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+            if (_.options.accessibility === true) {
+                _.$dots.off('keydown.slick', _.keyHandler);
+            }
+        }
+
+        _.$slider.off('focus.slick blur.slick');
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+            _.$prevArrow && _.$prevArrow.off('click.slick', _.changeSlide);
+            _.$nextArrow && _.$nextArrow.off('click.slick', _.changeSlide);
+
+            if (_.options.accessibility === true) {
+                _.$prevArrow && _.$prevArrow.off('keydown.slick', _.keyHandler);
+                _.$nextArrow && _.$nextArrow.off('keydown.slick', _.keyHandler);
+            }
+        }
+
+        _.$list.off('touchstart.slick mousedown.slick', _.swipeHandler);
+        _.$list.off('touchmove.slick mousemove.slick', _.swipeHandler);
+        _.$list.off('touchend.slick mouseup.slick', _.swipeHandler);
+        _.$list.off('touchcancel.slick mouseleave.slick', _.swipeHandler);
+
+        _.$list.off('click.slick', _.clickHandler);
+
+        $$$1(document).off(_.visibilityChange, _.visibility);
+
+        _.cleanUpSlideEvents();
+
+        if (_.options.accessibility === true) {
+            _.$list.off('keydown.slick', _.keyHandler);
+        }
+
+        if (_.options.focusOnSelect === true) {
+            $$$1(_.$slideTrack).children().off('click.slick', _.selectHandler);
+        }
+
+        $$$1(window).off('orientationchange.slick.slick-' + _.instanceUid, _.orientationChange);
+
+        $$$1(window).off('resize.slick.slick-' + _.instanceUid, _.resize);
+
+        $$$1('[draggable!=true]', _.$slideTrack).off('dragstart', _.preventDefault);
+
+        $$$1(window).off('load.slick.slick-' + _.instanceUid, _.setPosition);
+
+    };
+
+    Slick.prototype.cleanUpSlideEvents = function() {
+
+        var _ = this;
+
+        _.$list.off('mouseenter.slick', $$$1.proxy(_.interrupt, _, true));
+        _.$list.off('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+    };
+
+    Slick.prototype.cleanUpRows = function() {
+
+        var _ = this, originalSlides;
+
+        if(_.options.rows > 0) {
+            originalSlides = _.$slides.children().children();
+            originalSlides.removeAttr('style');
+            _.$slider.empty().append(originalSlides);
+        }
+
+    };
+
+    Slick.prototype.clickHandler = function(event) {
+
+        var _ = this;
+
+        if (_.shouldClick === false) {
+            event.stopImmediatePropagation();
+            event.stopPropagation();
+            event.preventDefault();
+        }
+
+    };
+
+    Slick.prototype.destroy = function(refresh) {
+
+        var _ = this;
+
+        _.autoPlayClear();
+
+        _.touchObject = {};
+
+        _.cleanUpEvents();
+
+        $$$1('.slick-cloned', _.$slider).detach();
+
+        if (_.$dots) {
+            _.$dots.remove();
+        }
+
+        if ( _.$prevArrow && _.$prevArrow.length ) {
+
+            _.$prevArrow
+                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeAttr('aria-hidden aria-disabled tabindex')
+                .css('display','');
+
+            if ( _.htmlExpr.test( _.options.prevArrow )) {
+                _.$prevArrow.remove();
+            }
+        }
+
+        if ( _.$nextArrow && _.$nextArrow.length ) {
+
+            _.$nextArrow
+                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeAttr('aria-hidden aria-disabled tabindex')
+                .css('display','');
+
+            if ( _.htmlExpr.test( _.options.nextArrow )) {
+                _.$nextArrow.remove();
+            }
+        }
+
+
+        if (_.$slides) {
+
+            _.$slides
+                .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
+                .removeAttr('aria-hidden')
+                .removeAttr('data-slick-index')
+                .each(function(){
+                    $$$1(this).attr('style', $$$1(this).data('originalStyling'));
+                });
+
+            _.$slideTrack.children(this.options.slide).detach();
+
+            _.$slideTrack.detach();
+
+            _.$list.detach();
+
+            _.$slider.append(_.$slides);
+        }
+
+        _.cleanUpRows();
+
+        _.$slider.removeClass('slick-slider');
+        _.$slider.removeClass('slick-initialized');
+        _.$slider.removeClass('slick-dotted');
+
+        _.unslicked = true;
+
+        if(!refresh) {
+            _.$slider.trigger('destroy', [_]);
+        }
+
+    };
+
+    Slick.prototype.disableTransition = function(slide) {
+
+        var _ = this,
+            transition = {};
+
+        transition[_.transitionType] = '';
+
+        if (_.options.fade === false) {
+            _.$slideTrack.css(transition);
+        } else {
+            _.$slides.eq(slide).css(transition);
+        }
+
+    };
+
+    Slick.prototype.fadeSlide = function(slideIndex, callback) {
+
+        var _ = this;
+
+        if (_.cssTransitions === false) {
+
+            _.$slides.eq(slideIndex).css({
+                zIndex: _.options.zIndex
+            });
+
+            _.$slides.eq(slideIndex).animate({
+                opacity: 1
+            }, _.options.speed, _.options.easing, callback);
+
+        } else {
+
+            _.applyTransition(slideIndex);
+
+            _.$slides.eq(slideIndex).css({
+                opacity: 1,
+                zIndex: _.options.zIndex
+            });
+
+            if (callback) {
+                setTimeout(function() {
+
+                    _.disableTransition(slideIndex);
+
+                    callback.call();
+                }, _.options.speed);
+            }
+
+        }
+
+    };
+
+    Slick.prototype.fadeSlideOut = function(slideIndex) {
+
+        var _ = this;
+
+        if (_.cssTransitions === false) {
+
+            _.$slides.eq(slideIndex).animate({
+                opacity: 0,
+                zIndex: _.options.zIndex - 2
+            }, _.options.speed, _.options.easing);
+
+        } else {
+
+            _.applyTransition(slideIndex);
+
+            _.$slides.eq(slideIndex).css({
+                opacity: 0,
+                zIndex: _.options.zIndex - 2
+            });
+
+        }
+
+    };
+
+    Slick.prototype.filterSlides = Slick.prototype.slickFilter = function(filter) {
+
+        var _ = this;
+
+        if (filter !== null) {
+
+            _.$slidesCache = _.$slides;
+
+            _.unload();
+
+            _.$slideTrack.children(this.options.slide).detach();
+
+            _.$slidesCache.filter(filter).appendTo(_.$slideTrack);
+
+            _.reinit();
+
+        }
+
+    };
+
+    Slick.prototype.focusHandler = function() {
+
+        var _ = this;
+
+        _.$slider
+            .off('focus.slick blur.slick')
+            .on('focus.slick blur.slick', '*', function(event) {
+
+            event.stopImmediatePropagation();
+            var $sf = $$$1(this);
+
+            setTimeout(function() {
+
+                if( _.options.pauseOnFocus ) {
+                    _.focussed = $sf.is(':focus');
+                    _.autoPlay();
+                }
+
+            }, 0);
+
+        });
+    };
+
+    Slick.prototype.getCurrent = Slick.prototype.slickCurrentSlide = function() {
+
+        var _ = this;
+        return _.currentSlide;
+
+    };
+
+    Slick.prototype.getDotCount = function() {
+
+        var _ = this;
+
+        var breakPoint = 0;
+        var counter = 0;
+        var pagerQty = 0;
+
+        if (_.options.infinite === true) {
+            if (_.slideCount <= _.options.slidesToShow) {
+                 ++pagerQty;
+            } else {
+                while (breakPoint < _.slideCount) {
+                    ++pagerQty;
+                    breakPoint = counter + _.options.slidesToScroll;
+                    counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+                }
+            }
+        } else if (_.options.centerMode === true) {
+            pagerQty = _.slideCount;
+        } else if(!_.options.asNavFor) {
+            pagerQty = 1 + Math.ceil((_.slideCount - _.options.slidesToShow) / _.options.slidesToScroll);
+        }else {
+            while (breakPoint < _.slideCount) {
+                ++pagerQty;
+                breakPoint = counter + _.options.slidesToScroll;
+                counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+            }
+        }
+
+        return pagerQty - 1;
+
+    };
+
+    Slick.prototype.getLeft = function(slideIndex) {
+
+        var _ = this,
+            targetLeft,
+            verticalHeight,
+            verticalOffset = 0,
+            targetSlide,
+            coef;
+
+        _.slideOffset = 0;
+        verticalHeight = _.$slides.first().outerHeight(true);
+
+        if (_.options.infinite === true) {
+            if (_.slideCount > _.options.slidesToShow) {
+                _.slideOffset = (_.slideWidth * _.options.slidesToShow) * -1;
+                coef = -1;
+
+                if (_.options.vertical === true && _.options.centerMode === true) {
+                    if (_.options.slidesToShow === 2) {
+                        coef = -1.5;
+                    } else if (_.options.slidesToShow === 1) {
+                        coef = -2;
+                    }
+                }
+                verticalOffset = (verticalHeight * _.options.slidesToShow) * coef;
+            }
+            if (_.slideCount % _.options.slidesToScroll !== 0) {
+                if (slideIndex + _.options.slidesToScroll > _.slideCount && _.slideCount > _.options.slidesToShow) {
+                    if (slideIndex > _.slideCount) {
+                        _.slideOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * _.slideWidth) * -1;
+                        verticalOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * verticalHeight) * -1;
+                    } else {
+                        _.slideOffset = ((_.slideCount % _.options.slidesToScroll) * _.slideWidth) * -1;
+                        verticalOffset = ((_.slideCount % _.options.slidesToScroll) * verticalHeight) * -1;
+                    }
+                }
+            }
+        } else {
+            if (slideIndex + _.options.slidesToShow > _.slideCount) {
+                _.slideOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * _.slideWidth;
+                verticalOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * verticalHeight;
+            }
+        }
+
+        if (_.slideCount <= _.options.slidesToShow) {
+            _.slideOffset = 0;
+            verticalOffset = 0;
+        }
+
+        if (_.options.centerMode === true && _.slideCount <= _.options.slidesToShow) {
+            _.slideOffset = ((_.slideWidth * Math.floor(_.options.slidesToShow)) / 2) - ((_.slideWidth * _.slideCount) / 2);
+        } else if (_.options.centerMode === true && _.options.infinite === true) {
+            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2) - _.slideWidth;
+        } else if (_.options.centerMode === true) {
+            _.slideOffset = 0;
+            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2);
+        }
+
+        if (_.options.vertical === false) {
+            targetLeft = ((slideIndex * _.slideWidth) * -1) + _.slideOffset;
+        } else {
+            targetLeft = ((slideIndex * verticalHeight) * -1) + verticalOffset;
+        }
+
+        if (_.options.variableWidth === true) {
+
+            if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
+                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
+            } else {
+                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow);
+            }
+
+            if (_.options.rtl === true) {
+                if (targetSlide[0]) {
+                    targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
+                } else {
+                    targetLeft =  0;
+                }
+            } else {
+                targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
+            }
+
+            if (_.options.centerMode === true) {
+                if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
+                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
+                } else {
+                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow + 1);
+                }
+
+                if (_.options.rtl === true) {
+                    if (targetSlide[0]) {
+                        targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
+                    } else {
+                        targetLeft =  0;
+                    }
+                } else {
+                    targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
+                }
+
+                targetLeft += (_.$list.width() - targetSlide.outerWidth()) / 2;
+            }
+        }
+
+        return targetLeft;
+
+    };
+
+    Slick.prototype.getOption = Slick.prototype.slickGetOption = function(option) {
+
+        var _ = this;
+
+        return _.options[option];
+
+    };
+
+    Slick.prototype.getNavigableIndexes = function() {
+
+        var _ = this,
+            breakPoint = 0,
+            counter = 0,
+            indexes = [],
+            max;
+
+        if (_.options.infinite === false) {
+            max = _.slideCount;
+        } else {
+            breakPoint = _.options.slidesToScroll * -1;
+            counter = _.options.slidesToScroll * -1;
+            max = _.slideCount * 2;
+        }
+
+        while (breakPoint < max) {
+            indexes.push(breakPoint);
+            breakPoint = counter + _.options.slidesToScroll;
+            counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+        }
+
+        return indexes;
+
+    };
+
+    Slick.prototype.getSlick = function() {
+
+        return this;
+
+    };
+
+    Slick.prototype.getSlideCount = function() {
+
+        var _ = this,
+            slidesTraversed, swipedSlide, centerOffset;
+
+        centerOffset = _.options.centerMode === true ? _.slideWidth * Math.floor(_.options.slidesToShow / 2) : 0;
+
+        if (_.options.swipeToSlide === true) {
+            _.$slideTrack.find('.slick-slide').each(function(index, slide) {
+                if (slide.offsetLeft - centerOffset + ($$$1(slide).outerWidth() / 2) > (_.swipeLeft * -1)) {
+                    swipedSlide = slide;
+                    return false;
+                }
+            });
+
+            slidesTraversed = Math.abs($$$1(swipedSlide).attr('data-slick-index') - _.currentSlide) || 1;
+
+            return slidesTraversed;
+
+        } else {
+            return _.options.slidesToScroll;
+        }
+
+    };
+
+    Slick.prototype.goTo = Slick.prototype.slickGoTo = function(slide, dontAnimate) {
+
+        var _ = this;
+
+        _.changeSlide({
+            data: {
+                message: 'index',
+                index: parseInt(slide)
+            }
+        }, dontAnimate);
+
+    };
+
+    Slick.prototype.init = function(creation) {
+
+        var _ = this;
+
+        if (!$$$1(_.$slider).hasClass('slick-initialized')) {
+
+            $$$1(_.$slider).addClass('slick-initialized');
+
+            _.buildRows();
+            _.buildOut();
+            _.setProps();
+            _.startLoad();
+            _.loadSlider();
+            _.initializeEvents();
+            _.updateArrows();
+            _.updateDots();
+            _.checkResponsive(true);
+            _.focusHandler();
+
+        }
+
+        if (creation) {
+            _.$slider.trigger('init', [_]);
+        }
+
+        if (_.options.accessibility === true) {
+            _.initADA();
+        }
+
+        if ( _.options.autoplay ) {
+
+            _.paused = false;
+            _.autoPlay();
+
+        }
+
+    };
+
+    Slick.prototype.initADA = function() {
+        var _ = this,
+                numDotGroups = Math.ceil(_.slideCount / _.options.slidesToShow),
+                tabControlIndexes = _.getNavigableIndexes().filter(function(val) {
+                    return (val >= 0) && (val < _.slideCount);
+                });
+
+        _.$slides.add(_.$slideTrack.find('.slick-cloned')).attr({
+            'aria-hidden': 'true',
+            'tabindex': '-1'
+        }).find('a, input, button, select').attr({
+            'tabindex': '-1'
+        });
+
+        if (_.$dots !== null) {
+            _.$slides.not(_.$slideTrack.find('.slick-cloned')).each(function(i) {
+                var slideControlIndex = tabControlIndexes.indexOf(i);
+
+                $$$1(this).attr({
+                    'role': 'tabpanel',
+                    'id': 'slick-slide' + _.instanceUid + i,
+                    'tabindex': -1
+                });
+
+                if (slideControlIndex !== -1) {
+                   var ariaButtonControl = 'slick-slide-control' + _.instanceUid + slideControlIndex;
+                   if ($$$1('#' + ariaButtonControl).length) {
+                     $$$1(this).attr({
+                         'aria-describedby': ariaButtonControl
+                     });
+                   }
+                }
+            });
+
+            _.$dots.attr('role', 'tablist').find('li').each(function(i) {
+                var mappedSlideIndex = tabControlIndexes[i];
+
+                $$$1(this).attr({
+                    'role': 'presentation'
+                });
+
+                $$$1(this).find('button').first().attr({
+                    'role': 'tab',
+                    'id': 'slick-slide-control' + _.instanceUid + i,
+                    'aria-controls': 'slick-slide' + _.instanceUid + mappedSlideIndex,
+                    'aria-label': (i + 1) + ' of ' + numDotGroups,
+                    'aria-selected': null,
+                    'tabindex': '-1'
+                });
+
+            }).eq(_.currentSlide).find('button').attr({
+                'aria-selected': 'true',
+                'tabindex': '0'
+            }).end();
+        }
+
+        for (var i=_.currentSlide, max=i+_.options.slidesToShow; i < max; i++) {
+          if (_.options.focusOnChange) {
+            _.$slides.eq(i).attr({'tabindex': '0'});
+          } else {
+            _.$slides.eq(i).removeAttr('tabindex');
+          }
+        }
+
+        _.activateADA();
+
+    };
+
+    Slick.prototype.initArrowEvents = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+            _.$prevArrow
+               .off('click.slick')
+               .on('click.slick', {
+                    message: 'previous'
+               }, _.changeSlide);
+            _.$nextArrow
+               .off('click.slick')
+               .on('click.slick', {
+                    message: 'next'
+               }, _.changeSlide);
+
+            if (_.options.accessibility === true) {
+                _.$prevArrow.on('keydown.slick', _.keyHandler);
+                _.$nextArrow.on('keydown.slick', _.keyHandler);
+            }
+        }
+
+    };
+
+    Slick.prototype.initDotEvents = function() {
+
+        var _ = this;
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+            $$$1('li', _.$dots).on('click.slick', {
+                message: 'index'
+            }, _.changeSlide);
+
+            if (_.options.accessibility === true) {
+                _.$dots.on('keydown.slick', _.keyHandler);
+            }
+        }
+
+        if (_.options.dots === true && _.options.pauseOnDotsHover === true && _.slideCount > _.options.slidesToShow) {
+
+            $$$1('li', _.$dots)
+                .on('mouseenter.slick', $$$1.proxy(_.interrupt, _, true))
+                .on('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+        }
+
+    };
+
+    Slick.prototype.initSlideEvents = function() {
+
+        var _ = this;
+
+        if ( _.options.pauseOnHover ) {
+
+            _.$list.on('mouseenter.slick', $$$1.proxy(_.interrupt, _, true));
+            _.$list.on('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+        }
+
+    };
+
+    Slick.prototype.initializeEvents = function() {
+
+        var _ = this;
+
+        _.initArrowEvents();
+
+        _.initDotEvents();
+        _.initSlideEvents();
+
+        _.$list.on('touchstart.slick mousedown.slick', {
+            action: 'start'
+        }, _.swipeHandler);
+        _.$list.on('touchmove.slick mousemove.slick', {
+            action: 'move'
+        }, _.swipeHandler);
+        _.$list.on('touchend.slick mouseup.slick', {
+            action: 'end'
+        }, _.swipeHandler);
+        _.$list.on('touchcancel.slick mouseleave.slick', {
+            action: 'end'
+        }, _.swipeHandler);
+
+        _.$list.on('click.slick', _.clickHandler);
+
+        $$$1(document).on(_.visibilityChange, $$$1.proxy(_.visibility, _));
+
+        if (_.options.accessibility === true) {
+            _.$list.on('keydown.slick', _.keyHandler);
+        }
+
+        if (_.options.focusOnSelect === true) {
+            $$$1(_.$slideTrack).children().on('click.slick', _.selectHandler);
+        }
+
+        $$$1(window).on('orientationchange.slick.slick-' + _.instanceUid, $$$1.proxy(_.orientationChange, _));
+
+        $$$1(window).on('resize.slick.slick-' + _.instanceUid, $$$1.proxy(_.resize, _));
+
+        $$$1('[draggable!=true]', _.$slideTrack).on('dragstart', _.preventDefault);
+
+        $$$1(window).on('load.slick.slick-' + _.instanceUid, _.setPosition);
+        $$$1(_.setPosition);
+
+    };
+
+    Slick.prototype.initUI = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$prevArrow.show();
+            _.$nextArrow.show();
+
+        }
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$dots.show();
+
+        }
+
+    };
+
+    Slick.prototype.keyHandler = function(event) {
+
+        var _ = this;
+         //Dont slide if the cursor is inside the form fields and arrow keys are pressed
+        if(!event.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
+            if (event.keyCode === 37 && _.options.accessibility === true) {
+                _.changeSlide({
+                    data: {
+                        message: _.options.rtl === true ? 'next' :  'previous'
+                    }
+                });
+            } else if (event.keyCode === 39 && _.options.accessibility === true) {
+                _.changeSlide({
+                    data: {
+                        message: _.options.rtl === true ? 'previous' : 'next'
+                    }
+                });
+            }
+        }
+
+    };
+
+    Slick.prototype.lazyLoad = function() {
+
+        var _ = this,
+            loadRange, cloneRange, rangeStart, rangeEnd;
+
+        function loadImages(imagesScope) {
+
+            $$$1('img[data-lazy]', imagesScope).each(function() {
+
+                var image = $$$1(this),
+                    imageSource = $$$1(this).attr('data-lazy'),
+                    imageSrcSet = $$$1(this).attr('data-srcset'),
+                    imageSizes  = $$$1(this).attr('data-sizes') || _.$slider.attr('data-sizes'),
+                    imageToLoad = document.createElement('img');
+
+                imageToLoad.onload = function() {
+
+                    image
+                        .animate({ opacity: 0 }, 100, function() {
+
+                            if (imageSrcSet) {
+                                image
+                                    .attr('srcset', imageSrcSet );
+
+                                if (imageSizes) {
+                                    image
+                                        .attr('sizes', imageSizes );
+                                }
+                            }
+
+                            image
+                                .attr('src', imageSource)
+                                .animate({ opacity: 1 }, 200, function() {
+                                    image
+                                        .removeAttr('data-lazy data-srcset data-sizes')
+                                        .removeClass('slick-loading');
+                                });
+                            _.$slider.trigger('lazyLoaded', [_, image, imageSource]);
+                        });
+
+                };
+
+                imageToLoad.onerror = function() {
+
+                    image
+                        .removeAttr( 'data-lazy' )
+                        .removeClass( 'slick-loading' )
+                        .addClass( 'slick-lazyload-error' );
+
+                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
+
+                };
+
+                imageToLoad.src = imageSource;
+
+            });
+
+        }
+
+        if (_.options.centerMode === true) {
+            if (_.options.infinite === true) {
+                rangeStart = _.currentSlide + (_.options.slidesToShow / 2 + 1);
+                rangeEnd = rangeStart + _.options.slidesToShow + 2;
+            } else {
+                rangeStart = Math.max(0, _.currentSlide - (_.options.slidesToShow / 2 + 1));
+                rangeEnd = 2 + (_.options.slidesToShow / 2 + 1) + _.currentSlide;
+            }
+        } else {
+            rangeStart = _.options.infinite ? _.options.slidesToShow + _.currentSlide : _.currentSlide;
+            rangeEnd = Math.ceil(rangeStart + _.options.slidesToShow);
+            if (_.options.fade === true) {
+                if (rangeStart > 0) { rangeStart--; }
+                if (rangeEnd <= _.slideCount) { rangeEnd++; }
+            }
+        }
+
+        loadRange = _.$slider.find('.slick-slide').slice(rangeStart, rangeEnd);
+
+        if (_.options.lazyLoad === 'anticipated') {
+            var prevSlide = rangeStart - 1,
+                nextSlide = rangeEnd,
+                $slides = _.$slider.find('.slick-slide');
+
+            for (var i = 0; i < _.options.slidesToScroll; i++) {
+                if (prevSlide < 0) { prevSlide = _.slideCount - 1; }
+                loadRange = loadRange.add($slides.eq(prevSlide));
+                loadRange = loadRange.add($slides.eq(nextSlide));
+                prevSlide--;
+                nextSlide++;
+            }
+        }
+
+        loadImages(loadRange);
+
+        if (_.slideCount <= _.options.slidesToShow) {
+            cloneRange = _.$slider.find('.slick-slide');
+            loadImages(cloneRange);
+        } else
+        if (_.currentSlide >= _.slideCount - _.options.slidesToShow) {
+            cloneRange = _.$slider.find('.slick-cloned').slice(0, _.options.slidesToShow);
+            loadImages(cloneRange);
+        } else if (_.currentSlide === 0) {
+            cloneRange = _.$slider.find('.slick-cloned').slice(_.options.slidesToShow * -1);
+            loadImages(cloneRange);
+        }
+
+    };
+
+    Slick.prototype.loadSlider = function() {
+
+        var _ = this;
+
+        _.setPosition();
+
+        _.$slideTrack.css({
+            opacity: 1
+        });
+
+        _.$slider.removeClass('slick-loading');
+
+        _.initUI();
+
+        if (_.options.lazyLoad === 'progressive') {
+            _.progressiveLazyLoad();
+        }
+
+    };
+
+    Slick.prototype.next = Slick.prototype.slickNext = function() {
+
+        var _ = this;
+
+        _.changeSlide({
+            data: {
+                message: 'next'
+            }
+        });
+
+    };
+
+    Slick.prototype.orientationChange = function() {
+
+        var _ = this;
+
+        _.checkResponsive();
+        _.setPosition();
+
+    };
+
+    Slick.prototype.pause = Slick.prototype.slickPause = function() {
+
+        var _ = this;
+
+        _.autoPlayClear();
+        _.paused = true;
+
+    };
+
+    Slick.prototype.play = Slick.prototype.slickPlay = function() {
+
+        var _ = this;
+
+        _.autoPlay();
+        _.options.autoplay = true;
+        _.paused = false;
+        _.focussed = false;
+        _.interrupted = false;
+
+    };
+
+    Slick.prototype.postSlide = function(index) {
+
+        var _ = this;
+
+        if( !_.unslicked ) {
+
+            _.$slider.trigger('afterChange', [_, index]);
+
+            _.animating = false;
+
+            if (_.slideCount > _.options.slidesToShow) {
+                _.setPosition();
+            }
+
+            _.swipeLeft = null;
+
+            if ( _.options.autoplay ) {
+                _.autoPlay();
+            }
+
+            if (_.options.accessibility === true) {
+                _.initADA();
+
+                if (_.options.focusOnChange) {
+                    var $currentSlide = $$$1(_.$slides.get(_.currentSlide));
+                    $currentSlide.attr('tabindex', 0).focus();
+                }
+            }
+
+        }
+
+    };
+
+    Slick.prototype.prev = Slick.prototype.slickPrev = function() {
+
+        var _ = this;
+
+        _.changeSlide({
+            data: {
+                message: 'previous'
+            }
+        });
+
+    };
+
+    Slick.prototype.preventDefault = function(event) {
+
+        event.preventDefault();
+
+    };
+
+    Slick.prototype.progressiveLazyLoad = function( tryCount ) {
+
+        tryCount = tryCount || 1;
+
+        var _ = this,
+            $imgsToLoad = $$$1( 'img[data-lazy]', _.$slider ),
+            image,
+            imageSource,
+            imageSrcSet,
+            imageSizes,
+            imageToLoad;
+
+        if ( $imgsToLoad.length ) {
+
+            image = $imgsToLoad.first();
+            imageSource = image.attr('data-lazy');
+            imageSrcSet = image.attr('data-srcset');
+            imageSizes  = image.attr('data-sizes') || _.$slider.attr('data-sizes');
+            imageToLoad = document.createElement('img');
+
+            imageToLoad.onload = function() {
+
+                if (imageSrcSet) {
+                    image
+                        .attr('srcset', imageSrcSet );
+
+                    if (imageSizes) {
+                        image
+                            .attr('sizes', imageSizes );
+                    }
+                }
+
+                image
+                    .attr( 'src', imageSource )
+                    .removeAttr('data-lazy data-srcset data-sizes')
+                    .removeClass('slick-loading');
+
+                if ( _.options.adaptiveHeight === true ) {
+                    _.setPosition();
+                }
+
+                _.$slider.trigger('lazyLoaded', [ _, image, imageSource ]);
+                _.progressiveLazyLoad();
+
+            };
+
+            imageToLoad.onerror = function() {
+
+                if ( tryCount < 3 ) {
+
+                    /**
+                     * try to load the image 3 times,
+                     * leave a slight delay so we don't get
+                     * servers blocking the request.
+                     */
+                    setTimeout( function() {
+                        _.progressiveLazyLoad( tryCount + 1 );
+                    }, 500 );
+
+                } else {
+
+                    image
+                        .removeAttr( 'data-lazy' )
+                        .removeClass( 'slick-loading' )
+                        .addClass( 'slick-lazyload-error' );
+
+                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
+
+                    _.progressiveLazyLoad();
+
+                }
+
+            };
+
+            imageToLoad.src = imageSource;
+
+        } else {
+
+            _.$slider.trigger('allImagesLoaded', [ _ ]);
+
+        }
+
+    };
+
+    Slick.prototype.refresh = function( initializing ) {
+
+        var _ = this, currentSlide, lastVisibleIndex;
+
+        lastVisibleIndex = _.slideCount - _.options.slidesToShow;
+
+        // in non-infinite sliders, we don't want to go past the
+        // last visible index.
+        if( !_.options.infinite && ( _.currentSlide > lastVisibleIndex )) {
+            _.currentSlide = lastVisibleIndex;
+        }
+
+        // if less slides than to show, go to start.
+        if ( _.slideCount <= _.options.slidesToShow ) {
+            _.currentSlide = 0;
+
+        }
+
+        currentSlide = _.currentSlide;
+
+        _.destroy(true);
+
+        $$$1.extend(_, _.initials, { currentSlide: currentSlide });
+
+        _.init();
+
+        if( !initializing ) {
+
+            _.changeSlide({
+                data: {
+                    message: 'index',
+                    index: currentSlide
+                }
+            }, false);
+
+        }
+
+    };
+
+    Slick.prototype.registerBreakpoints = function() {
+
+        var _ = this, breakpoint, currentBreakpoint, l,
+            responsiveSettings = _.options.responsive || null;
+
+        if ( $$$1.type(responsiveSettings) === 'array' && responsiveSettings.length ) {
+
+            _.respondTo = _.options.respondTo || 'window';
+
+            for ( breakpoint in responsiveSettings ) {
+
+                l = _.breakpoints.length-1;
+
+                if (responsiveSettings.hasOwnProperty(breakpoint)) {
+                    currentBreakpoint = responsiveSettings[breakpoint].breakpoint;
+
+                    // loop through the breakpoints and cut out any existing
+                    // ones with the same breakpoint number, we don't want dupes.
+                    while( l >= 0 ) {
+                        if( _.breakpoints[l] && _.breakpoints[l] === currentBreakpoint ) {
+                            _.breakpoints.splice(l,1);
+                        }
+                        l--;
+                    }
+
+                    _.breakpoints.push(currentBreakpoint);
+                    _.breakpointSettings[currentBreakpoint] = responsiveSettings[breakpoint].settings;
+
+                }
+
+            }
+
+            _.breakpoints.sort(function(a, b) {
+                return ( _.options.mobileFirst ) ? a-b : b-a;
+            });
+
+        }
+
+    };
+
+    Slick.prototype.reinit = function() {
+
+        var _ = this;
+
+        _.$slides =
+            _.$slideTrack
+                .children(_.options.slide)
+                .addClass('slick-slide');
+
+        _.slideCount = _.$slides.length;
+
+        if (_.currentSlide >= _.slideCount && _.currentSlide !== 0) {
+            _.currentSlide = _.currentSlide - _.options.slidesToScroll;
+        }
+
+        if (_.slideCount <= _.options.slidesToShow) {
+            _.currentSlide = 0;
+        }
+
+        _.registerBreakpoints();
+
+        _.setProps();
+        _.setupInfinite();
+        _.buildArrows();
+        _.updateArrows();
+        _.initArrowEvents();
+        _.buildDots();
+        _.updateDots();
+        _.initDotEvents();
+        _.cleanUpSlideEvents();
+        _.initSlideEvents();
+
+        _.checkResponsive(false, true);
+
+        if (_.options.focusOnSelect === true) {
+            $$$1(_.$slideTrack).children().on('click.slick', _.selectHandler);
+        }
+
+        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
+
+        _.setPosition();
+        _.focusHandler();
+
+        _.paused = !_.options.autoplay;
+        _.autoPlay();
+
+        _.$slider.trigger('reInit', [_]);
+
+    };
+
+    Slick.prototype.resize = function() {
+
+        var _ = this;
+
+        if ($$$1(window).width() !== _.windowWidth) {
+            clearTimeout(_.windowDelay);
+            _.windowDelay = window.setTimeout(function() {
+                _.windowWidth = $$$1(window).width();
+                _.checkResponsive();
+                if( !_.unslicked ) { _.setPosition(); }
+            }, 50);
+        }
+    };
+
+    Slick.prototype.removeSlide = Slick.prototype.slickRemove = function(index, removeBefore, removeAll) {
+
+        var _ = this;
+
+        if (typeof(index) === 'boolean') {
+            removeBefore = index;
+            index = removeBefore === true ? 0 : _.slideCount - 1;
+        } else {
+            index = removeBefore === true ? --index : index;
+        }
+
+        if (_.slideCount < 1 || index < 0 || index > _.slideCount - 1) {
+            return false;
+        }
+
+        _.unload();
+
+        if (removeAll === true) {
+            _.$slideTrack.children().remove();
+        } else {
+            _.$slideTrack.children(this.options.slide).eq(index).remove();
+        }
+
+        _.$slides = _.$slideTrack.children(this.options.slide);
+
+        _.$slideTrack.children(this.options.slide).detach();
+
+        _.$slideTrack.append(_.$slides);
+
+        _.$slidesCache = _.$slides;
+
+        _.reinit();
+
+    };
+
+    Slick.prototype.setCSS = function(position) {
+
+        var _ = this,
+            positionProps = {},
+            x, y;
+
+        if (_.options.rtl === true) {
+            position = -position;
+        }
+        x = _.positionProp == 'left' ? Math.ceil(position) + 'px' : '0px';
+        y = _.positionProp == 'top' ? Math.ceil(position) + 'px' : '0px';
+
+        positionProps[_.positionProp] = position;
+
+        if (_.transformsEnabled === false) {
+            _.$slideTrack.css(positionProps);
+        } else {
+            positionProps = {};
+            if (_.cssTransitions === false) {
+                positionProps[_.animType] = 'translate(' + x + ', ' + y + ')';
+                _.$slideTrack.css(positionProps);
+            } else {
+                positionProps[_.animType] = 'translate3d(' + x + ', ' + y + ', 0px)';
+                _.$slideTrack.css(positionProps);
+            }
+        }
+
+    };
+
+    Slick.prototype.setDimensions = function() {
+
+        var _ = this;
+
+        if (_.options.vertical === false) {
+            if (_.options.centerMode === true) {
+                _.$list.css({
+                    padding: ('0px ' + _.options.centerPadding)
+                });
+            }
+        } else {
+            _.$list.height(_.$slides.first().outerHeight(true) * _.options.slidesToShow);
+            if (_.options.centerMode === true) {
+                _.$list.css({
+                    padding: (_.options.centerPadding + ' 0px')
+                });
+            }
+        }
+
+        _.listWidth = _.$list.width();
+        _.listHeight = _.$list.height();
+
+
+        if (_.options.vertical === false && _.options.variableWidth === false) {
+            _.slideWidth = Math.ceil(_.listWidth / _.options.slidesToShow);
+            _.$slideTrack.width(Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length)));
+
+        } else if (_.options.variableWidth === true) {
+            _.$slideTrack.width(5000 * _.slideCount);
+        } else {
+            _.slideWidth = Math.ceil(_.listWidth);
+            _.$slideTrack.height(Math.ceil((_.$slides.first().outerHeight(true) * _.$slideTrack.children('.slick-slide').length)));
+        }
+
+        var offset = _.$slides.first().outerWidth(true) - _.$slides.first().width();
+        if (_.options.variableWidth === false) { _.$slideTrack.children('.slick-slide').width(_.slideWidth - offset); }
+
+    };
+
+    Slick.prototype.setFade = function() {
+
+        var _ = this,
+            targetLeft;
+
+        _.$slides.each(function(index, element) {
+            targetLeft = (_.slideWidth * index) * -1;
+            if (_.options.rtl === true) {
+                $$$1(element).css({
+                    position: 'relative',
+                    right: targetLeft,
+                    top: 0,
+                    zIndex: _.options.zIndex - 2,
+                    opacity: 0
+                });
+            } else {
+                $$$1(element).css({
+                    position: 'relative',
+                    left: targetLeft,
+                    top: 0,
+                    zIndex: _.options.zIndex - 2,
+                    opacity: 0
+                });
+            }
+        });
+
+        _.$slides.eq(_.currentSlide).css({
+            zIndex: _.options.zIndex - 1,
+            opacity: 1
+        });
+
+    };
+
+    Slick.prototype.setHeight = function() {
+
+        var _ = this;
+
+        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
+            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
+            _.$list.css('height', targetHeight);
+        }
+
+    };
+
+    Slick.prototype.setOption =
+    Slick.prototype.slickSetOption = function() {
+
+        /**
+         * accepts arguments in format of:
+         *
+         *  - for changing a single option's value:
+         *     .slick("setOption", option, value, refresh )
+         *
+         *  - for changing a set of responsive options:
+         *     .slick("setOption", 'responsive', [{}, ...], refresh )
+         *
+         *  - for updating multiple values at once (not responsive)
+         *     .slick("setOption", { 'option': value, ... }, refresh )
+         */
+
+        var _ = this, l, item, option, value, refresh = false, type;
+
+        if( $$$1.type( arguments[0] ) === 'object' ) {
+
+            option =  arguments[0];
+            refresh = arguments[1];
+            type = 'multiple';
+
+        } else if ( $$$1.type( arguments[0] ) === 'string' ) {
+
+            option =  arguments[0];
+            value = arguments[1];
+            refresh = arguments[2];
+
+            if ( arguments[0] === 'responsive' && $$$1.type( arguments[1] ) === 'array' ) {
+
+                type = 'responsive';
+
+            } else if ( typeof arguments[1] !== 'undefined' ) {
+
+                type = 'single';
+
+            }
+
+        }
+
+        if ( type === 'single' ) {
+
+            _.options[option] = value;
+
+
+        } else if ( type === 'multiple' ) {
+
+            $$$1.each( option , function( opt, val ) {
+
+                _.options[opt] = val;
+
+            });
+
+
+        } else if ( type === 'responsive' ) {
+
+            for ( item in value ) {
+
+                if( $$$1.type( _.options.responsive ) !== 'array' ) {
+
+                    _.options.responsive = [ value[item] ];
+
+                } else {
+
+                    l = _.options.responsive.length-1;
+
+                    // loop through the responsive object and splice out duplicates.
+                    while( l >= 0 ) {
+
+                        if( _.options.responsive[l].breakpoint === value[item].breakpoint ) {
+
+                            _.options.responsive.splice(l,1);
+
+                        }
+
+                        l--;
+
+                    }
+
+                    _.options.responsive.push( value[item] );
+
+                }
+
+            }
+
+        }
+
+        if ( refresh ) {
+
+            _.unload();
+            _.reinit();
+
+        }
+
+    };
+
+    Slick.prototype.setPosition = function() {
+
+        var _ = this;
+
+        _.setDimensions();
+
+        _.setHeight();
+
+        if (_.options.fade === false) {
+            _.setCSS(_.getLeft(_.currentSlide));
+        } else {
+            _.setFade();
+        }
+
+        _.$slider.trigger('setPosition', [_]);
+
+    };
+
+    Slick.prototype.setProps = function() {
+
+        var _ = this,
+            bodyStyle = document.body.style;
+
+        _.positionProp = _.options.vertical === true ? 'top' : 'left';
+
+        if (_.positionProp === 'top') {
+            _.$slider.addClass('slick-vertical');
+        } else {
+            _.$slider.removeClass('slick-vertical');
+        }
+
+        if (bodyStyle.WebkitTransition !== undefined ||
+            bodyStyle.MozTransition !== undefined ||
+            bodyStyle.msTransition !== undefined) {
+            if (_.options.useCSS === true) {
+                _.cssTransitions = true;
+            }
+        }
+
+        if ( _.options.fade ) {
+            if ( typeof _.options.zIndex === 'number' ) {
+                if( _.options.zIndex < 3 ) {
+                    _.options.zIndex = 3;
+                }
+            } else {
+                _.options.zIndex = _.defaults.zIndex;
+            }
+        }
+
+        if (bodyStyle.OTransform !== undefined) {
+            _.animType = 'OTransform';
+            _.transformType = '-o-transform';
+            _.transitionType = 'OTransition';
+            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.MozTransform !== undefined) {
+            _.animType = 'MozTransform';
+            _.transformType = '-moz-transform';
+            _.transitionType = 'MozTransition';
+            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.MozPerspective === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.webkitTransform !== undefined) {
+            _.animType = 'webkitTransform';
+            _.transformType = '-webkit-transform';
+            _.transitionType = 'webkitTransition';
+            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.msTransform !== undefined) {
+            _.animType = 'msTransform';
+            _.transformType = '-ms-transform';
+            _.transitionType = 'msTransition';
+            if (bodyStyle.msTransform === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.transform !== undefined && _.animType !== false) {
+            _.animType = 'transform';
+            _.transformType = 'transform';
+            _.transitionType = 'transition';
+        }
+        _.transformsEnabled = _.options.useTransform && (_.animType !== null && _.animType !== false);
+    };
+
+
+    Slick.prototype.setSlideClasses = function(index) {
+
+        var _ = this,
+            centerOffset, allSlides, indexOffset, remainder;
+
+        allSlides = _.$slider
+            .find('.slick-slide')
+            .removeClass('slick-active slick-center slick-current')
+            .attr('aria-hidden', 'true');
+
+        _.$slides
+            .eq(index)
+            .addClass('slick-current');
+
+        if (_.options.centerMode === true) {
+
+            var evenCoef = _.options.slidesToShow % 2 === 0 ? 1 : 0;
+
+            centerOffset = Math.floor(_.options.slidesToShow / 2);
+
+            if (_.options.infinite === true) {
+
+                if (index >= centerOffset && index <= (_.slideCount - 1) - centerOffset) {
+                    _.$slides
+                        .slice(index - centerOffset + evenCoef, index + centerOffset + 1)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
+
+                } else {
+
+                    indexOffset = _.options.slidesToShow + index;
+                    allSlides
+                        .slice(indexOffset - centerOffset + 1 + evenCoef, indexOffset + centerOffset + 2)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
+
+                }
+
+                if (index === 0) {
+
+                    allSlides
+                        .eq(allSlides.length - 1 - _.options.slidesToShow)
+                        .addClass('slick-center');
+
+                } else if (index === _.slideCount - 1) {
+
+                    allSlides
+                        .eq(_.options.slidesToShow)
+                        .addClass('slick-center');
+
+                }
+
+            }
+
+            _.$slides
+                .eq(index)
+                .addClass('slick-center');
+
+        } else {
+
+            if (index >= 0 && index <= (_.slideCount - _.options.slidesToShow)) {
+
+                _.$slides
+                    .slice(index, index + _.options.slidesToShow)
+                    .addClass('slick-active')
+                    .attr('aria-hidden', 'false');
+
+            } else if (allSlides.length <= _.options.slidesToShow) {
+
+                allSlides
+                    .addClass('slick-active')
+                    .attr('aria-hidden', 'false');
+
+            } else {
+
+                remainder = _.slideCount % _.options.slidesToShow;
+                indexOffset = _.options.infinite === true ? _.options.slidesToShow + index : index;
+
+                if (_.options.slidesToShow == _.options.slidesToScroll && (_.slideCount - index) < _.options.slidesToShow) {
+
+                    allSlides
+                        .slice(indexOffset - (_.options.slidesToShow - remainder), indexOffset + remainder)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
+
+                } else {
+
+                    allSlides
+                        .slice(indexOffset, indexOffset + _.options.slidesToShow)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
+
+                }
+
+            }
+
+        }
+
+        if (_.options.lazyLoad === 'ondemand' || _.options.lazyLoad === 'anticipated') {
+            _.lazyLoad();
+        }
+    };
+
+    Slick.prototype.setupInfinite = function() {
+
+        var _ = this,
+            i, slideIndex, infiniteCount;
+
+        if (_.options.fade === true) {
+            _.options.centerMode = false;
+        }
+
+        if (_.options.infinite === true && _.options.fade === false) {
+
+            slideIndex = null;
+
+            if (_.slideCount > _.options.slidesToShow) {
+
+                if (_.options.centerMode === true) {
+                    infiniteCount = _.options.slidesToShow + 1;
+                } else {
+                    infiniteCount = _.options.slidesToShow;
+                }
+
+                for (i = _.slideCount; i > (_.slideCount -
+                        infiniteCount); i -= 1) {
+                    slideIndex = i - 1;
+                    $$$1(_.$slides[slideIndex]).clone(true).attr('id', '')
+                        .attr('data-slick-index', slideIndex - _.slideCount)
+                        .prependTo(_.$slideTrack).addClass('slick-cloned');
+                }
+                for (i = 0; i < infiniteCount  + _.slideCount; i += 1) {
+                    slideIndex = i;
+                    $$$1(_.$slides[slideIndex]).clone(true).attr('id', '')
+                        .attr('data-slick-index', slideIndex + _.slideCount)
+                        .appendTo(_.$slideTrack).addClass('slick-cloned');
+                }
+                _.$slideTrack.find('.slick-cloned').find('[id]').each(function() {
+                    $$$1(this).attr('id', '');
+                });
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.interrupt = function( toggle ) {
+
+        var _ = this;
+
+        if( !toggle ) {
+            _.autoPlay();
+        }
+        _.interrupted = toggle;
+
+    };
+
+    Slick.prototype.selectHandler = function(event) {
+
+        var _ = this;
+
+        var targetElement =
+            $$$1(event.target).is('.slick-slide') ?
+                $$$1(event.target) :
+                $$$1(event.target).parents('.slick-slide');
+
+        var index = parseInt(targetElement.attr('data-slick-index'));
+
+        if (!index) { index = 0; }
+
+        if (_.slideCount <= _.options.slidesToShow) {
+
+            _.slideHandler(index, false, true);
+            return;
+
+        }
+
+        _.slideHandler(index);
+
+    };
+
+    Slick.prototype.slideHandler = function(index, sync, dontAnimate) {
+
+        var targetSlide, animSlide, oldSlide, slideLeft, targetLeft = null,
+            _ = this, navTarget;
+
+        sync = sync || false;
+
+        if (_.animating === true && _.options.waitForAnimate === true) {
+            return;
+        }
+
+        if (_.options.fade === true && _.currentSlide === index) {
+            return;
+        }
+
+        if (sync === false) {
+            _.asNavFor(index);
+        }
+
+        targetSlide = index;
+        targetLeft = _.getLeft(targetSlide);
+        slideLeft = _.getLeft(_.currentSlide);
+
+        _.currentLeft = _.swipeLeft === null ? slideLeft : _.swipeLeft;
+
+        if (_.options.infinite === false && _.options.centerMode === false && (index < 0 || index > _.getDotCount() * _.options.slidesToScroll)) {
+            if (_.options.fade === false) {
+                targetSlide = _.currentSlide;
+                if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
+                    _.animateSlide(slideLeft, function() {
+                        _.postSlide(targetSlide);
+                    });
+                } else {
+                    _.postSlide(targetSlide);
+                }
+            }
+            return;
+        } else if (_.options.infinite === false && _.options.centerMode === true && (index < 0 || index > (_.slideCount - _.options.slidesToScroll))) {
+            if (_.options.fade === false) {
+                targetSlide = _.currentSlide;
+                if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
+                    _.animateSlide(slideLeft, function() {
+                        _.postSlide(targetSlide);
+                    });
+                } else {
+                    _.postSlide(targetSlide);
+                }
+            }
+            return;
+        }
+
+        if ( _.options.autoplay ) {
+            clearInterval(_.autoPlayTimer);
+        }
+
+        if (targetSlide < 0) {
+            if (_.slideCount % _.options.slidesToScroll !== 0) {
+                animSlide = _.slideCount - (_.slideCount % _.options.slidesToScroll);
+            } else {
+                animSlide = _.slideCount + targetSlide;
+            }
+        } else if (targetSlide >= _.slideCount) {
+            if (_.slideCount % _.options.slidesToScroll !== 0) {
+                animSlide = 0;
+            } else {
+                animSlide = targetSlide - _.slideCount;
+            }
+        } else {
+            animSlide = targetSlide;
+        }
+
+        _.animating = true;
+
+        _.$slider.trigger('beforeChange', [_, _.currentSlide, animSlide]);
+
+        oldSlide = _.currentSlide;
+        _.currentSlide = animSlide;
+
+        _.setSlideClasses(_.currentSlide);
+
+        if ( _.options.asNavFor ) {
+
+            navTarget = _.getNavTarget();
+            navTarget = navTarget.slick('getSlick');
+
+            if ( navTarget.slideCount <= navTarget.options.slidesToShow ) {
+                navTarget.setSlideClasses(_.currentSlide);
+            }
+
+        }
+
+        _.updateDots();
+        _.updateArrows();
+
+        if (_.options.fade === true) {
+            if (dontAnimate !== true) {
+
+                _.fadeSlideOut(oldSlide);
+
+                _.fadeSlide(animSlide, function() {
+                    _.postSlide(animSlide);
+                });
+
+            } else {
+                _.postSlide(animSlide);
+            }
+            _.animateHeight();
+            return;
+        }
+
+        if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
+            _.animateSlide(targetLeft, function() {
+                _.postSlide(animSlide);
+            });
+        } else {
+            _.postSlide(animSlide);
+        }
+
+    };
+
+    Slick.prototype.startLoad = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$prevArrow.hide();
+            _.$nextArrow.hide();
+
+        }
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$dots.hide();
+
+        }
+
+        _.$slider.addClass('slick-loading');
+
+    };
+
+    Slick.prototype.swipeDirection = function() {
+
+        var xDist, yDist, r, swipeAngle, _ = this;
+
+        xDist = _.touchObject.startX - _.touchObject.curX;
+        yDist = _.touchObject.startY - _.touchObject.curY;
+        r = Math.atan2(yDist, xDist);
+
+        swipeAngle = Math.round(r * 180 / Math.PI);
+        if (swipeAngle < 0) {
+            swipeAngle = 360 - Math.abs(swipeAngle);
+        }
+
+        if ((swipeAngle <= 45) && (swipeAngle >= 0)) {
+            return (_.options.rtl === false ? 'left' : 'right');
+        }
+        if ((swipeAngle <= 360) && (swipeAngle >= 315)) {
+            return (_.options.rtl === false ? 'left' : 'right');
+        }
+        if ((swipeAngle >= 135) && (swipeAngle <= 225)) {
+            return (_.options.rtl === false ? 'right' : 'left');
+        }
+        if (_.options.verticalSwiping === true) {
+            if ((swipeAngle >= 35) && (swipeAngle <= 135)) {
+                return 'down';
+            } else {
+                return 'up';
+            }
+        }
+
+        return 'vertical';
+
+    };
+
+    Slick.prototype.swipeEnd = function(event) {
+
+        var _ = this,
+            slideCount,
+            direction;
+
+        _.dragging = false;
+        _.swiping = false;
+
+        if (_.scrolling) {
+            _.scrolling = false;
+            return false;
+        }
+
+        _.interrupted = false;
+        _.shouldClick = ( _.touchObject.swipeLength > 10 ) ? false : true;
+
+        if ( _.touchObject.curX === undefined ) {
+            return false;
+        }
+
+        if ( _.touchObject.edgeHit === true ) {
+            _.$slider.trigger('edge', [_, _.swipeDirection() ]);
+        }
+
+        if ( _.touchObject.swipeLength >= _.touchObject.minSwipe ) {
+
+            direction = _.swipeDirection();
+
+            switch ( direction ) {
+
+                case 'left':
+                case 'down':
+
+                    slideCount =
+                        _.options.swipeToSlide ?
+                            _.checkNavigable( _.currentSlide + _.getSlideCount() ) :
+                            _.currentSlide + _.getSlideCount();
+
+                    _.currentDirection = 0;
+
+                    break;
+
+                case 'right':
+                case 'up':
+
+                    slideCount =
+                        _.options.swipeToSlide ?
+                            _.checkNavigable( _.currentSlide - _.getSlideCount() ) :
+                            _.currentSlide - _.getSlideCount();
+
+                    _.currentDirection = 1;
+
+                    break;
+
+                default:
+
+
+            }
+
+            if( direction != 'vertical' ) {
+
+                _.slideHandler( slideCount );
+                _.touchObject = {};
+                _.$slider.trigger('swipe', [_, direction ]);
+
+            }
+
+        } else {
+
+            if ( _.touchObject.startX !== _.touchObject.curX ) {
+
+                _.slideHandler( _.currentSlide );
+                _.touchObject = {};
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.swipeHandler = function(event) {
+
+        var _ = this;
+
+        if ((_.options.swipe === false) || ('ontouchend' in document && _.options.swipe === false)) {
+            return;
+        } else if (_.options.draggable === false && event.type.indexOf('mouse') !== -1) {
+            return;
+        }
+
+        _.touchObject.fingerCount = event.originalEvent && event.originalEvent.touches !== undefined ?
+            event.originalEvent.touches.length : 1;
+
+        _.touchObject.minSwipe = _.listWidth / _.options
+            .touchThreshold;
+
+        if (_.options.verticalSwiping === true) {
+            _.touchObject.minSwipe = _.listHeight / _.options
+                .touchThreshold;
+        }
+
+        switch (event.data.action) {
+
+            case 'start':
+                _.swipeStart(event);
+                break;
+
+            case 'move':
+                _.swipeMove(event);
+                break;
+
+            case 'end':
+                _.swipeEnd(event);
+                break;
+
+        }
+
+    };
+
+    Slick.prototype.swipeMove = function(event) {
+
+        var _ = this,
+            curLeft, swipeDirection, swipeLength, positionOffset, touches, verticalSwipeLength;
+
+        touches = event.originalEvent !== undefined ? event.originalEvent.touches : null;
+
+        if (!_.dragging || _.scrolling || touches && touches.length !== 1) {
+            return false;
+        }
+
+        curLeft = _.getLeft(_.currentSlide);
+
+        _.touchObject.curX = touches !== undefined ? touches[0].pageX : event.clientX;
+        _.touchObject.curY = touches !== undefined ? touches[0].pageY : event.clientY;
+
+        _.touchObject.swipeLength = Math.round(Math.sqrt(
+            Math.pow(_.touchObject.curX - _.touchObject.startX, 2)));
+
+        verticalSwipeLength = Math.round(Math.sqrt(
+            Math.pow(_.touchObject.curY - _.touchObject.startY, 2)));
+
+        if (!_.options.verticalSwiping && !_.swiping && verticalSwipeLength > 4) {
+            _.scrolling = true;
+            return false;
+        }
+
+        if (_.options.verticalSwiping === true) {
+            _.touchObject.swipeLength = verticalSwipeLength;
+        }
+
+        swipeDirection = _.swipeDirection();
+
+        if (event.originalEvent !== undefined && _.touchObject.swipeLength > 4) {
+            _.swiping = true;
+            event.preventDefault();
+        }
+
+        positionOffset = (_.options.rtl === false ? 1 : -1) * (_.touchObject.curX > _.touchObject.startX ? 1 : -1);
+        if (_.options.verticalSwiping === true) {
+            positionOffset = _.touchObject.curY > _.touchObject.startY ? 1 : -1;
+        }
+
+
+        swipeLength = _.touchObject.swipeLength;
+
+        _.touchObject.edgeHit = false;
+
+        if (_.options.infinite === false) {
+            if ((_.currentSlide === 0 && swipeDirection === 'right') || (_.currentSlide >= _.getDotCount() && swipeDirection === 'left')) {
+                swipeLength = _.touchObject.swipeLength * _.options.edgeFriction;
+                _.touchObject.edgeHit = true;
+            }
+        }
+
+        if (_.options.vertical === false) {
+            _.swipeLeft = curLeft + swipeLength * positionOffset;
+        } else {
+            _.swipeLeft = curLeft + (swipeLength * (_.$list.height() / _.listWidth)) * positionOffset;
+        }
+        if (_.options.verticalSwiping === true) {
+            _.swipeLeft = curLeft + swipeLength * positionOffset;
+        }
+
+        if (_.options.fade === true || _.options.touchMove === false) {
+            return false;
+        }
+
+        if (_.animating === true) {
+            _.swipeLeft = null;
+            return false;
+        }
+
+        _.setCSS(_.swipeLeft);
+
+    };
+
+    Slick.prototype.swipeStart = function(event) {
+
+        var _ = this,
+            touches;
+
+        _.interrupted = true;
+
+        if (_.touchObject.fingerCount !== 1 || _.slideCount <= _.options.slidesToShow) {
+            _.touchObject = {};
+            return false;
+        }
+
+        if (event.originalEvent !== undefined && event.originalEvent.touches !== undefined) {
+            touches = event.originalEvent.touches[0];
+        }
+
+        _.touchObject.startX = _.touchObject.curX = touches !== undefined ? touches.pageX : event.clientX;
+        _.touchObject.startY = _.touchObject.curY = touches !== undefined ? touches.pageY : event.clientY;
+
+        _.dragging = true;
+
+    };
+
+    Slick.prototype.unfilterSlides = Slick.prototype.slickUnfilter = function() {
+
+        var _ = this;
+
+        if (_.$slidesCache !== null) {
+
+            _.unload();
+
+            _.$slideTrack.children(this.options.slide).detach();
+
+            _.$slidesCache.appendTo(_.$slideTrack);
+
+            _.reinit();
+
+        }
+
+    };
+
+    Slick.prototype.unload = function() {
+
+        var _ = this;
+
+        $$$1('.slick-cloned', _.$slider).remove();
+
+        if (_.$dots) {
+            _.$dots.remove();
+        }
+
+        if (_.$prevArrow && _.htmlExpr.test(_.options.prevArrow)) {
+            _.$prevArrow.remove();
+        }
+
+        if (_.$nextArrow && _.htmlExpr.test(_.options.nextArrow)) {
+            _.$nextArrow.remove();
+        }
+
+        _.$slides
+            .removeClass('slick-slide slick-active slick-visible slick-current')
+            .attr('aria-hidden', 'true')
+            .css('width', '');
+
+    };
+
+    Slick.prototype.unslick = function(fromBreakpoint) {
+
+        var _ = this;
+        _.$slider.trigger('unslick', [_, fromBreakpoint]);
+        _.destroy();
+
+    };
+
+    Slick.prototype.updateArrows = function() {
+
+        var _ = this,
+            centerOffset;
+
+        centerOffset = Math.floor(_.options.slidesToShow / 2);
+
+        if ( _.options.arrows === true &&
+            _.slideCount > _.options.slidesToShow &&
+            !_.options.infinite ) {
+
+            _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+            _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
+            if (_.currentSlide === 0) {
+
+                _.$prevArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+                _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
+            } else if (_.currentSlide >= _.slideCount - _.options.slidesToShow && _.options.centerMode === false) {
+
+                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
+            } else if (_.currentSlide >= _.slideCount - 1 && _.options.centerMode === true) {
+
+                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.updateDots = function() {
+
+        var _ = this;
+
+        if (_.$dots !== null) {
+
+            _.$dots
+                .find('li')
+                    .removeClass('slick-active')
+                    .end();
+
+            _.$dots
+                .find('li')
+                .eq(Math.floor(_.currentSlide / _.options.slidesToScroll))
+                .addClass('slick-active');
+
+        }
+
+    };
+
+    Slick.prototype.visibility = function() {
+
+        var _ = this;
+
+        if ( _.options.autoplay ) {
+
+            if ( document[_.hidden] ) {
+
+                _.interrupted = true;
+
+            } else {
+
+                _.interrupted = false;
+
+            }
+
+        }
+
+    };
+
+    $$$1.fn.slick = function() {
+        var _ = this,
+            opt = arguments[0],
+            args = Array.prototype.slice.call(arguments, 1),
+            l = _.length,
+            i,
+            ret;
+        for (i = 0; i < l; i++) {
+            if (typeof opt == 'object' || typeof opt == 'undefined')
+                { _[i].slick = new Slick(_[i], opt); }
+            else
+                { ret = _[i].slick[opt].apply(_[i].slick, args); }
+            if (typeof ret != 'undefined') { return ret; }
+        }
+        return _;
+    };
+
+}));
+});
+
+var slick$1 = /*#__PURE__*/Object.freeze({
+  default: slick,
+  __moduleExports: slick
+});
+
+/* harmony default export */ __webpack_exports__["a"] = (slickCarousel);
+
+
+/***/ }),
+
+/***/ 695:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(696);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(647)("be419506", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0a49a3ac\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mainPage.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0a49a3ac\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mainPage.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 696:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(75)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 697:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_slick__ = __webpack_require__(660);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            slickOptions: {
+                arrows: false,
+                autoplay: true
+                // Any other options that can be got from plugin documentation
+            },
+            fromFocused: false,
+            toFocused: false,
+            loading: false,
+            activatedOrder: false,
+            activatedOrderId: {},
+            activatedOrderIndex: '',
+            otherOrders: '',
+            from: {
+                adress: '',
+                marker: {
+                    lat: 51.165691,
+                    lng: 10.451526
+                },
+                icon: 'images/home.svg'
+            },
+            to: {
+                adress: '',
+                marker: {
+                    lat: 51.165691,
+                    lng: 10.451526
+                },
+                icon: 'images/send.svg'
+            },
+            allOrders: this.$orders.getOrders(),
+            isChecked: false,
+            tempRouteResult: {}
+        };
+    },
+
+    components: {
+        'app-orders': __webpack_require__(698),
+        'app-other-orders': __webpack_require__(703),
+        Slick: __WEBPACK_IMPORTED_MODULE_0_vue_slick__["a" /* default */]
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        $('#FromGeoAdress').focus(function () {
+            _this.fromFocused = true;
+        });
+        $('#FromGeoAdress').blur(function () {
+
+            _this.fromFocused = false;
+        });
+        $('#ToGeoAdress').focus(function () {
+            _this.toFocused = true;
+        });
+        $('#ToGeoAdress').blur(function () {
+
+            _this.toFocused = false;
+        });
+        this.$genF.svg();
+        $('[data-toggle="tooltip"]').tooltip();
+        $('.deleteImage').tooltip();
+        $('.fullSize').tooltip();
+        $('#FromGeoAdress').change(function () {
+            _this.setFromPlace({});
+        });
+        $('#ToGeoAdress').change(function () {
+            _this.setToPlace({});
+        });
+
+        this.getOrders();
+    },
+
+    computed: {
+        isThereLocation: function isThereLocation() {
+            if (window.navigator && window.navigator.geolocation) {
+                return true;
+            }
+            return false;
+        }
+    },
+
+    methods: {
+        focused: function focused(type) {
+            alert(type);
+        },
+        slideChange: function slideChange(e) {
+            if (this.activatedOrder) {
+                this.changeActiveOrder(this.allOrders[e].id);
+            }
+        },
+        getOrders: function getOrders() {
+            var _this2 = this;
+
+            this.$http.get('/api/orders/other').then(function (response) {
+                if (response.body && response.body[1] === 'adv') {
+                    if (!_this2.allOrders || _this2.allOrders.length === 0) {
+                        _this2.otherOrders = response.body[0];
+                    }
+                } else if (response.body && response.body[1] === 'owner') {
+                    _this2.allOrders = _this2.allOrders.concat(response.body[0].map(function (e) {
+                        e.id = e.encrypted;
+                        return e;
+                    }));
+                }
+            });
+        },
+        isNumeric: function isNumeric(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n);
+        },
+        getLocationToFrom: function getLocationToFrom() {
+            var _this3 = this;
+
+            navigator.geolocation.getCurrentPosition(function (myposition) {
+
+                _this3.from.marker = {
+                    lat: myposition.coords.latitude,
+                    lng: myposition.coords.longitude
+                };
+                var geocoder = new google.maps.Geocoder();
+                var latlng = {
+                    lat: Number(myposition.coords.latitude),
+                    lng: Number(myposition.coords.longitude)
+                };
+
+                geocoder.geocode({
+                    'location': latlng
+                }, function (results, status) {
+                    if (status === 'OK') {
+                        if (results[0]) {
+                            _this3.from.icon = '';
+                            $('#FromGeoAdress').val(results[0].formatted_address);
+                            // alert(results[1].formatted_address);
+                            _this3.from.adress = results[0].formatted_address;
+                            _this3.$nextTick(function () {
+                                _this3.from.icon = '/images/checked.svg';
+                            });
+                            if (_this3.activatedOrder) {
+                                _this3.ShowRoute();
+                            }
+                        } else {
+                            alert('No results found');
+                        }
+                    }
+                });
+            }, function (error) {
+
+                _this3.$swal({
+                    title: error.message,
+                    text: error.message,
+                    type: "error",
+                    confirmButtonText: trans('front.main.ok'),
+                    onOpen: function onOpen() {
+                        $('.swal2-icon.swal2-error').html('');
+
+                        $('.swal2-icon.swal2-error').html('<img src="/images/warming.svg"/>');
+                    }
+                });
+            }, {
+                maximumAge: 600000,
+                timeout: 5000,
+                enableHighAccuracy: true
+            });
+        },
+        changeActiveOrder: function changeActiveOrder(id) {
+            var _this4 = this;
+
+            this.activatedOrder = true;
+            this.$orders.getOrder(id).then(function (response) {
+
+                _this4.activatedOrderId = response;
+                $('#FromGeoAdress').val(_this4.activatedOrderId.from);
+                $('#ToGeoAdress').val(_this4.activatedOrderId.to);
+                _this4.from.adress = response.from;
+                _this4.to.adress = response.to;
+
+                _this4.from.marker = _this4.getMarker(response.from_map);
+                _this4.to.marker = _this4.getMarker(response.to_map);
+                var directionsService = new window.google.maps.DirectionsService();
+                if (_this4.directionsDisplay) {
+                    _this4.directionsDisplay.setDirections({
+                        routes: []
+                    });
+                    _this4.directionsDisplay = null;
+                }
+                _this4.directionsDisplay = new window.google.maps.DirectionsRenderer({
+                    suppressMarkers: true
+                });
+                _this4.directionsDisplay.setMap(null);
+                _this4.directionsDisplay.setMap(_this4.$refs.map.$mapObject);
+                _this4.directionsDisplay.setDirections(response.orderRoute);
+            });
+        },
+        getMarker: function getMarker(text) {
+            return {
+                lat: Number(text.split(',')[0]),
+                lng: Number(text.split(',')[1])
+            };
+        },
+        ShowRoute: function ShowRoute() {
+            var _this5 = this;
+
+            var directionsService = new window.google.maps.DirectionsService();
+            if (this.directionsDisplay) {
+
+                this.directionsDisplay.setDirections({
+                    routes: []
+                });
+                this.directionsDisplay = null;
+            }
+            this.directionsDisplay = new window.google.maps.DirectionsRenderer({
+                suppressMarkers: true
+            });
+            this.directionsDisplay.setMap(null);
+
+            this.directionsDisplay.setMap(this.$refs.map.$mapObject);
+
+            var start = new window.google.maps.LatLng(this.from.marker.lat, this.from.marker.lng);
+            var end = new window.google.maps.LatLng(this.to.marker.lat, this.to.marker.lng);
+
+            var request = {
+                origin: start,
+                destination: end,
+                travelMode: google.maps.TravelMode['DRIVING']
+            };
+
+            directionsService.route(request, function (result, status) {
+                if (status == 'OK') {
+                    _this5.tempRouteResult = result;
+                    _this5.activatedOrderId.orderRoute = result;
+                    _this5.directionsDisplay.setDirections(result);
+                    var data = {
+                        from: _this5.from.adress,
+                        to: _this5.to.adress,
+                        from_map: _this5.from.marker.lat + ',' + _this5.from.marker.lng,
+                        to_map: _this5.to.marker.lat + ',' + _this5.to.marker.lng,
+                        orderRoute: _this5.tempRouteResult
+                    };
+                    if (!_this5.activatedOrderIndex || _this5.allOrders[_this5.activatedOrderIndex].id !== _this5.activatedOrderId.id) {
+                        _this5.allOrders.map(function (element, index) {
+                            if (element.id === _this5.activatedOrderId.id) {
+                                _this5.activatedOrderIndex = index;
+                            }
+                        });
+                    }
+                    for (var key in data) {
+                        _this5.allOrders[_this5.activatedOrderIndex][key] = data[key];
+                    }
+                    _this5.$orders.updateOrder(_this5.activatedOrderId.id, data);
+                }
+            });
+        },
+        check: function check(e) {
+            var _this6 = this;
+
+            this.loading = true;
+            var data = {
+                from: this.from.adress,
+                to: this.to.adress,
+                from_map: this.from.marker.lat + ',' + this.from.marker.lng,
+                to_map: this.to.marker.lat + ',' + this.to.marker.lng,
+                userId: this.$orders.OrdersUserId()
+            };
+            this.orderValidate(data).then(function (response) {
+                _this6.gotto();
+            }, function (error) {
+                _this6.gotto();
+                // this.loading = false;
+            });
+
+            return true;
+        },
+        orderValidate: function orderValidate(NewOrder) {
+            var result = false;
+            if (NewOrder.from && NewOrder.to && NewOrder.from_map && NewOrder.to_map && NewOrder.from_map !== NewOrder.to_map) {
+                result = true;
+            }
+            return new Promise(function (resolve, reject) {
+                if (result) {
+                    // if (this.$orders.IsFound(NewOrder)) {
+                    //     return reject({
+                    //         title: trans('front.main.repeatedOrder'),
+                    //         text: trans('front.main.repeatedOrderText')
+                    //     })
+                    // }
+                    return resolve(result);
+                } else {
+                    return reject({
+                        title: trans('front.main.wrongData'),
+                        text: trans('front.main.wrongDataMessage')
+                    });
+                }
+            });
+        },
+        validateFromPlace: function validateFromPlace() {
+            var _this7 = this;
+
+            if (this.from.marker.lat && this.from.marker.lng && this.from.adress && $('#FromGeoAdress').val()) {
+                this.from.icon = '';
+                this.$nextTick(function () {
+                    _this7.from.icon = '/images/checked.svg';
+                });
+            } else {
+                this.from.icon = '';
+                this.$nextTick(function () {
+                    _this7.from.icon = '/images/warning.svg';
+                });
+            }
+        },
+        validateToPlace: function validateToPlace() {
+            var _this8 = this;
+
+            if (this.to.marker.lat && this.to.marker.lng && this.to.adress && $('#ToGeoAdress').val()) {
+                this.to.icon = '';
+                this.$nextTick(function () {
+                    _this8.to.icon = '/images/checked.svg';
+                });
+            } else {
+                this.to.icon = '';
+                this.$nextTick(function () {
+                    _this8.to.icon = '/images/warning.svg';
+                });
+            }
+        },
+        validatePlace: function validatePlace(place) {
+            if (!place || !place.address_components) {
+                return false;
+            }
+            var HasStreetArray = place.address_components.some(function (component) {
+                return component.types.indexOf('street_number') !== -1;
+            });
+            if (!HasStreetArray) {
+                this.$snotify.warning(trans('front.main.placeError'), trans('front.main.placeErrorHead'), {
+                    timeout: 3500,
+                    // showProgressBar:false,
+                    pauseOnHover: true
+                });
+            }
+            return HasStreetArray;
+        },
+        setFromPlace: function setFromPlace(place) {
+            this.from.adress = place.formatted_address;
+
+            if (!place.geometry || !this.validatePlace(place)) {
+
+                this.from.marker = {
+                    lat: '',
+                    lng: ''
+                };
+                this.validateFromPlace();
+                return '';
+            } else {
+                $('#ToGeoAdress').focus();
+                this.from.marker = {
+                    lat: place.geometry.location.lat(),
+                    lng: place.geometry.location.lng()
+                };
+            }
+            if (this.activatedOrder) {
+                this.ShowRoute();
+            } else if (this.from.adress && this.from.marker && this.to.marker && this.from.marker.lat && this.from.marker.lng && this.to.adress && this.to.marker.lng && this.to.marker.lat) {
+                this.check();
+            }
+            this.validateFromPlace();
+        },
+        setToPlace: function setToPlace(place) {
+            var _this9 = this;
+
+            this.to.adress = place.formatted_address;
+            if (!place.geometry || !this.validatePlace(place)) {
+
+                this.to.marker = {
+                    lat: '',
+                    lng: ''
+                };
+                this.validateToPlace();
+                return '';
+            } else {
+                $('#SubmitFormButton').focus();
+                this.to.marker = {
+                    lat: place.geometry.location.lat(),
+                    lng: place.geometry.location.lng()
+                };
+            }
+            this.validateToPlace();
+            if (this.activatedOrder) {
+                this.ShowRoute();
+            } else if (this.from.adress && this.from.marker.lat && this.from.marker.lng && this.to.adress && this.to.marker.lng && this.to.marker.lat) {
+                this.check();
+            }
+            this.$nextTick(function () {
+                _this9.saveNewOrder();
+            });
+        },
+        setFromPlaceViaMarker: function setFromPlaceViaMarker(event) {
+            var _this10 = this;
+
+            this.from.marker = {
+                lat: event.latLng.lat(),
+                lng: event.latLng.lng()
+            };
+            var geocoder = new google.maps.Geocoder();
+            var latlng = {
+                lat: event.latLng.lat(),
+                lng: event.latLng.lng()
+            };
+            geocoder.geocode({
+                'location': latlng
+            }, function (results, status) {
+                if (status === 'OK') {
+                    if (results[1]) {
+                        $('#FromGeoAdress').val(results[1].formatted_address);
+                        // alert(results[1].formatted_address);
+                        _this10.from.adress = results[1].formatted_address;
+                        if (_this10.activatedOrder) {
+                            _this10.ShowRoute();
+                        }
+                    } else {
+                        alert('No results found');
+                    }
+                }
+            });
+        },
+        setToPlaceViaMarker: function setToPlaceViaMarker(event) {
+            var _this11 = this;
+
+            this.to.marker = {
+                lat: event.latLng.lat(),
+                lng: event.latLng.lng()
+                // this.gotto()
+            };var geocoder = new google.maps.Geocoder();
+            var latlng = {
+                lat: event.latLng.lat(),
+                lng: event.latLng.lng()
+            };
+            geocoder.geocode({
+                'location': latlng
+            }, function (results, status) {
+                if (status === 'OK') {
+                    if (results[1]) {
+                        $('#ToGeoAdress').val(results[1].formatted_address);
+                        _this11.to.adress = results[1].formatted_address;
+                        if (_this11.activatedOrder) {
+                            _this11.ShowRoute();
+                        }
+                        // alert(results[1].formatted_address);
+                    } else {
+                        alert('No results found');
+                    }
+                }
+            });
+        },
+        gotto: function gotto() {
+            var _this12 = this;
+
+            var save = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+
+            var directionsService = new window.google.maps.DirectionsService();
+            if (this.directionsDisplay) {
+                this.directionsDisplay.setDirections({
+                    routes: []
+                });
+                this.directionsDisplay = null;
+            }
+            this.directionsDisplay = new window.google.maps.DirectionsRenderer({
+                suppressMarkers: true
+            });
+            this.directionsDisplay.setMap(null);
+            this.directionsDisplay.setMap(this.$refs.map.$mapObject);
+
+            var start = new window.google.maps.LatLng(this.from.marker.lat, this.from.marker.lng);
+            var end = new window.google.maps.LatLng(this.to.marker.lat, this.to.marker.lng);
+
+            var request = {
+                origin: start,
+                destination: end,
+                travelMode: google.maps.TravelMode['DRIVING']
+            };
+            directionsService.route(request, function (result, status) {
+                if (status == 'OK') {
+                    _this12.tempRouteResult = result;
+                    var data = {
+                        from: _this12.from.adress,
+                        to: _this12.to.adress,
+                        from_map: _this12.from.marker.lat + ',' + _this12.from.marker.lng,
+                        to_map: _this12.to.marker.lat + ',' + _this12.to.marker.lng,
+                        orderRoute: _this12.tempRouteResult
+                    };
+                    if (save === true) {
+
+                        _this12.$orders.NewOrder(data).then(function (response) {
+
+                            _this12.allOrders = response;
+
+                            _this12.isChecked = true;
+                            _this12.tempRouteResult = {};
+                            // this.changeActiveOrder(response[response.length - 1].id);
+                            _this12.$nextTick(function () {
+                                _this12.loading = false;
+                                _this12.$router.push('/order/create_order/' + response[response.length - 1].id);
+                            });
+                        });
+                    }
+
+                    _this12.directionsDisplay.setDirections(result);
+                    _this12.loading = false;
+                }
+            });
+        },
+        saveNewOrder: function saveNewOrder() {
+            var _this13 = this;
+
+            this.loading = true;
+            var data = {
+                from: this.from.adress,
+                to: this.to.adress,
+                from_map: this.from.marker.lat + ',' + this.from.marker.lng,
+                to_map: this.to.marker.lat + ',' + this.to.marker.lng,
+                orderRoute: this.tempRouteResult
+            };
+            this.orderValidate(data).then(function (result) {
+
+                _this13.gotto(true);
+            }, function (error) {
+                if (!_this13.from.marker || !_this13.from.adress || !_this13.from.marker.lat || !_this13.from.marker.lng) {
+                    _this13.from.icon = '';
+                    _this13.$nextTick(function () {
+                        _this13.from.icon = '/images/warning.svg';
+                    });
+                }
+                if (!_this13.to.marker || !_this13.to.adress || !_this13.to.marker.lat || !_this13.to.marker.lng) {
+                    _this13.to.icon = '';
+                    _this13.$nextTick(function () {
+                        _this13.to.icon = '/images/warning.svg';
+                    });
+                }
+
+                _this13.loading = false;
+            });
+        }
+    }
+
+});
+
+/***/ }),
+
+/***/ 698:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(699)
+}
+var normalizeComponent = __webpack_require__(25)
+/* script */
+var __vue_script__ = __webpack_require__(701)
+/* template */
+var __vue_template__ = __webpack_require__(702)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/pages/main/AppOrders.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0386ae32", Component.options)
+  } else {
+    hotAPI.reload("data-v-0386ae32", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 699:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(700);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(647)("092ab20b", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0386ae32\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AppOrders.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0386ae32\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AppOrders.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 700:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(75)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 701:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            loading: false,
+            ordeers: this.orders
+        };
+    },
+
+    computed: {
+        userId: function userId() {
+            if (this.$auth.isAuth) {
+                return 'user';
+            } else {
+                if (localStorage.getItem('tempid')) {
+                    return localStorage.getItem('tempid');
+                } else {
+                    return 'new';
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        this.$genF.svg();
+    },
+
+    props: ['orders'],
+    watch: {
+        'orders': function orders(newval) {
+            var _this = this;
+
+            this.loading = true;
+            this.$nextTick(function () {
+
+                _this.loading = false;
+                _this.ordeers = _this.orders;
+                _this.$nextTick(function () {
+                    if (_this.$refs.carsouel) {
+
+                        _this.$refs.carsouel.goSlide(newval.length - 1);
+
+                        _this.$genF.svg();
+                    }
+                });
+            });
+        }
+    },
+    methods: {
+        slideChange: function slideChange(e) {
+            this.$emit('slide-change', e);
+        },
+        activateOrder: function activateOrder(slide) {
+            this.$orders.setActiveOrder(slide.id);
+            this.$emit('activateOrder', slide.id);
+        },
+        deleteOrder: function deleteOrder(order) {
+            var _this2 = this;
+
+            var vm = this;
+            $('.deleteImage').tooltip('hide');
+            Vue.orders.removeOrder(order).then(function (response) {
+                // Vue.orders = response;
+                $('.deleteImage').tooltip('hide');
+                _this2.loading = true;
+                _this2.ordeers = response;
+
+                _this2.$nextTick(function () {
+                    $('.deleteImage').tooltip('hide');
+                    _this2.loading = false;
+                });
+            });
+            // this.$swal({
+            //     type: 'question',
+            //     title: '',
+            //     text: trans('front.main.deleteConfirm'),
+            //     showCancelButton: true,
+            //     cancelButtonColor: '#d33',
+            //     cancelButtonText: trans('front.main.cancel'),
+            //     confirmButtonText: trans('front.main.deleteIt'),
+            //     onOpen() {
+            //         $('.swal2-icon.swal2-question').html('<img src="/images/question.svg"/>');
+            //     }
+
+            // }).then(result => {
+            //     if (result.value === true) {
+            //         this.$swal({
+            //             text: trans('front.main.deleting'),
+            //             onOpen() {
+            //                 Vue.swal.showLoading();
+
+            //             }
+            //         })
+            //     }
+            // })
+        }
+    }
+
+});
+
+/***/ }),
+
+/***/ 702:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("transition", { attrs: { name: "fade" } }, [
+    !_vm.loading
+      ? _c(
+          "div",
+          { staticClass: "orders-small-wrapper" },
+          [
+            _c(
+              "carousel-3d",
+              {
+                ref: "carsouel",
+                attrs: { "controls-visible": true, height: 200, width: 300 },
+                on: { "before-slide-change": _vm.slideChange }
+              },
+              _vm._l(_vm.ordeers, function(slide, i) {
+                return _c("slide", { key: "slide" + i, attrs: { index: i } }, [
+                  _c("div", { staticClass: "small-order" }, [
+                    _c("img", {
+                      staticClass: "deleteImage",
+                      attrs: {
+                        src: "/images/delete-order.svg",
+                        title: _vm.trans("front.main.delete"),
+                        alt: _vm.trans("front.main.delete")
+                      },
+                      on: {
+                        click: function($event) {
+                          return _vm.deleteOrder(slide)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "fullSize",
+                      attrs: {
+                        src: "/images/full-size.svg",
+                        title: _vm.trans("front.main.fullSize"),
+                        alt: _vm.trans("front.main.fullSize")
+                      },
+                      on: {
+                        click: function($event) {
+                          return _vm.activateOrder(slide)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "small-order-cell order-from" }, [
+                      _c("img", {
+                        staticClass: "svg",
+                        attrs: {
+                          src: "/images/home.svg",
+                          alt: "From",
+                          title: _vm.trans("front.main.from"),
+                          "data-toggle": "tooltip"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "small-order-cell-adress" }, [
+                        _c("b", [_vm._v(_vm._s(_vm.trans("front.main.from")))]),
+                        _c("span", [_vm._v(" : " + _vm._s(slide.from))])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "small-order-cell order-to" }, [
+                      _c("img", {
+                        staticClass: "svg",
+                        attrs: {
+                          src: "/images/send.svg",
+                          alt: _vm.trans("front.main.to"),
+                          title: _vm.trans("front.main.to"),
+                          "data-toggle": "tooltip"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "small-order-cell-adress" }, [
+                        _c("b", [_vm._v(_vm._s(_vm.trans("front.main.to")))]),
+                        _c("span", [_vm._v(" : " + _vm._s(slide.to))])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "small-order-cell completeIt" },
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "letsComplete btn",
+                            attrs: {
+                              tag: "button",
+                              to: _vm.$auth.isAuth()
+                                ? "/order/create_order/" + slide.id
+                                : "/order/create_order/" + slide.id
+                            }
+                          },
+                          [_vm._v(_vm._s(_vm.trans("front.main.letsComplete")))]
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "warning-order",
+                      attrs: { src: "/images/warning.svg", alt: "warning" }
+                    })
+                  ])
+                ])
+              }),
+              1
+            )
+          ],
+          1
+        )
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0386ae32", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 703:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(704)
+}
+var normalizeComponent = __webpack_require__(25)
+/* script */
+var __vue_script__ = __webpack_require__(706)
+/* template */
+var __vue_template__ = __webpack_require__(707)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/pages/main/AppOtherOrders.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-f269efd0", Component.options)
+  } else {
+    hotAPI.reload("data-v-f269efd0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 704:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(705);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(647)("7e120ab7", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f269efd0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AppOtherOrders.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f269efd0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AppOtherOrders.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 705:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(75)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 706:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            loading: false,
+            ordeers: this.orders
+        };
+    },
+
+    computed: {},
+    props: {
+        'orders': {
+            required: true
+        }
+    },
+    methods: {},
+    created: function created() {},
+    mounted: function mounted() {
+        var _this = this;
+
+        this.$nextTick(function () {
+
+            _this.$genF.svg();
+        });
+    },
+
+    watch: {
+        'orders': function orders(newval) {
+            var _this2 = this;
+
+            this.loading = true;
+            this.$nextTick(function () {
+
+                _this2.loading = false;
+                _this2.ordeers = _this2.orders;
+                console.log(_this2.ordeers);
+                _this2.$nextTick(function () {
+                    if (_this2.$refs.othercarsouel) {
+
+                        _this2.$genF.svg();
+                        _this2.$refs.othercarsouel.goSlide(newval.length - 1);
+                    }
+                });
+            });
+        }
+    }
+
+});
+
+/***/ }),
+
+/***/ 707:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("transition", { attrs: { name: "fade" } }, [
+    !_vm.loading
+      ? _c(
+          "div",
+          { staticClass: "orders-small-wrapper" },
+          [
+            _c(
+              "carousel-3d",
+              {
+                ref: "othercarsouel",
+                attrs: {
+                  autoplay: true,
+                  dir: "ltr",
+                  "autoplay-timeout": 5000,
+                  "controls-visible": true,
+                  height: 200,
+                  width: 300
+                }
+              },
+              _vm._l(_vm.ordeers, function(slide, i) {
+                return _c("slide", { key: "slide" + i, attrs: { index: i } }, [
+                  _c("div", { staticClass: "small-order" }, [
+                    _c("div", { staticClass: "advertise-order" }, [
+                      _c("div", { staticClass: "advertise-row" }, [
+                        _c("div", { staticClass: "advertise-address" }, [
+                          _c(
+                            "div",
+                            { staticClass: "small-order-cell order-from" },
+                            [
+                              _c("img", {
+                                staticClass: "svg",
+                                attrs: {
+                                  src: "/images/home.svg",
+                                  alt: "From",
+                                  title: _vm.trans("front.main.from"),
+                                  "data-toggle": "tooltip"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                { staticClass: "small-order-cell-adress" },
+                                [_c("span", [_vm._v(_vm._s(slide.from))])]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "small-order-cell order-to" },
+                            [
+                              _c("img", {
+                                staticClass: "svg",
+                                attrs: {
+                                  src: "/images/send.svg",
+                                  alt: _vm.trans("front.main.to"),
+                                  title: _vm.trans("front.main.to"),
+                                  "data-toggle": "tooltip"
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "span",
+                                { staticClass: "small-order-cell-adress" },
+                                [_c("span", [_vm._v(_vm._s(slide.to))])]
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "advertise-pricing" }, [
+                          _c("img", {
+                            attrs: {
+                              src:
+                                "/api/orders/images/icon?price=" +
+                                slide.price +
+                                "&distance=" +
+                                slide.distance,
+                              alt: ""
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "advertise-row" }, [
+                        slide.ship
+                          ? _c(
+                              "div",
+                              { staticClass: "advertise-address shipping" },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src: "/images/shippings/" + slide.ship.img,
+                                    alt: slide.ship.title
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticStyle: { width: "100%" } }, [
+                                  _vm._v(_vm._s(slide.ship.title))
+                                ])
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "advertise-pricing" })
+                      ])
+                    ])
+                  ])
+                ])
+              }),
+              1
+            )
+          ],
+          1
+        )
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-f269efd0", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 708:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "main-page-div" }, [
+    _c(
+      "div",
+      { class: { "main-page-overlay": true, checked: false } },
+      [
+        _c(
+          "form",
+          {
+            ref: "newOrderForm",
+            staticClass: "main-page-form",
+            attrs: { action: "#" },
+            on: {
+              submit: function($event) {
+                $event.preventDefault()
+                return _vm.saveNewOrder($event)
+              }
+            }
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "form-head" },
+              [
+                _c("h1", [_vm._v(_vm._s(_vm.trans("frontend.main.make")))]),
+                _vm._v(" "),
+                _c(
+                  "slick",
+                  {
+                    ref: "slick",
+                    staticClass: "text-slider",
+                    attrs: { options: _vm.slickOptions }
+                  },
+                  [
+                    _c("div", [_vm._v(_vm._s(_vm.trans("frontend.main.p1")))]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.trans("frontend.main.p2")))]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.trans("frontend.main.p3")))]),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.trans("frontend.main.p4")))])
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-container" }, [
+              _c(
+                "div",
+                {
+                  class: { "main-form-input": true, focused: _vm.fromFocused }
+                },
+                [
+                  _c("div", { staticClass: "main-from-span" }, [
+                    _vm.from.icon
+                      ? _c("span", { staticClass: "icon" }, [
+                          _c("img", {
+                            staticClass: "svg",
+                            attrs: {
+                              src: _vm.from.icon,
+                              alt: _vm.trans("from.main.from")
+                            }
+                          })
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "FromGeoAdress" } }, [
+                      _vm._v(_vm._s(_vm.trans("front.main.senderAdress")))
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("gmap-autocomplete", {
+                    ref: "fromAdress",
+                    staticStyle: { "padding-right": "61.5px" },
+                    attrs: {
+                      placeholder: _vm.trans("front.main.addressPlaceHolder"),
+                      id: "FromGeoAdress",
+                      autofocus: ""
+                    },
+                    on: { place_changed: _vm.setFromPlace }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "icons-wrapper" }, [
+                    _c(
+                      "span",
+                      {
+                        attrs: {
+                          "data-placement": "right",
+                          "data-toggle": "tooltip",
+                          role: "button"
+                        }
+                      },
+                      [
+                        _c("label", { attrs: { for: "FromGeoAdress" } }, [
+                          _c("img", {
+                            staticClass: "right-image svg",
+                            attrs: {
+                              src: "/images/search.svg",
+                              alt: _vm.trans("front.main.gpsusage")
+                            }
+                          })
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "span",
+                      {
+                        attrs: {
+                          "data-placement": "right",
+                          "data-toggle": "tooltip",
+                          role: "button",
+                          title: _vm.trans("front.main.gpsusage")
+                        },
+                        on: { click: _vm.getLocationToFrom }
+                      },
+                      [
+                        _vm.isThereLocation
+                          ? _c("img", {
+                              staticClass: "right-image svg",
+                              attrs: {
+                                src: "/images/gps-fixed-indicator.svg",
+                                alt: _vm.trans("front.main.gpsusage")
+                              }
+                            })
+                          : _vm._e()
+                      ]
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { class: { "main-form-input": true, focused: _vm.toFocused } },
+                [
+                  _c("div", { staticClass: "main-from-span" }, [
+                    _vm.to.icon
+                      ? _c("span", { staticClass: "icon" }, [
+                          _c("img", {
+                            staticClass: "svg",
+                            attrs: {
+                              src: _vm.to.icon,
+                              alt: _vm.trans("from.main.to")
+                            }
+                          })
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "ToGeoAdress" } }, [
+                      _vm._v(_vm._s(_vm.trans("front.main.receiverAdress")))
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("gmap-autocomplete", {
+                    ref: "ToAdress",
+                    staticStyle: { "padding-right": "30px" },
+                    attrs: {
+                      placeholder: _vm.trans("front.main.addressPlaceHolder"),
+                      id: "ToGeoAdress"
+                    },
+                    on: { place_changed: _vm.setToPlace }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "icons-wrapper" }, [
+                    _c(
+                      "span",
+                      {
+                        attrs: {
+                          "data-placement": "right",
+                          "data-toggle": "tooltip",
+                          role: "button"
+                        }
+                      },
+                      [
+                        _c("label", { attrs: { for: "ToGeoAdress" } }, [
+                          _c("img", {
+                            staticClass: "right-image svg",
+                            attrs: {
+                              src: "/images/search.svg",
+                              alt: _vm.trans("front.main.gpsusage")
+                            }
+                          })
+                        ])
+                      ]
+                    )
+                  ])
+                ],
+                1
+              )
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _vm.allOrders && _vm.allOrders.length !== 0
+          ? _c("app-orders", {
+              attrs: { orders: _vm.allOrders },
+              on: {
+                "slide-change": _vm.slideChange,
+                activateOrder: _vm.changeActiveOrder
+              }
+            })
+          : _c("app-other-orders", { attrs: { orders: _vm.otherOrders } })
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "main-page-maps" },
+      [
+        _c(
+          "gmap-map",
+          {
+            ref: "map",
+            staticStyle: { width: "100%", height: "100%" },
+            attrs: {
+              center: { lat: 51.165691, lng: 10.451526 },
+              zoom: 6,
+              "map-type-id": "roadmap"
+            }
+          },
+          [
+            _vm.isNumeric(_vm.to.marker.lng) && _vm.isNumeric(_vm.to.marker.lat)
+              ? _c("gmap-marker", {
+                  attrs: {
+                    "data-toggle": "tooltip",
+                    icon: "/images/marker-to.svg",
+                    position: _vm.to.marker,
+                    title: "to",
+                    animation: 2,
+                    draggable: true
+                  },
+                  on: { dragend: _vm.setToPlaceViaMarker }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.isNumeric(_vm.from.marker.lng) &&
+            _vm.isNumeric(_vm.from.marker.lat)
+              ? _c("gmap-marker", {
+                  attrs: {
+                    "data-toggle": "tooltip",
+                    icon: "/images/home-marker.svg",
+                    position: _vm.from.marker,
+                    title: "from",
+                    animation: 2,
+                    draggable: true
+                  },
+                  on: { dragend: _vm.setFromPlaceViaMarker }
+                })
+              : _vm._e()
+          ],
+          1
+        )
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0a49a3ac", module.exports)
+  }
+}
+
+/***/ })
+
+});
