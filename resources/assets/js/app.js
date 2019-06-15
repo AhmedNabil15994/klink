@@ -65,7 +65,7 @@ Vue.use(VueSweetalert2);
 import * as VueGoogleMaps from 'vue2-google-maps'
 Vue.use(VueGoogleMaps, {
     load: {
-        key: 'AIzaSyD06pFMPpfuA37fB3JJQ_K85GaRG45CFv8',
+        key: 'AIzaSyBKbJsGIea4zN3LbwdZ7o1eDt2BttMnTCc',
         libraries: 'places', // This is required cause of Autocomplete plugin
         language: document.head.querySelector('meta[http-equiv="content-language"]').content
 
