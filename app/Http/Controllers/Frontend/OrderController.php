@@ -237,6 +237,8 @@ class OrderController extends Controller
                     Auth::login($user);
                     $this->data['profile'] = Profile::where('user_id', Auth::user()->id)->where('is_admin', 0)->first();
                     return redirect()->route('user2.uncompleted', ['id'=>$id]);
+                }else{
+                    return view('frontend.order.uncompleted.uncompleted', $this->data);
                 }
             } else {
                 return view('frontend.order.uncompleted.uncompleted', $this->data);
